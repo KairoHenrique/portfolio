@@ -46,7 +46,7 @@
         <p class="hero__description fade-in">
           Estudante de Engenharia de Computação no CEFET-MG (6º período) e game dev na Studio Vessel.
           Experiência em ensino de robótica e programação na HZN Labs. Construo apps mobile,
-          sistemas web com IA e jogos 2D — em especial o Easy Trip, em desenvolvimento.
+          SaaS acadêmico (ACME HUB), dashboards de dados e jogos 2D — com Easy Trip e SEMUSA em desenvolvimento.
         </p>
         <div class="hero__actions fade-in">
           <a href="#projetos" class="btn btn--primary">Ver projetos</a>
@@ -60,11 +60,12 @@
         <div class="hero__tech fade-in">
           <span>React Native</span>
           <span>Expo</span>
+          <span>Next.js</span>
+          <span>Fastify</span>
+          <span>Supabase</span>
           <span>Spring Boot</span>
-          <span>Angular</span>
           <span>TypeScript</span>
           <span>Python</span>
-          <span>Java</span>
         </div>
       </div>
     </section>
@@ -88,9 +89,11 @@
               Concluí o <strong>Santander Bootcamp | Fullstack Developer</strong> (DIO, 125h), com projetos
               em Spring Boot, Spring Cloud, Angular e APIs REST. Fui <strong>Scrum Master e desenvolvedor
               full-stack do HealthBridge</strong>, plataforma de triagem médica com IA e conformidade LGPD.
-              Desenvolvi o <strong>ACME HUB</strong> (<a href="https://acmehub.com.br" target="_blank" rel="noopener noreferrer">site</a>), planejador acadêmico para o CEFET-MG, e sigo no
-              <strong>Easy Trip</strong> (app de viagens e rolês) e em <strong>Whispers of the Mind</strong>,
-              uma Metroidvania 2D em pixel art.
+              Desenvolvi o <strong>ACME HUB</strong> (<a href="https://acmehub.com.br" target="_blank" rel="noopener noreferrer">site</a>),
+              planejador acadêmico para o CEFET-MG. Em paralelo, trabalho no <strong>Easy Trip</strong>
+              (app de viagens, roteiros com IA e Radar da Noite), no <strong>SEMUSA</strong>
+              (dashboard de indicadores de saúde) e em <strong>Whispers of the Mind</strong>,
+              Metroidvania 2D em pixel art.
             </p>
             <p>
               Já atuei como <strong>monitor de Introdução à Programação</strong> no
@@ -150,7 +153,7 @@
             <h3>Front-End & Mobile</h3>
             <div class="skills__tags">
               <span>React</span><span>React Native</span><span>Expo</span><span>Next.js</span>
-              <span>Angular</span><span>Vite</span><span>Jinja2</span>
+              <span>Angular</span><span>Vite</span><span>Recharts</span><span>Jinja2</span>
             </div>
           </div>
           <div class="skills__group">
@@ -302,31 +305,14 @@
       <div class="container">
         <h2 class="section__title reveal">Projetos</h2>
         <p class="section__subtitle reveal">
-          Destaques em mobile, Spring Boot, plataformas acadêmicas, jogos e sistemas de alta performance.
+          ACME HUB no ar; Easy Trip, SEMUSA e jogos em desenvolvimento; além de Spring Boot, IA e sistemas de alta performance.
         </p>
 
         <h3 class="projects__category reveal">Destaques</h3>
         <div class="projects projects--featured">
           <article class="project-card project-card--featured reveal">
             <div class="project-card__header">
-              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
-              <span class="project-card__role">Mobile & Full-Stack</span>
-              <h3>Easy Trip</h3>
-            </div>
-            <p>
-              App mobile de planejamento de viagens e descoberta de rolês locais. Roteiros com IA,
-              check-in, mapa, exportação PDF, Radar da Noite com Google Places e backend Fastify
-              (chaves server-side) + Supabase. Stack: React Native, Expo, TypeScript.
-            </p>
-            <div class="project-card__tags">
-              <span>React Native</span><span>Expo</span><span>TypeScript</span>
-              <span>Fastify</span><span>Supabase</span><span>Maps</span>
-            </div>
-          </article>
-
-          <article class="project-card project-card--featured reveal">
-            <div class="project-card__header">
-              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
+              <span class="project-card__status project-card__status--done">No ar</span>
               <span class="project-card__role">Full-Stack</span>
               <h3>ACME HUB</h3>
             </div>
@@ -350,6 +336,56 @@
 
           <article class="project-card project-card--featured reveal">
             <div class="project-card__header">
+              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
+              <span class="project-card__role">Mobile & Full-Stack</span>
+              <h3>Easy Trip</h3>
+            </div>
+            <p>
+              App mobile de planejamento de viagens e descoberta de rolês. Wizard de viagem
+              (datas, cidades, transporte, grupo), roteiros com IA e modalidades, circuitos de cidades,
+              convites, mapa, PDF, gastos com rateio, sync na nuvem (Supabase), 8 paletas Coolors e
+              <strong>Radar da Noite</strong> (clima + Google Places + curadoria IA). Backend Fastify
+              (IA/Places/Directions) + auth Supabase. Stack: React Native, Expo, TypeScript.
+            </p>
+            <div class="project-card__tags">
+              <span>React Native</span><span>Expo</span><span>TypeScript</span>
+              <span>Fastify</span><span>Supabase</span><span>OpenAI</span><span>Places</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__header">
+              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
+              <span class="project-card__role">Full-Stack · Dados</span>
+              <h3>SEMUSA</h3>
+            </div>
+            <p>
+              Dashboard de indicadores de saúde pública (materno-infantil e câncer colorretal)
+              para apoio à gestão. Painéis com gráficos e filtros; front em React + Vite + Recharts
+              e estrutura de API/banco em evolução. Projeto acadêmico-aplicado em andamento.
+            </p>
+            <div class="project-card__tags">
+              <span>React</span><span>Vite</span><span>Recharts</span><span>Dashboard</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__header">
+              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
+              <span class="project-card__role">Game Dev</span>
+              <h3>Whispers of the Mind</h3>
+            </div>
+            <p>
+              Metroidvania 2D em pixel art na Studio Vessel. Acompanhe Luna em um mundo de sombras
+              enquanto enfrenta os demônios de sua própria mente — um jogo sobre medos, música e autodescoberta.
+            </p>
+            <div class="project-card__tags">
+              <span>GameMaker</span><span>GML</span><span>Pixel Art</span><span>Metroidvania</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__header">
               <span class="project-card__status project-card__status--done">Concluído</span>
               <span class="project-card__role">Scrum Master</span>
               <span class="project-card__role">Full-Stack</span>
@@ -366,21 +402,6 @@
             <div class="project-card__tags">
               <span>FastAPI</span><span>Python</span><span>Jinja2</span>
               <span>IA</span><span>LGPD</span><span>SQLAlchemy</span>
-            </div>
-          </article>
-
-          <article class="project-card project-card--featured reveal">
-            <div class="project-card__header">
-              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
-              <span class="project-card__role">Game Dev</span>
-              <h3>Whispers of the Mind</h3>
-            </div>
-            <p>
-              Metroidvania 2D em pixel art na Studio Vessel. Acompanhe Luna em um mundo de sombras
-              enquanto enfrenta os demônios de sua própria mente, um jogo sobre medos, música e autodescoberta.
-            </p>
-            <div class="project-card__tags">
-              <span>GameMaker</span><span>GML</span><span>Pixel Art</span><span>Metroidvania</span>
             </div>
           </article>
 
@@ -482,16 +503,6 @@
             <p>Boss rush 2D em Lua para TIC-80. Ação rápida com chefes desafiadores e visual pixel art. Apresentado no TIC-80 (2025).</p>
             <a href="https://github.com/KairoHenrique/Between-Game" target="_blank" rel="noopener noreferrer" class="project-card__link">Ver no GitHub →</a>
             <div class="project-card__tags"><span>Lua</span><span>TIC-80</span></div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-card__header">
-              <span class="project-card__status project-card__status--done">Concluído</span>
-              <h3>Simulador de Incêndio</h3>
-            </div>
-            <p>Simulação de propagação de incêndio florestal com Raylib. Visualização em tempo real de sistemas dinâmicos (AED1, CEFET-MG).</p>
-            <a href="https://github.com/KairoHenrique/Simulador-de-Incendio" target="_blank" rel="noopener noreferrer" class="project-card__link">Ver no GitHub →</a>
-            <div class="project-card__tags"><span>C++</span><span>Raylib</span></div>
           </article>
         </div>
 
