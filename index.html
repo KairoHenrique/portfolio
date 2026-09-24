@@ -246,11 +246,10 @@
             <div class="timeline__marker"></div>
             <div class="timeline__content">
               <span class="timeline__date">2025 a Atual</span>
-              <h3>Game Dev na Studio Vessel</h3>
-              <p class="timeline__org">Desenvolvimento de jogos indie</p>
+              <h3>Fundador & Lead Developer na Studio Vessel</h3>
+              <p class="timeline__org">Estúdio Indie de Software & Game Dev</p>
               <p>
-                Desenvolvimento de <strong>Whispers of the Mind</strong>, Metroidvania 2D em pixel art
-                com GameMaker e GML, com mecânicas de plataforma, combate e narrativa sobre medos e autodescoberta.
+                Fundador e desenvolvedor principal da Studio Vessel. Liderança técnica e criação de produtos de software e jogos autoriais, como o <strong>ACME HUB</strong> (planejador acadêmico full-stack no ar em acmehub.com.br), <strong>Whispers of the Mind</strong> (Metroidvania 2D), <strong>Zero Echo</strong> e <strong>Between Game</strong>.
               </p>
             </div>
           </article>
@@ -322,12 +321,17 @@
               dashboard, calendário, simulador de notas/matrícula, mapa do PPC, integralização e app
               Android (Expo). Repositório: <code>CEFET-Academic-Planner</code>.
             </p>
-            <a href="https://acmehub.com.br" target="_blank" rel="noopener noreferrer" class="project-card__link">
-              Abrir o site →
-            </a>
-            <a href="https://github.com/KairoHenrique/CEFET-Academic-Planner" target="_blank" rel="noopener noreferrer" class="project-card__link">
-              Ver no GitHub →
-            </a>
+            <div class="project-card__actions">
+              <a href="https://acmehub.com.br" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Abrir o site →
+              </a>
+              <a href="https://github.com/KairoHenrique/CEFET-Academic-Planner" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Ver no GitHub →
+              </a>
+              <button type="button" class="btn btn--primary btn--mockup" data-mockup="acmehub">
+                ⚡ Testar Demo Interativa
+              </button>
+            </div>
             <div class="project-card__tags">
               <span>Next.js</span><span>TypeScript</span><span>Supabase</span>
               <span>Playwright</span><span>Expo</span><span>Cloudflare</span>
@@ -347,6 +351,11 @@
               <strong>Radar da Noite</strong> (clima + Google Places + curadoria IA). Backend Fastify
               (IA/Places/Directions) + auth Supabase. Stack: React Native, Expo, TypeScript.
             </p>
+            <div class="project-card__actions">
+              <button type="button" class="btn btn--primary btn--mockup" data-mockup="easytrip">
+                ⚡ Testar Demo Interativa
+              </button>
+            </div>
             <div class="project-card__tags">
               <span>React Native</span><span>Expo</span><span>TypeScript</span>
               <span>Fastify</span><span>Supabase</span><span>OpenAI</span><span>Places</span>
@@ -502,7 +511,16 @@
             </div>
             <p>Boss rush 2D em Lua para TIC-80. Ação rápida com chefes desafiadores e visual pixel art. Apresentado no TIC-80 (2025).</p>
             <a href="https://github.com/KairoHenrique/Between-Game" target="_blank" rel="noopener noreferrer" class="project-card__link">Ver no GitHub →</a>
-            <div class="project-card__tags"><span>Lua</span><span>TIC-80</span></div>
+            <div class="project-card__tags"><span>Lua</span><span>TIC-80</span><span>Studio Vessel</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__status project-card__status--dev">Em desenvolvimento</span>
+              <h3>Zero Echo</h3>
+            </div>
+            <p>Novo jogo 2D em desenvolvimento pela Studio Vessel, expandindo o catálogo de títulos indie autoriais do estúdio.</p>
+            <div class="project-card__tags"><span>Game Dev</span><span>Studio Vessel</span><span>Pixel Art</span><span>2D</span></div>
           </article>
         </div>
 
@@ -604,6 +622,23 @@
       <p>© <span id="year"></span> Kairo Henrique. Feito com dedicação.</p>
     </div>
   </footer>
+
+  <!-- Modal Interativo de Mockups -->
+  <div class="modal" id="mockup-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__container">
+      <div class="modal__header">
+        <div class="modal__title-group">
+          <span class="modal__badge" id="modal-badge">Demo Interativa</span>
+          <h3 class="modal__title" id="modal-title">Mockup do Projeto</h3>
+        </div>
+        <button type="button" class="modal__close" id="modal-close" aria-label="Fechar modal">✕</button>
+      </div>
+      <div class="modal__body" id="modal-body">
+        <!-- Conteúdo carregado dinamicamente via JS -->
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
