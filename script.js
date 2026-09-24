@@ -149,25 +149,43 @@
           </div>
         </div>
 
+        <div class="acme-header-bar" style="margin: 1rem 1.5rem 0 1.5rem;">
+          <div class="acme-logo-brand">
+            <span style="background:linear-gradient(135deg, #06b6d4, #3b82f6); color:#fff; width:30px; height:30px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; font-size:0.9rem;">AH</span>
+            <span>ACME HUB</span>
+            <span style="font-size:0.75rem; color:#94a3b8; font-weight:400; font-family:sans-serif;">| CEFET-MG Academic Planner</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <span class="acme-status-pill acme-status-pill--approved">
+              🟢 SIGAA Worker Ativo (Playwright)
+            </span>
+            <span style="background:#1e293b; color:#f8fafc; font-size:0.8rem; font-weight:600; padding:0.3rem 0.75rem; border-radius:50px; border:1px solid rgba(148,163,184,0.2);">
+              Kairo Henrique (6º Período)
+            </span>
+          </div>
+        </div>
+
         <div class="mockup-tabs">
-          <button class="mockup-tab mockup-tab--active" data-tab="acme-dash">Dashboard & Sync SIGAA</button>
-          <button class="mockup-tab" data-tab="acme-sim">Simulador de Notas</button>
-          <button class="mockup-tab" data-tab="acme-ppc">Mapa do PPC & Créditos</button>
+          <button class="mockup-tab mockup-tab--active" data-tab="acme-dash">Dashboard & Boletim SIGAA</button>
+          <button class="mockup-tab" data-tab="acme-sim">Simulador de Notas (CEFET)</button>
+          <button class="mockup-tab" data-tab="acme-grid">Grade Horária & PPC</button>
         </div>
 
         <div class="mockup-tab-content mockup-tab-content--active" id="acme-dash">
-          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; margin-bottom:1.25rem;">
             <div>
-              <h4 style="color:#fff; margin:0;">Estudante: Kairo Henrique F. Martins</h4>
-              <p style="color:var(--text-secondary); font-size:0.85rem; margin:0;">Engenharia de Computação · 6º Período (CEFET-MG)</p>
+              <h4 style="color:#f8fafc; margin:0; font-size:1.1rem;">Visão Geral Acadêmica</h4>
+              <p style="color:#94a3b8; font-size:0.82rem; margin:0.2rem 0 0 0;">Engenharia de Computação · Campus Divinópolis</p>
             </div>
-            <button class="mock-btn" id="btn-sync-sigaa">🔄 Sincronizar SIGAA (Worker Playwright)</button>
+            <button class="mock-btn" id="btn-sync-sigaa" style="background:linear-gradient(135deg, #0284c7, #2563eb);">
+              🔄 Sincronizar SIGAA em Tempo Real
+            </button>
           </div>
 
-          <div id="sync-status-box" style="display:none; margin-bottom:1rem; background:rgba(74, 159, 212, 0.1); border:1px solid var(--border); padding:0.75rem; border-radius:8px;">
-            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--text-secondary); margin-bottom:0.3rem;">
-              <span id="sync-label">Executando Playwright Headless Browser...</span>
-              <span id="sync-percent">0%</span>
+          <div id="sync-status-box" style="display:none; margin-bottom:1.25rem; background:rgba(15, 23, 42, 0.9); border:1px solid #38bdf8; padding:0.85rem; border-radius:8px;">
+            <div style="display:flex; justify-content:space-between; font-size:0.82rem; color:#cbd5e1; margin-bottom:0.4rem;">
+              <span id="sync-label" style="font-family:monospace;">[LOG] Iniciando Playwright Headless Worker...</span>
+              <span id="sync-percent" style="font-weight:700; color:#38bdf8;">0%</span>
             </div>
             <div class="progress-bar-container">
               <div class="progress-bar-fill" id="sync-progress"></div>
@@ -175,76 +193,123 @@
           </div>
 
           <div class="mock-card-grid">
-            <div class="mock-card">
-              <div class="mock-card__title">Rendimento Global (IRA)</div>
-              <div class="mock-card__val">89.4</div>
-              <span class="mock-badge">Acima da Média</span>
+            <div class="mock-card" style="background:#1e293b; border-color:rgba(56, 189, 248, 0.3);">
+              <div class="mock-card__title" style="color:#94a3b8;">Rendimento Global (IRA)</div>
+              <div class="mock-card__val" style="color:#38bdf8; font-size:1.6rem;">89.4 <span style="font-size:0.8rem; color:#34d399;">/ 100</span></div>
+              <span class="acme-status-pill acme-status-pill--approved">Desempenho Excelente</span>
             </div>
-            <div class="mock-card">
-              <div class="mock-card__title">Integralização PPC</div>
-              <div class="mock-card__val">65%</div>
-              <span class="mock-badge">180 / 270 Créditos</span>
+            <div class="mock-card" style="background:#1e293b; border-color:rgba(168, 85, 247, 0.3);">
+              <div class="mock-card__title" style="color:#94a3b8;">Integralização do Curso</div>
+              <div class="mock-card__val" style="color:#c084fc; font-size:1.6rem;">65.0%</div>
+              <span style="font-size:0.75rem; color:#cbd5e1;">180 de 270 Créditos</span>
             </div>
-            <div class="mock-card">
-              <div class="mock-card__title">Disciplinas Ativas</div>
-              <div class="mock-card__val">5</div>
-              <span class="mock-badge">Semestre 2026/2</span>
+            <div class="mock-card" style="background:#1e293b; border-color:rgba(16, 185, 129, 0.3);">
+              <div class="mock-card__title" style="color:#94a3b8;">Faltas Globais</div>
+              <div class="mock-card__val" style="color:#34d399; font-size:1.6rem;">3.8%</div>
+              <span class="acme-status-pill acme-status-pill--approved">Frequência 96.2%</span>
             </div>
           </div>
 
-          <h5 style="color:#fff; margin-top:1.5rem; margin-bottom:0.75rem;">Disciplinas Sincronizadas</h5>
-          <div style="display:flex; flex-direction:column; gap:0.5rem;" id="courses-list">
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.75rem; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
-              <span>Engenharia de Software (CEFET001)</span>
-              <span style="font-weight:700; color:#10b981;">Nota: 94.0</span>
-            </div>
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.75rem; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
-              <span>Sistemas Operacionais II (CEFET002)</span>
-              <span style="font-weight:700; color:#10b981;">Nota: 91.5</span>
-            </div>
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.75rem; border-radius:6px; display:flex; justify-content:space-between; align-items:center;">
-              <span>Banco de Dados I (CEFET003)</span>
-              <span style="font-weight:700; color:#10b981;">Nota: 88.0</span>
-            </div>
+          <h5 style="color:#f8fafc; margin-top:1.5rem; margin-bottom:0.75rem; font-size:0.95rem;">Boletim Sincronizado do Semestre (2026/2)</h5>
+          
+          <div style="overflow-x:auto;">
+            <table class="acme-table">
+              <thead>
+                <tr>
+                  <th>Disciplina</th>
+                  <th>Etapa 1 (30p)</th>
+                  <th>Etapa 2 (30p)</th>
+                  <th>Etapa 3 (40p)</th>
+                  <th>Média Final</th>
+                  <th>Faltas</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Engenharia de Software</strong> <br><small style="color:#94a3b8;">CEFET001 · Prof. Alexandre</small></td>
+                  <td>28.0</td>
+                  <td>27.5</td>
+                  <td>36.0</td>
+                  <td><strong style="color:#34d399;">91.5</strong></td>
+                  <td>2h</td>
+                  <td><span class="acme-status-pill acme-status-pill--approved">🟢 Aprovado</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Sistemas Operacionais II</strong> <br><small style="color:#94a3b8;">CEFET002 · Prof. Roberto</small></td>
+                  <td>26.0</td>
+                  <td>25.5</td>
+                  <td style="color:#94a3b8;">--</td>
+                  <td><strong style="color:#38bdf8;">85.8</strong></td>
+                  <td>4h</td>
+                  <td><span class="acme-status-pill acme-status-pill--progress">🔵 Em Andamento</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Banco de Dados I</strong> <br><small style="color:#94a3b8;">CEFET003 · Profa. Carla</small></td>
+                  <td>24.5</td>
+                  <td>26.0</td>
+                  <td style="color:#94a3b8;">--</td>
+                  <td><strong style="color:#38bdf8;">84.2</strong></td>
+                  <td>0h</td>
+                  <td><span class="acme-status-pill acme-status-pill--progress">🔵 Em Andamento</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Redes de Computadores I</strong> <br><small style="color:#94a3b8;">CEFET004 · Prof. Marcos</small></td>
+                  <td>29.0</td>
+                  <td>28.5</td>
+                  <td>38.0</td>
+                  <td><strong style="color:#34d399;">95.5</strong></td>
+                  <td>1h</td>
+                  <td><span class="acme-status-pill acme-status-pill--approved">🟢 Aprovado</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
         <div class="mockup-tab-content" id="acme-sim">
-          <h4 style="color:#fff; margin-bottom:0.5rem;">Simulador de Notas e Aprovação</h4>
-          <p style="color:var(--text-secondary); font-size:0.85rem; margin-bottom:1rem;">
-            Insira suas notas das duas primeiras etapas para calcular o mínimo necessário na Etapa 3 (vale 40 pontos) para passar com 60 pontos.
+          <h4 style="color:#f8fafc; margin-bottom:0.4rem;">Simulador Oficial de Notas (Regra CEFET-MG)</h4>
+          <p style="color:#94a3b8; font-size:0.85rem; margin-bottom:1.25rem;">
+            No CEFET-MG a média mínima para aprovação é <strong>60.0 pontos</strong> distribuídos em 3 etapas (Etapa 1: 30p, Etapa 2: 30p, Etapa 3: 40p).
           </p>
 
-          <div style="max-width:400px; background:rgba(255,255,255,0.03); padding:1.25rem; border-radius:8px; border:1px solid var(--border);">
-            <label style="font-size:0.8rem; color:var(--text-secondary);">Nota Etapa 1 (máx 30 pts):</label>
-            <input type="number" id="sim-n1" class="mock-input" value="22" max="30" min="0">
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem;">
+            <div style="background:#1e293b; padding:1.25rem; border-radius:10px; border:1px solid rgba(148, 163, 184, 0.2);">
+              <label style="font-size:0.8rem; color:#cbd5e1; font-weight:600;">Nota Obtida na Etapa 1 (máx 30 pts):</label>
+              <input type="number" id="sim-n1" class="mock-input" value="22" max="30" min="0" style="background:#0f172a;">
 
-            <label style="font-size:0.8rem; color:var(--text-secondary);">Nota Etapa 2 (máx 30 pts):</label>
-            <input type="number" id="sim-n2" class="mock-input" value="24" max="30" min="0">
+              <label style="font-size:0.8rem; color:#cbd5e1; font-weight:600;">Nota Obtida na Etapa 2 (máx 30 pts):</label>
+              <input type="number" id="sim-n2" class="mock-input" value="24" max="30" min="0" style="background:#0f172a;">
 
-            <button class="mock-btn" id="btn-calcular-nota" style="width:100%; margin-top:0.5rem;">Calcular Nota Necessária</button>
+              <button class="mock-btn" id="btn-calcular-nota" style="width:100%; margin-top:0.5rem; background:linear-gradient(135deg, #0284c7, #0891b2);">
+                🎯 Simular Mínimo na Etapa 3
+              </button>
+            </div>
 
-            <div id="sim-result" style="margin-top:1rem; padding:0.75rem; background:rgba(212,168,67,0.15); border:1px solid var(--cruzeiro-gold); border-radius:6px; color:#fff; font-size:0.9rem; text-align:center; font-weight:600;">
-              Você precisa de 14.0 pontos na Etapa 3 para ser aprovado!
+            <div id="sim-result" style="background:rgba(212,168,67,0.12); border:1px solid #f59e0b; padding:1.25rem; border-radius:10px; color:#fff; display:flex; flex-direction:column; justify-content:center; text-align:center;">
+              <span style="font-size:0.8rem; color:#fcd34d; text-transform:uppercase; font-weight:700;">Resultado da Simulação</span>
+              <div style="font-size:1.8rem; font-weight:800; color:#fff; margin:0.4rem 0;">14.0 pts</div>
+              <p style="font-size:0.85rem; color:#cbd5e1; margin:0;">Você precisa de apenas <strong>14.0 pontos</strong> dos 40.0 da Etapa 3 para ser aprovado!</p>
             </div>
           </div>
         </div>
 
-        <div class="mockup-tab-content" id="acme-ppc">
-          <h4 style="color:#fff; margin-bottom:0.5rem;">Mapa de Integralização do PPC (Eng. Computação)</h4>
-          <p style="color:var(--text-secondary); font-size:0.85rem; margin-bottom:1rem;">
-            Acompanhe a sua evolução na matriz curricular e pré-requisitos.
+        <div class="mockup-tab-content" id="acme-grid">
+          <h4 style="color:#f8fafc; margin-bottom:0.4rem;">Grade Horária & Pré-requisitos PPC</h4>
+          <p style="color:#94a3b8; font-size:0.85rem; margin-bottom:1rem;">
+            Matriz curricular de Engenharia de Computação sincronizada com o SIGAA.
           </p>
-          <div style="background:rgba(255,255,255,0.03); padding:1rem; border-radius:8px; border:1px solid var(--border);">
+
+          <div style="background:#1e293b; padding:1rem; border-radius:8px; border:1px solid rgba(148,163,184,0.2);">
             <div style="display:flex; justify-content:space-between; font-size:0.85rem; color:#fff; margin-bottom:0.5rem;">
-              <span>Progresso Total do Curso:</span>
-              <span style="font-weight:700; color:var(--cruzeiro-celeste);">65% Concluído</span>
+              <span>Integralização dos Créditos:</span>
+              <span style="font-weight:700; color:#38bdf8;">180 / 270 Horas-aula</span>
             </div>
             <div class="progress-bar-container" style="height:12px;">
               <div class="progress-bar-fill" style="width:65%;"></div>
             </div>
-            <p style="font-size:0.8rem; color:var(--text-secondary); margin-top:0.75rem;">
-              ✓ Pré-requisitos atendidos para TCC I, Compiladores e Redes de Computadores II.
+            <p style="font-size:0.8rem; color:#34d399; margin-top:0.75rem;">
+              ✓ Liberação confirmada para: Compiladores, Sistemas Distribuídos e TCC I.
             </p>
           </div>
         </div>
@@ -253,7 +318,7 @@
 
     bindTabSwitching();
 
-    /* Interação de Sync */
+    /* Interação de Sync em tempo real */
     const btnSync = document.getElementById("btn-sync-sigaa");
     const syncBox = document.getElementById("sync-status-box");
     const syncProgress = document.getElementById("sync-progress");
@@ -266,20 +331,27 @@
         btnSync.disabled = true;
         btnSync.style.opacity = "0.5";
         let width = 0;
+        const logs = [
+          "[LOG] Conectando ao SIGAA CEFET-MG via Playwright Headless Worker...",
+          "[LOG] Autenticando credenciais do usuário...",
+          "[LOG] Baixando turmas ativas e cálculo de frequência...",
+          "[LOG] Processando médias e integralização PPC...",
+          "✅ Sincronização em tempo real concluída com sucesso!"
+        ];
         const interval = setInterval(function () {
-          width += 20;
+          width += 25;
           if (width <= 100) {
             syncProgress.style.width = width + "%";
             syncPercent.textContent = width + "%";
-            if (width === 40) syncLabel.textContent = "Efetuando Login seguro via Playwright Worker...";
-            if (width === 80) syncLabel.textContent = "Extraindo boletim e horários do SIGAA...";
+            const logIdx = Math.min(Math.floor((width / 100) * (logs.length - 1)), logs.length - 2);
+            syncLabel.textContent = logs[logIdx];
           } else {
             clearInterval(interval);
-            syncLabel.textContent = "✅ Sincronização concluída com sucesso!";
+            syncLabel.textContent = logs[logs.length - 1];
             btnSync.disabled = false;
             btnSync.style.opacity = "1";
           }
-        }, 300);
+        }, 350);
       });
     }
 
@@ -297,14 +369,29 @@
         const falta = 60 - atual;
 
         if (falta <= 0) {
-          simResult.innerHTML = "🎉 Você já possui " + atual + " pontos e já está <strong>APROVADO</strong>!";
+          simResult.innerHTML = `
+            <span style="font-size:0.8rem; color:#34d399; text-transform:uppercase; font-weight:700;">Status: Aprovado</span>
+            <div style="font-size:1.8rem; font-weight:800; color:#34d399; margin:0.4rem 0;">${atual.toFixed(1)} pts</div>
+            <p style="font-size:0.85rem; color:#cbd5e1; margin:0;">🎉 Parabéns! Você já atingiu a média mínima de 60.0 pontos!</p>
+          `;
           simResult.style.borderColor = "#10b981";
+          simResult.style.background = "rgba(16, 185, 129, 0.12)";
         } else if (falta > 40) {
-          simResult.innerHTML = "⚠️ Você acumulou " + atual + " pts. Precisaria de " + falta.toFixed(1) + " pts (Etapa 3 vale máx 40 pts).";
+          simResult.innerHTML = `
+            <span style="font-size:0.8rem; color:#ef4444; text-transform:uppercase; font-weight:700;">Atenção: Risco Acadêmico</span>
+            <div style="font-size:1.8rem; font-weight:800; color:#ef4444; margin:0.4rem 0;">${atual.toFixed(1)} pts</div>
+            <p style="font-size:0.85rem; color:#cbd5e1; margin:0;">Precisaria de ${falta.toFixed(1)} pts (a Etapa 3 vale no máximo 40.0 pts).</p>
+          `;
           simResult.style.borderColor = "#ef4444";
+          simResult.style.background = "rgba(239, 68, 68, 0.12)";
         } else {
-          simResult.innerHTML = "🎯 Você possui " + atual + " pts. Precisa de <strong>" + falta.toFixed(1) + " pts</strong> na Etapa 3 para passar!";
-          simResult.style.borderColor = "var(--cruzeiro-gold)";
+          simResult.innerHTML = `
+            <span style="font-size:0.8rem; color:#fcd34d; text-transform:uppercase; font-weight:700;">Simulação da Etapa 3</span>
+            <div style="font-size:1.8rem; font-weight:800; color:#fff; margin:0.4rem 0;">${falta.toFixed(1)} pts</div>
+            <p style="font-size:0.85rem; color:#cbd5e1; margin:0;">Você possui ${atual.toFixed(1)} pts acumulados. Precisa de <strong>${falta.toFixed(1)} pts</strong> na Etapa 3!</p>
+          `;
+          simResult.style.borderColor = "#f59e0b";
+          simResult.style.background = "rgba(212, 168, 67, 0.12)";
         }
       });
     }
@@ -313,107 +400,165 @@
   /* ========== TEMPLATES E INTERAÇÕES DO EASY TRIP ========== */
   function renderEasyTripMockup() {
     modalBody.innerHTML = `
-      <div class="smartphone-frame">
-        <div class="smartphone-notch"></div>
-        
-        <div style="padding:0.75rem 1rem; background:#0e1e33; border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:var(--text-secondary);">
+      <div class="smartphone-frame" id="easytrip-phone">
+        <div class="smartphone-notch">
+          <div class="smartphone-camera"></div>
+        </div>
+
+        <!-- Seletor Interativo de Paletas Coolors -->
+        <div class="easytrip-palette-bar">
+          <span style="font-size:0.65rem; color:#94a3b8; font-weight:600;">Paletas Coolors:</span>
+          <button class="palette-chip palette-chip--active" data-bg="#0b0718" data-accent="#8b5cf6">🟣 Cyber Violet</button>
+          <button class="palette-chip" data-bg="#1a0c02" data-accent="#ea580c">🔥 Sunset Neon</button>
+          <button class="palette-chip" data-bg="#02140d" data-accent="#059669">🌲 Emerald Trip</button>
+          <button class="palette-chip" data-bg="#03111e" data-accent="#0284c7">🌊 Ocean Deep</button>
+        </div>
+
+        <div style="padding:0.6rem 1rem; background:rgba(0,0,0,0.4); display:flex; justify-content:space-between; align-items:center; font-size:0.75rem; color:#94a3b8;">
           <span>09:41</span>
-          <span>Easy Trip Mobile App · iOS & Android</span>
+          <span style="font-weight:700; color:#fff;">Easy Trip · iOS & Android</span>
           <span>🔋 100%</span>
         </div>
 
-        <div class="mockup-tabs" style="background:#0b1828;">
+        <div class="mockup-tabs" style="background:rgba(0,0,0,0.6);">
           <button class="mockup-tab mockup-tab--active" data-tab="trip-wizard">Roteiros com IA</button>
           <button class="mockup-tab" data-tab="trip-radar">Radar da Noite</button>
           <button class="mockup-tab" data-tab="trip-split">Rateio de Gastos</button>
         </div>
 
         <div class="mockup-tab-content mockup-tab-content--active" id="trip-wizard">
-          <h5 style="color:#fff; margin-bottom:0.4rem;">Planejador de Viagem com IA</h5>
-          <p style="color:var(--text-secondary); font-size:0.8rem; margin-bottom:0.75rem;">
-            Escolha o destino e o estilo da viagem para gerar o roteiro automático via OpenAI.
-          </p>
+          <div style="background:linear-gradient(135deg, rgba(139,92,246,0.2), rgba(236,72,153,0.15)); padding:0.85rem; border-radius:12px; border:1px solid rgba(139,92,246,0.3); margin-bottom:1rem;">
+            <span style="font-size:0.7rem; color:#a855f7; font-weight:700; text-transform:uppercase;">Viagem de Grupo</span>
+            <h4 style="color:#fff; margin:0.2rem 0; font-size:1.05rem;">Rio de Janeiro 🌴</h4>
+            <p style="font-size:0.75rem; color:#cbd5e1; margin:0;">5 Dias · 4 Viajantes (Kairo, Lucas, Ana, Marina)</p>
+          </div>
 
-          <label style="font-size:0.75rem; color:var(--text-secondary);">Destino:</label>
-          <select id="trip-dest" class="mock-input" style="background:#132438;">
-            <option value="Rio de Janeiro">Rio de Janeiro (RJ)</option>
-            <option value="Florianópolis">Florianópolis (SC)</option>
-            <option value="Ouro Preto">Ouro Preto (MG)</option>
+          <label style="font-size:0.75rem; color:#cbd5e1; font-weight:600;">Destino da Viagem:</label>
+          <select id="trip-dest" class="mock-input" style="background:rgba(255,255,255,0.06);">
+            <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
+            <option value="Florianópolis (SC)">Florianópolis (SC)</option>
+            <option value="Ouro Preto (MG)">Ouro Preto (MG)</option>
           </select>
 
-          <label style="font-size:0.75rem; color:var(--text-secondary);">Estilo da Viagem:</label>
-          <select id="trip-vibe" class="mock-input" style="background:#132438;">
-            <option value="Bares & Vida Noturna">Bares & Vida Noturna</option>
-            <option value="Praias & Ecoturismo">Praias & Ecoturismo</option>
-            <option value="Gastronomia & Cultura">Gastronomia & Cultura</option>
+          <label style="font-size:0.75rem; color:#cbd5e1; font-weight:600;">Estilo do Grupo:</label>
+          <select id="trip-vibe" class="mock-input" style="background:rgba(255,255,255,0.06);">
+            <option value="Bares, Shows & Vida Noturna">Bares, Shows & Vida Noturna</option>
+            <option value="Praias, Trilhas & Ecoturismo">Praias, Trilhas & Ecoturismo</option>
+            <option value="Gastronomia & Centro Histórico">Gastronomia & Centro Histórico</option>
           </select>
 
-          <button class="mock-btn" id="btn-generate-trip" style="width:100%; margin-bottom:1rem;">✨ Gerar Roteiro com IA</button>
+          <button class="mock-btn" id="btn-generate-trip" style="width:100%; margin-bottom:1rem; background:linear-gradient(135deg, #8b5cf6, #ec4899);">
+            ✨ Gerar Roteiro com Inteligência Artificial
+          </button>
 
           <div id="trip-itinerary-output">
-            <div style="background:rgba(255,255,255,0.04); border:1px solid var(--border); padding:0.75rem; border-radius:6px; margin-bottom:0.5rem;">
-              <span class="mock-badge" style="background:rgba(74,159,212,0.2); color:var(--cruzeiro-celeste); border-color:var(--cruzeiro-celeste);">Dia 1 · Manhã</span>
-              <h6 style="color:#fff; margin:0.3rem 0 0.1rem 0;">Passeio pela Orla & Mirante</h6>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin:0;">Caminhada e fotos com curadoria de locais em alta no Google Places.</p>
+            <div class="easytrip-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+                <span class="mock-badge" style="background:rgba(139,92,246,0.25); color:#c084fc; border-color:#a855f7;">Dia 1 · 09:30</span>
+                <span style="font-size:0.7rem; color:#94a3b8;">Google Places ⭐ 4.9</span>
+              </div>
+              <h6 style="color:#fff; margin:0; font-size:0.9rem;">Caminhada & Coco Gelado em Ipanema</h6>
+              <p style="font-size:0.75rem; color:#cbd5e1; margin:0.2rem 0 0 0;">Posto 9 · Curadoria IA de locais em alta na manhã.</p>
             </div>
-            <div style="background:rgba(255,255,255,0.04); border:1px solid var(--border); padding:0.75rem; border-radius:6px;">
-              <span class="mock-badge" style="background:rgba(212,168,67,0.2); color:var(--cruzeiro-gold); border-color:var(--cruzeiro-gold);">Dia 1 · Noite</span>
-              <h6 style="color:#fff; margin:0.3rem 0 0.1rem 0;">Radar da Noite (Circuito de Bares)</h6>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin:0;">Música ao vivo, clima favorável e sugestão de transporte em grupo.</p>
+
+            <div class="easytrip-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
+                <span class="mock-badge" style="background:rgba(236,72,153,0.25); color:#f472b6; border-color:#ec4899;">Dia 1 · 20:00</span>
+                <span style="font-size:0.7rem; color:#fcd34d;">🔥 Radar da Noite</span>
+              </div>
+              <h6 style="color:#fff; margin:0; font-size:0.9rem;">Bar & Samba na Lapa (Circo Voador)</h6>
+              <p style="font-size:0.75rem; color:#cbd5e1; margin:0.2rem 0 0 0;">Música ao vivo, grupo de 4 convidados sincronizados.</p>
             </div>
           </div>
         </div>
 
         <div class="mockup-tab-content" id="trip-radar">
-          <div style="background:linear-gradient(135deg, #1e3a8a, #0b1828); padding:0.75rem; border-radius:8px; border:1px solid var(--border); margin-bottom:0.75rem; display:flex; justify-content:space-between; align-items:center;">
+          <div style="background:linear-gradient(135deg, #4c1d95, #1e1b4b); padding:0.85rem; border-radius:10px; border:1px solid rgba(139,92,246,0.4); margin-bottom:0.85rem; display:flex; justify-content:space-between; align-items:center;">
             <div>
-              <span style="font-size:0.75rem; color:var(--cruzeiro-celeste-light);">Radar da Noite</span>
-              <h5 style="color:#fff; margin:0;">🌙 24°C · Céu Limpo</h5>
+              <span style="font-size:0.7rem; color:#c084fc; font-weight:600; text-transform:uppercase;">Radar da Noite</span>
+              <h5 style="color:#fff; margin:0; font-size:1.1rem;">🌙 24°C · Céu Limpo</h5>
             </div>
-            <span class="mock-badge">API Google Places</span>
+            <span class="mock-badge" style="background:rgba(56,189,248,0.2); color:#38bdf8;">Google Places API</span>
           </div>
 
-          <div style="display:flex; flex-direction:column; gap:0.5rem;">
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.6rem 0.75rem; border-radius:6px;">
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#fff; font-weight:600;">
-                <span>Bar & Brewpub da Lapa</span>
-                <span style="color:var(--cruzeiro-gold);">⭐ 4.8</span>
+          <div style="display:flex; flex-direction:column; gap:0.6rem;">
+            <div class="easytrip-card">
+              <div class="easytrip-place-img" style="background:linear-gradient(135deg, #60a5fa, #1d4ed8);">
+                🍹 Bar & Brewpub da Lapa
               </div>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin:0.2rem 0 0 0;">Música ao vivo · 350m de você · R$ R$</p>
+              <div style="display:flex; justify-content:space-between; margin-top:0.4rem; font-size:0.78rem;">
+                <span style="color:#cbd5e1;">350m de distância · R$ R$</span>
+                <span style="color:#fcd34d; font-weight:700;">⭐ 4.8 (850+)</span>
+              </div>
             </div>
 
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:0.6rem 0.75rem; border-radius:6px;">
-              <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:#fff; font-weight:600;">
-                <span>Festival de Verão / Show</span>
-                <span style="color:var(--cruzeiro-gold);">⭐ 4.9</span>
+            <div class="easytrip-card">
+              <div class="easytrip-place-img" style="background:linear-gradient(135deg, #c084fc, #9333ea);">
+                🎵 Show ao Vivo no Circo Voador
               </div>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin:0.2rem 0 0 0;">Ingressos disponíveis · 1.2 km · Curadoria IA</p>
+              <div style="display:flex; justify-content:space-between; margin-top:0.4rem; font-size:0.78rem;">
+                <span style="color:#cbd5e1;">1.2 km de distância · R$$$</span>
+                <span style="color:#fcd34d; font-weight:700;">⭐ 4.9 (2.1k)</span>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="mockup-tab-content" id="trip-split">
-          <h5 style="color:#fff; margin-bottom:0.4rem;">Calculadora de Rateio de Despesas</h5>
-          <p style="color:var(--text-secondary); font-size:0.8rem; margin-bottom:0.75rem;">
-            Divida hospedagem, gasolina ou jantar entre o grupo de viagem com transparência.
+          <h5 style="color:#fff; margin-bottom:0.3rem;">Calculadora de Rateio de Despesas</h5>
+          <p style="color:#94a3b8; font-size:0.78rem; margin-bottom:0.85rem;">
+            Divida o AirBnb, combustível e jantares entre o grupo com 1 clique.
           </p>
 
-          <label style="font-size:0.75rem; color:var(--text-secondary);">Valor Total da Conta (R$):</label>
-          <input type="number" id="split-total" class="mock-input" value="360" min="0">
+          <label style="font-size:0.75rem; color:#cbd5e1;">Valor Total da Conta (R$):</label>
+          <input type="number" id="split-total" class="mock-input" value="360" min="0" style="background:rgba(255,255,255,0.06);">
 
-          <label style="font-size:0.75rem; color:var(--text-secondary);">Número de Amigos:</label>
-          <input type="number" id="split-people" class="mock-input" value="4" min="1">
+          <label style="font-size:0.75rem; color:#cbd5e1;">Número de Amigos:</label>
+          <input type="number" id="split-people" class="mock-input" value="4" min="1" style="background:rgba(255,255,255,0.06);">
 
-          <button class="mock-btn" id="btn-calc-split" style="width:100%; margin-bottom:0.75rem;">Calcular Rateio</button>
+          <button class="mock-btn" id="btn-calc-split" style="width:100%; margin-bottom:0.85rem; background:linear-gradient(135deg, #10b981, #059669);">
+            💸 Calcular Divisão de Gastos
+          </button>
 
-          <div id="split-result" style="background:rgba(16,185,129,0.15); border:1px solid #10b981; padding:0.75rem; border-radius:6px; color:#fff; font-size:0.85rem; text-align:center; font-weight:600;">
-            Cada pessoa paga: R$ 90.00
+          <div id="split-result" style="background:rgba(16,185,129,0.15); border:1px solid #10b981; padding:0.85rem; border-radius:8px; color:#fff; font-size:0.85rem; text-align:center; font-weight:600;">
+            Cada pessoa paga: <strong>R$ 90.00</strong>
+          </div>
+        </div>
+
+        <div class="easytrip-bottom-nav">
+          <div class="easytrip-nav-item easytrip-nav-item--active">
+            <span>📍</span>
+            <span>Roteiros</span>
+          </div>
+          <div class="easytrip-nav-item">
+            <span>🌙</span>
+            <span>Radar</span>
+          </div>
+          <div class="easytrip-nav-item">
+            <span>💸</span>
+            <span>Gastos</span>
           </div>
         </div>
       </div>
     `;
 
     bindTabSwitching();
+
+    /* Troca Dinâmica de Paletas Coolors */
+    const paletteChips = modalBody.querySelectorAll(".palette-chip");
+    const phoneFrame = modalBody.querySelector("#easytrip-phone");
+
+    paletteChips.forEach(function (chip) {
+      chip.addEventListener("click", function () {
+        paletteChips.forEach(function (c) { c.classList.remove("palette-chip--active"); });
+        chip.classList.add("palette-chip--active");
+
+        const bg = chip.getAttribute("data-bg");
+        if (phoneFrame) {
+          phoneFrame.style.background = bg;
+        }
+      });
+    });
 
     /* Interação do Gerador com IA */
     const btnGen = document.getElementById("btn-generate-trip");
@@ -425,14 +570,14 @@
       btnGen.addEventListener("click", function () {
         const dest = tripDest.value;
         const vibe = tripVibe.value;
-        btnGen.textContent = "⚡ Processando com OpenAI...";
+        btnGen.textContent = "⚡ Consultando IA (OpenAI)...";
         setTimeout(function () {
-          btnGen.textContent = "✨ Gerar Roteiro com IA";
+          btnGen.textContent = "✨ Gerar Roteiro com Inteligência Artificial";
           tripOutput.innerHTML = `
-            <div style="background:rgba(74,159,212,0.1); border:1px solid var(--cruzeiro-celeste); padding:0.75rem; border-radius:6px; margin-bottom:0.5rem;">
-              <span class="mock-badge" style="background:rgba(16,185,129,0.2); color:#10b981;">Roteiro Gerado com Sucesso!</span>
+            <div class="easytrip-card" style="border-color:#10b981; background:rgba(16,185,129,0.1);">
+              <span class="mock-badge" style="background:rgba(16,185,129,0.25); color:#34d399;">Roteiro Gerado com Sucesso!</span>
               <h6 style="color:#fff; margin:0.4rem 0 0.1rem 0;">Destino: ${dest}</h6>
-              <p style="font-size:0.75rem; color:var(--text-secondary); margin:0;">Estilo: ${vibe} · 3 Dias de Roteiro Inteligente sincronizado na nuvem (Supabase).</p>
+              <p style="font-size:0.75rem; color:#cbd5e1; margin:0;">Estilo: ${vibe} · Roteiro inteligente em 3 dias com sincronização Supabase e mapas em tempo real.</p>
             </div>
           `;
         }, 600);
@@ -450,7 +595,7 @@
         const total = parseFloat(splitTotal.value) || 0;
         const people = parseInt(splitPeople.value) || 1;
         const perPerson = total / (people > 0 ? people : 1);
-        splitResult.innerHTML = "Cada pessoa paga: <strong>R$ " + perPerson.toFixed(2) + "</strong>";
+        splitResult.innerHTML = "Cada pessoa paga: <strong style='color:#34d399;'>R$ " + perPerson.toFixed(2) + "</strong>";
       });
     }
   }
