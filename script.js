@@ -755,4 +755,24 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.className = 'lang-' + lang;
     });
   });
+
+  const printBtn = document.getElementById('btn-print-resume');
+  if (printBtn) {
+    printBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      let langSuffix = 'br';
+      if (document.body.classList.contains('lang-en')) langSuffix = 'us';
+      else if (document.body.classList.contains('lang-es')) langSuffix = 'es';
+
+      const origTitle = document.title;
+      document.title = 'Kairo Martins-Curriculo (' + langSuffix + ')';
+
+      window.print();
+
+      setTimeout(() => {
+        document.title = origTitle;
+      }, 1000);
+    });
+  }
 });
