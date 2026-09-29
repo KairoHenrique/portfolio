@@ -735,3 +735,10 @@ body.lang-es .lang-es { display: inline; }
   
   .about-right { grid-template-columns: 1fr; }
 }
+
+
+/* LANGUAGE TOGGLE */
+.lang-pt .lang-en, .lang-pt .lang-es { display: none !important; }
+.lang-en .lang-pt, .lang-en .lang-es { display: none !important; }
+.lang-es .lang-pt, .lang-es .lang-en { display: none !important; }
+
