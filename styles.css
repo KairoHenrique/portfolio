@@ -874,25 +874,7 @@ body.lang-es .lang-es { display: inline; }
     padding-left: 22px;
   }
 
-  /* OVERLAY BACKDROP */
-  .nav-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 1002;
-  }
-  .nav-overlay.nav-overlay--active {
-    display: block;
-    opacity: 1;
-    pointer-events: auto;
-  }
+
 
   .hero {
     padding-top: 110px;

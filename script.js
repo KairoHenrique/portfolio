@@ -5,7 +5,6 @@
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
   const navLinks = document.querySelectorAll(".nav__link, .nav-links a");
-  const navOverlay = document.getElementById("nav-overlay");
   const revealElements = document.querySelectorAll(".reveal");
   const yearEl = document.getElementById("year");
 
@@ -49,9 +48,6 @@
     const isOpen = navMenu.classList.toggle("nav__menu--open");
     navToggle.classList.toggle("nav__toggle--open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    if (navOverlay) {
-      navOverlay.classList.toggle("nav-overlay--active", isOpen);
-    }
   }
 
   function closeMenu() {
@@ -59,9 +55,6 @@
     navMenu.classList.remove("nav__menu--open");
     navToggle.classList.remove("nav__toggle--open");
     navToggle.setAttribute("aria-expanded", "false");
-    if (navOverlay) {
-      navOverlay.classList.remove("nav-overlay--active");
-    }
   }
 
   if (navToggle) {
@@ -69,10 +62,6 @@
       e.stopPropagation();
       toggleMenu();
     });
-  }
-
-  if (navOverlay) {
-    navOverlay.addEventListener("click", closeMenu);
   }
 
   navLinks.forEach(function (link) {
