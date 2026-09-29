@@ -654,6 +654,13 @@ body.lang-es .lang-es { display: inline; }
 @media (max-width: 900px) {
   .about-layout { grid-template-columns: 1fr; }
   .about-text .profile-img { float: none; display: block; margin: 0 auto 24px auto; }
+  .about-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .stat-card { margin-bottom: 0; }
+  .lang-card { grid-column: 1 / -1; }
 }
 
 @media (max-width: 768px) {
@@ -665,15 +672,10 @@ body.lang-es .lang-es { display: inline; }
   
   .grid { grid-template-columns: 1fr; }
   .grid-compact { grid-template-columns: 1fr; }
+  .contact-cards-wrap { grid-template-columns: 1fr; }
   
   .hero-actions { flex-direction: column; width: 100%; max-width: 320px; align-items: stretch; margin: 0 auto; gap: 16px; }
   .hero-actions .btn { width: 100%; text-align: center; }
-  
-  .section { padding: 60px 24px; }
-  
-  .timeline-item { padding-left: 20px; }
-  .timeline-item::before { left: -5px; }
-  .timeline::before { left: 0px; }
 }
 
 @media (max-width: 480px) {
@@ -682,4 +684,6 @@ body.lang-es .lang-es { display: inline; }
   .section-title { font-size: 1.8rem; }
   .btn { padding: 12px 24px; font-size: 0.9rem; }
   .lang-btn { font-size: 1rem; }
+  
+  .about-right { grid-template-columns: 1fr; }
 }
