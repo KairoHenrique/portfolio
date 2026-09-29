@@ -7,7 +7,7 @@
   <meta name="description" content="Kairo Henrique | Full-Stack & Game Dev" />
   <title>Kairo Henrique | Portfolio</title>
 
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="icon" type="image/jpeg" href="assets/img/profile.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
@@ -20,27 +20,31 @@
 
   <!-- NAVBAR -->
   <nav class="navbar" id="header">
-    <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
-      <span class="hamburger"></span>
-    </button>
+    <a href="#inicio" class="nav-brand">KH</a>
     <div class="nav-links" id="nav-menu">
-      <a href="#sobre"><span class="lang lang-pt">SOBRE</span><span class="lang lang-en">ABOUT</span><span
+      <a href="#sobre" class="nav__link"><span class="lang lang-pt">SOBRE</span><span class="lang lang-en">ABOUT</span><span
           class="lang lang-es">SOBRE MÍ</span></a>
-      <a href="#experiencia"><span class="lang lang-pt">EXPERIÊNCIA</span><span
+      <a href="#experiencia" class="nav__link"><span class="lang lang-pt">EXPERIÊNCIA</span><span
           class="lang lang-en">EXPERIENCE</span><span class="lang lang-es">EXPERIENCIA</span></a>
-      <a href="#projetos"><span class="lang lang-pt">PROJETOS</span><span class="lang lang-en">PROJECTS</span><span
+      <a href="#projetos" class="nav__link"><span class="lang lang-pt">PROJETOS</span><span class="lang lang-en">PROJECTS</span><span
           class="lang lang-es">PROYECTOS</span></a>
-      <a href="#certificados"><span class="lang lang-pt">CERTIFICADOS</span><span class="lang lang-en">CERTS</span><span
+      <a href="#certificados" class="nav__link"><span class="lang lang-pt">CERTIFICADOS</span><span class="lang lang-en">CERTS</span><span
           class="lang lang-es">CERTIFICADOS</span></a>
-      <a href="#contato"><span class="lang lang-pt">CONTATO</span><span class="lang lang-en">CONTACT</span><span
+      <a href="#contato" class="nav__link"><span class="lang lang-pt">CONTATO</span><span class="lang lang-en">CONTACT</span><span
           class="lang lang-es">CONTACTO</span></a>
     </div>
-    <div class="nav-langs">
-      <button class="lang-btn active" data-lang="pt"><span class="fi fi-br"></span></button>
-      <button class="lang-btn" data-lang="en"><span class="fi fi-us"></span></button>
-      <button class="lang-btn" data-lang="es"><span class="fi fi-es"></span></button>
+    <div class="nav-right">
+      <div class="nav-langs">
+        <button class="lang-btn active" data-lang="pt" aria-label="Português"><span class="fi fi-br"></span></button>
+        <button class="lang-btn" data-lang="en" aria-label="English"><span class="fi fi-us"></span></button>
+        <button class="lang-btn" data-lang="es" aria-label="Español"><span class="fi fi-es"></span></button>
+      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir Menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
     </div>
   </nav>
+  <div class="nav-overlay" id="nav-overlay"></div>
 
   <!-- HERO -->
   <section class="hero" id="inicio">
@@ -53,10 +57,10 @@
     <h1 class="giant-title">KAIRO HENRIQUE</h1>
     <p class="hero-subtitle">
       <span class="lang lang-pt">Desenvolvedor Full-Stack (22 anos) | Fundador da Studio Vessel | Estudante de
-        Engenharia de Computação no UFCI/MG (6º período)</span><span class="lang lang-en">Full-Stack Developer (22 y/o)
-        | Studio Vessel Founder | Computer Engineering Student at UFCI/MG (6th semester)</span><span
+        Engenharia de Computação no CEFET-MG (6º período)</span><span class="lang lang-en">Full-Stack Developer (22 y/o)
+        | Studio Vessel Founder | Computer Engineering Student at CEFET-MG (6th semester)</span><span
         class="lang lang-es">Desarrollador Full-Stack (22 años) | Fundador de Studio Vessel | Estudiante de Ingeniería
-        Informática en UFCI/MG (6º semestre)</span>
+        Informática en CEFET-MG (6º semestre)</span>
     </p>
     <div class="hero-actions">
       <a href="#projetos" class="btn btn-primary">
@@ -79,24 +83,56 @@
       <div class="about-layout">
 
         <div class="about-text">
-          <img src="assets/img/profile.jpg" alt="Kairo Henrique" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Kairo+Henrique'" />
-          <p><span class="lang lang-pt">Sou <strong>Kairo Henrique</strong>, desenvolvedor full-stack e analista de sistemas em formação pela UFCI/MG, com foco em arquiteturas escaláveis e produtos digitais modernos. Atuo unindo visão de negócio com tecnologia para criar experiências de alto desempenho.</span><span class="lang lang-en">I am <strong>Kairo Henrique</strong>, a full-stack developer and systems analyst in training at UFCI/MG, focused on scalable architectures and modern digital products. I combine business vision with technology to create high-performance experiences.</span><span class="lang lang-es">Soy <strong>Kairo Henrique</strong>, desarrollador full-stack y analista de sistemas en formación en la UFCI/MG, enfocado en arquitecturas escalables y productos digitales modernos. Combino visión de negocio con tecnología para crear experiencias de alto rendimiento.</span></p>
-          
-          <div style="display:flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
-            <span class="skill-tag" style="background:#d4a843; color:#001e3c; font-weight:700; border:none;"><span class="lang lang-pt">Lead Developer</span><span class="lang lang-en">Lead Developer</span><span class="lang lang-es">Lead Developer</span></span>
-            <span class="skill-tag" style="background:#2088d4; color:#fff; font-weight:700; border:none;"><span class="lang lang-pt">Scrum Master</span><span class="lang lang-en">Scrum Master</span><span class="lang lang-es">Scrum Master</span></span>
-            <span class="skill-tag" style="background:#3fb950; color:#fff; font-weight:700; border:none;"><span class="lang lang-pt">Game Dev</span><span class="lang lang-en">Game Dev</span><span class="lang lang-es">Game Dev</span></span>
-          </div>
+          <img src="assets/img/profile.jpg" alt="Kairo Henrique" class="profile-img"
+            onerror="this.src='https://ui-avatars.com/api/?name=Kairo+Henrique'" />
+          <p><span class="lang lang-pt">Sou <strong>Kairo Henrique Ferreira Martins</strong> (22 anos), estudante de
+              <strong>Engenharia de Computação no CEFET-MG</strong> (Campus Divinópolis, 6º período) e <strong>game
+                dev</strong> na <strong>Studio Vessel</strong>. Fui estagiário como professor de robótica e programação
+              na <strong>HZN Labs</strong>, desenvolvendo também softwares internos. Domino React, React Native,
+              TypeScript, Spring Boot, FastAPI, Python, C/C++ e desenvolvimento de jogos (GameMaker, Godot e
+              TIC-80).</span><span class="lang lang-en">I am <strong>Kairo Henrique Ferreira Martins</strong> (22 years
+              old), a <strong>Computer Engineering student at CEFET-MG</strong> (6th semester) and <strong>game
+                dev</strong> at <strong>Studio Vessel</strong>. I interned as a robotics and programming teacher at
+              <strong>HZN Labs</strong>, where I also developed internal software. I master React, React Native,
+              TypeScript, Spring Boot, FastAPI, Python, C/C++, and game development (GameMaker, Godot, and
+              TIC-80).</span><span class="lang lang-es">Soy <strong>Kairo Henrique Ferreira Martins</strong> (22 años),
+              estudiante de <strong>Ingeniería Informática en CEFET-MG</strong> (6º semestre) y <strong>desarrollador de
+                juegos</strong> en <strong>Studio Vessel</strong>. Hice prácticas como profesor de robótica y
+              programación en <strong>HZN Labs</strong>, desarrollando también software interno. Domino React, React
+              Native, TypeScript, Spring Boot, FastAPI, Python, C/C++ y desarrollo de juegos (GameMaker, Godot y
+              TIC-80).</span></p>
+          <p><span class="lang lang-pt">Concluí o <strong>Santander Bootcamp | Fullstack Developer</strong> (DIO, 125h).
+              Fui Scrum Master e desenvolvedor full-stack do <strong>HealthBridge</strong>, plataforma médica com IA.
+              Desenvolvi o <strong>ACME HUB</strong>, planejador acadêmico. Em paralelo, trabalho no <strong>Easy
+                Trip</strong> (viagens com IA), <strong>SEMUSA</strong> (dashboard de saúde) e no Metroidvania
+              <strong>Whispers of the Mind</strong>.</span><span class="lang lang-en">I completed the <strong>Santander
+                Bootcamp | Fullstack Developer</strong> (DIO, 125h). I was Scrum Master and full-stack developer for
+              <strong>HealthBridge</strong>, an AI medical platform. I developed <strong>ACME HUB</strong>, an academic
+              planner. Concurrently, I work on <strong>Easy Trip</strong> (AI travel), <strong>SEMUSA</strong> (health
+              dashboard), and the Metroidvania <strong>Whispers of the Mind</strong>.</span><span
+              class="lang lang-es">Completé el <strong>Santander Bootcamp | Fullstack Developer</strong> (DIO, 125h).
+              Fui Scrum Master y desarrollador full-stack de <strong>HealthBridge</strong>, plataforma médica con IA.
+              Desarrollé <strong>ACME HUB</strong>, planificador académico. En paralelo, trabajo en <strong>Easy
+                Trip</strong> (viajes con IA), <strong>SEMUSA</strong> (dashboard de salud) y el Metroidvania
+              <strong>Whispers of the Mind</strong>.</span></p>
+          <p><span class="lang lang-pt">Já atuei como monitor de Introdução à Programação no CEFET-MG e estagiário na
+              Prefeitura de Divinópolis. Meu foco é <strong>desenvolvimento de software</strong> bem arquitetado, com
+              SOLID, segurança (OWASP/LGPD) e alta performance.</span><span class="lang lang-en">I worked as a teaching
+              assistant for Intro to Programming at CEFET-MG and interned at the Divinópolis City Hall. My focus is on
+              well-architected <strong>software development</strong>, employing SOLID, security (OWASP/LGPD), and high
+              performance.</span><span class="lang lang-es">Trabajé como asistente de Introducción a la Programación en
+              CEFET-MG y pasante en la Alcaldía de Divinópolis. Mi enfoque es el <strong>desarrollo de software</strong>
+              bien estructurado, con SOLID, seguridad (OWASP/LGPD) y alto rendimiento.</span></p>
         </div>
 
         <div class="about-right">
           <div class="stat-card">
-            <h3 class="counter" data-target="6" data-suffix="º">0º</h3>
-            <p><span class="lang lang-pt">Período UFCI/MG</span><span class="lang lang-en">UFCI/MG
-                Semester</span><span class="lang lang-es">Semestre UFCI/MG</span></p>
+            <h3>6º</h3>
+            <p><span class="lang lang-pt">Período CEFET-MG</span><span class="lang lang-en">CEFET-MG
+                Semester</span><span class="lang lang-es">Semestre CEFET-MG</span></p>
           </div>
           <div class="stat-card">
-            <h3 class="counter" data-target="20" data-suffix="+">0+</h3>
+            <h3>20+</h3>
             <p><span class="lang lang-pt">Projetos</span><span class="lang lang-en">Projects</span><span
                 class="lang lang-es">Proyectos</span></p>
           </div>
@@ -132,70 +168,91 @@
           <h3><span class="lang lang-pt">Linguagens</span><span class="lang lang-en">Languages</span><span
               class="lang lang-es">Lenguajes</span></h3>
           <div class="skills-wrapper">
-            <div class="skills-track">
-              <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Lua</span><span class="skill-tag">HTML/CSS</span>
-              <!-- Duplicate for seamless scroll -->
-              <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Lua</span><span class="skill-tag">HTML/CSS</span>
-            </div>
+            <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span
+              class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span
+              class="skill-tag">Lua</span><span class="skill-tag">HTML/CSS</span>
           </div>
         </div>
         <div class="skills-group">
           <h3><span class="lang lang-pt">Front-End & Mobile</span><span class="lang lang-en">Front-End &
               Mobile</span><span class="lang lang-es">Front-End y Móvil</span></h3>
           <div class="skills-wrapper">
-            <div class="skills-track" style="animation-direction: reverse; animation-duration: 18s;">
-              <span class="skill-tag">React</span><span class="skill-tag">React Native</span><span class="skill-tag">Expo</span><span class="skill-tag">Next.js</span><span class="skill-tag">Angular</span><span class="skill-tag">Vite</span><span class="skill-tag">Recharts</span><span class="skill-tag">Jinja2</span>
-              <!-- Duplicate for seamless scroll -->
-              <span class="skill-tag">React</span><span class="skill-tag">React Native</span><span class="skill-tag">Expo</span><span class="skill-tag">Next.js</span><span class="skill-tag">Angular</span><span class="skill-tag">Vite</span><span class="skill-tag">Recharts</span><span class="skill-tag">Jinja2</span>
-            </div>
+            <span class="skill-tag">React</span><span class="skill-tag">React Native</span><span
+              class="skill-tag">Expo</span><span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Angular</span><span class="skill-tag">Vite</span><span
+              class="skill-tag">Recharts</span><span class="skill-tag">Jinja2</span>
           </div>
         </div>
         <div class="skills-group">
           <h3><span class="lang lang-pt">Back-End & Dados</span><span class="lang lang-en">Back-End & Data</span><span
               class="lang lang-es">Back-End y Datos</span></h3>
           <div class="skills-wrapper">
-            <div class="skills-track" style="animation-duration: 22s;">
-              <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Fastify</span><span class="skill-tag">Node.js</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite</span>
-              <!-- Duplicate for seamless scroll -->
-              <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Fastify</span><span class="skill-tag">Node.js</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite</span>
-            </div>
+            <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span
+              class="skill-tag">FastAPI</span><span class="skill-tag">Fastify</span>
+            <span class="skill-tag">Node.js</span><span class="skill-tag">SQLAlchemy</span><span
+              class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span
+              class="skill-tag">SQLite</span>
           </div>
         </div>
         <div class="skills-group">
           <h3><span class="lang lang-pt">Game Dev</span><span class="lang lang-en">Game Dev</span><span
               class="lang lang-es">Game Dev</span></h3>
           <div class="skills-wrapper">
-            <div class="skills-track" style="animation-direction: reverse; animation-duration: 16s;">
-              <span class="skill-tag">Unity</span><span class="skill-tag">GameMaker</span><span class="skill-tag">GML</span><span class="skill-tag">Godot</span><span class="skill-tag">TIC-80</span>
-              <!-- Duplicate for seamless scroll -->
-              <span class="skill-tag">Unity</span><span class="skill-tag">GameMaker</span><span class="skill-tag">GML</span><span class="skill-tag">Godot</span><span class="skill-tag">TIC-80</span>
-            </div>
+            <span class="skill-tag">Unity</span><span class="skill-tag">GameMaker</span><span
+              class="skill-tag">GML</span><span class="skill-tag">Godot</span><span class="skill-tag">TIC-80</span>
           </div>
         </div>
         <div class="skills-group">
           <h3><span class="lang lang-pt">IA & Automação</span><span class="lang lang-en">AI & Automation</span><span
               class="lang lang-es">IA y Automatización</span></h3>
           <div class="skills-wrapper">
-            <div class="skills-track" style="animation-duration: 19s;">
-              <span class="skill-tag">Gemini</span><span class="skill-tag">OpenAI</span><span class="skill-tag">Ollama</span><span class="skill-tag">Playwright</span>
-              <!-- Duplicate for seamless scroll -->
-              <span class="skill-tag">Gemini</span><span class="skill-tag">OpenAI</span><span class="skill-tag">Ollama</span><span class="skill-tag">Playwright</span>
-            </div>
+            <span class="skill-tag">Gemini</span><span class="skill-tag">OpenAI</span><span
+              class="skill-tag">Ollama</span><span class="skill-tag">Playwright</span>
           </div>
         </div>
         <div class="skills-group">
           <h3><span class="lang lang-pt">Ferramentas</span><span class="lang lang-en">Tools</span><span
               class="lang lang-es">Herramientas</span></h3>
           <div class="skills-wrapper">
-            <div class="skills-track" style="animation-direction: reverse; animation-duration: 20s;">
-              <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Figma</span>
-              <!-- Duplicate for seamless scroll -->
-              <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Figma</span>
-            </div>
+            <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span
+              class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Figma</span>
           </div>
         </div>
       </div>
 
+      <div class="learning-box">
+        <h2 class="section-title" style="font-size: 2rem; margin-bottom: 24px;"><span class="lang lang-pt">APRENDIZADOS
+            RECENTES</span><span class="lang lang-en">RECENT LEARNINGS</span><span class="lang lang-es">APRENDIZAJES
+            RECIENTES</span></h2>
+        <div class="skills-wrapper">
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Microsserviços com
+              Spring Cloud</span><span class="lang lang-en">Microservices with Spring Cloud</span><span
+              class="lang lang-es">Microservicios con Spring Cloud</span></span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;">Angular 17</span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;">React Native & Expo</span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">APIs REST com
+              Spring Boot</span><span class="lang lang-en">REST APIs with Spring Boot</span><span
+              class="lang lang-es">APIs REST con Spring Boot</span></span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;">Fastify + Supabase</span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Arquitetura mobile
+              full-stack</span><span class="lang lang-en">Full-stack mobile architecture</span><span
+              class="lang lang-es">Arquitectura móvil full-stack</span></span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Testes E2E
+              (Playwright)</span><span class="lang lang-en">E2E Testing (Playwright)</span><span
+              class="lang lang-es">Pruebas E2E (Playwright)</span></span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Integração IA
+              Multimodelo</span><span class="lang lang-en">Multi-model AI Integration</span><span
+              class="lang lang-es">Integración IA Multimodelo</span></span>
+
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">UX/UI
+              Design</span><span class="lang lang-en">UX/UI Design</span><span class="lang lang-es">Diseño
+              UX/UI</span></span>
+          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">CI/CD (GitHub
+              Actions)</span><span class="lang lang-en">CI/CD (GitHub Actions)</span><span class="lang lang-es">CI/CD
+              (GitHub Actions)</span></span>
+        </div>
+      </div>
       </div>
     </section>
 
@@ -285,62 +342,57 @@
                 automatizaciones en un entorno del sector público.</span></p>
           </div>
         </div>
-        <details class="expandable-section">
-          <summary class="btn-expand">
-            <span class="lang lang-pt">Ver Mais Experiências</span><span class="lang lang-en">View More Experiences</span><span class="lang lang-es">Ver Más Experiencias</span>
-          </summary>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching
-                  Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la
-                  Programación</span></h3>
-              <h4>UFCI/MG · <span class="lang lang-pt">Curso Técnico</span><span class="lang lang-en">Technical
-                  Course</span><span class="lang lang-es">Curso Técnico</span> <span>(2024)</span></h4>
-              <p><span class="lang lang-pt">Auxílio a alunos do técnico em lógica de programação e exercícios em
-                  C.</span><span class="lang lang-en">Assisting technical students with programming logic and exercises in
-                  C.</span><span class="lang lang-es">Ayuda a estudiantes técnicos en lógica de programación y ejercicios
-                  en C.</span></p>
-            </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching
+                Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la
+                Programación</span></h3>
+            <h4>CEFET-MG · <span class="lang lang-pt">Curso Técnico</span><span class="lang lang-en">Technical
+                Course</span><span class="lang lang-es">Curso Técnico</span> <span>(2024)</span></h4>
+            <p><span class="lang lang-pt">Auxílio a alunos do técnico em lógica de programação e exercícios em
+                C.</span><span class="lang lang-en">Assisting technical students with programming logic and exercises in
+                C.</span><span class="lang lang-es">Ayuda a estudiantes técnicos en lógica de programación y ejercicios
+                en C.</span></p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer
-                  Engineering</span><span class="lang lang-es">Ingeniería Informática</span></h3>
-              <h4>UFCI/MG · Campus Divinópolis <span>(2024 a 2029)</span></h4>
-              <p><span class="lang lang-pt">Formação em algoritmos, POO, banco de dados, eng. de software, redes, SO,
-                  linguagens formais, sinais e sistemas e arquitetura.</span><span class="lang lang-en">Training in
-                  algorithms, OOP, databases, software eng., networks, OS, formal languages, signals & systems, and
-                  architecture.</span><span class="lang lang-es">Formación en algoritmos, POO, bases de datos, ing. de
-                  software, redes, SO, lenguajes formales, señales y sistemas y arquitectura.</span></p>
-            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer
+                Engineering</span><span class="lang lang-es">Ingeniería Informática</span></h3>
+            <h4>CEFET-MG · Campus Divinópolis <span>(2024 a 2029)</span></h4>
+            <p><span class="lang lang-pt">Formação em algoritmos, POO, banco de dados, eng. de software, redes, SO,
+                linguagens formais, sinais e sistemas e arquitetura.</span><span class="lang lang-en">Training in
+                algorithms, OOP, databases, software eng., networks, OS, formal languages, signals & systems, and
+                architecture.</span><span class="lang lang-es">Formación en algoritmos, POO, bases de datos, ing. de
+                software, redes, SO, lenguajes formales, señales y sistemas y arquitectura.</span></p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
-                  Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
-              <h4>Gráfica Express <span>(2023 a 2024)</span></h4>
-              <p><span class="lang lang-pt">Atuação em finalização e produção visual de materiais impressos e preparação
-                  de arquivos.</span><span class="lang lang-en">Worked in visual finishing and production of printed
-                  materials, including file preparation.</span><span class="lang lang-es">Trabajo en acabado visual y
-                  producción de materiales impresos, y preparación de archivos.</span></p>
-            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
+                Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
+            <h4>Gráfica Express <span>(2023 a 2024)</span></h4>
+            <p><span class="lang lang-pt">Atuação em finalização e produção visual de materiais impressos e preparação
+                de arquivos.</span><span class="lang lang-en">Worked in visual finishing and production of printed
+                materials, including file preparation.</span><span class="lang lang-es">Trabajo en acabado visual y
+                producción de materiales impresos, y preparación de archivos.</span></p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
-                  Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
-              <h4>Poligráfica <span>(2017 a 2019)</span></h4>
-              <p><span class="lang lang-pt">Experiência sólida com preparação e finalização visual gráfica no setor de
-                  impressões.</span><span class="lang lang-en">Solid experience in graphic visual preparation and
-                  finishing within the printing sector.</span><span class="lang lang-es">Sólida experiencia en preparación
-                  visual y acabado gráfico en el sector de impresión.</span></p>
-            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
+                Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
+            <h4>Poligráfica <span>(2017 a 2019)</span></h4>
+            <p><span class="lang lang-pt">Experiência sólida com preparação e finalização visual gráfica no setor de
+                impressões.</span><span class="lang lang-en">Solid experience in graphic visual preparation and
+                finishing within the printing sector.</span><span class="lang lang-es">Sólida experiencia en preparación
+                visual y acabado gráfico en el sector de impresión.</span></p>
           </div>
-        </details>
+        </div>
       </div>
     </section>
 
@@ -356,13 +408,13 @@
             <span class="card-pill">NEXT.JS · SUPABASE</span>
           </div>
           <p class="card-desc"><span class="lang lang-pt"><strong>ACME HUB</strong> — planejador acadêmico gratuito para
-              o UFCI/MG. Sincroniza o SIGAA via Playwright, simulador de notas e mapa do PPC.</span><span
-              class="lang lang-en"><strong>ACME HUB</strong> — free academic planner for UFCI/MG. Synchronizes SIGAA
+              o CEFET-MG. Sincroniza o SIGAA via Playwright, simulador de notas e mapa do PPC.</span><span
+              class="lang lang-en"><strong>ACME HUB</strong> — free academic planner for CEFET-MG. Synchronizes SIGAA
               via Playwright, grade simulator, and PPC map.</span><span class="lang lang-es"><strong>ACME HUB</strong> —
-              planificador académico gratuito para UFCI/MG. Sincroniza SIGAA a través de Playwright, simulador de notas
+              planificador académico gratuito para CEFET-MG. Sincroniza SIGAA a través de Playwright, simulador de notas
               y mapa del PPC.</span></p>
           <div class="card-footer" style="display: flex; gap: 16px; margin-top: auto;">
-            <a href="https://github.com/KairoHenrique/UFCI-Academic-Planner" target="_blank"
+            <a href="https://github.com/KairoHenrique/CEFET-Academic-Planner" target="_blank"
               style="text-decoration: none;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub
                   →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub
                   →</span></span></a>
@@ -447,11 +499,6 @@
       </div>
     </section>
 
-    <details class="expandable-section" style="margin-bottom:48px;">
-      <summary class="btn-expand">
-        <span class="lang lang-pt">Ver Mais Projetos</span><span class="lang lang-en">View More Projects</span><span class="lang lang-es">Ver Más Proyectos</span>
-      </summary>
-      
     <!-- PROJETOS: GAMES -->
     <section class="section">
       <h2 class="section-title"><span class="lang lang-pt">GAME DEV</span><span class="lang lang-en">GAME
@@ -588,7 +635,6 @@
         </a>
       </div>
     </section>
-    </details>
 
     <!-- CERTIFICADOS (DIVIDIDOS EM ETAPAS) -->
     <section class="section" id="certificados">
@@ -632,11 +678,6 @@
               certification.</span><span class="lang lang-es">Certificación oficial en fundamentos de Inteligencia
               Artificial de Microsoft Azure.</span></p>
         </a>
-        <details class="expandable-section" style="grid-column: 1 / -1;">
-          <summary class="btn-expand" style="margin-bottom: 16px;">
-            <span class="lang lang-pt">Ver Mais Certificados</span><span class="lang lang-en">View More Certifications</span><span class="lang lang-es">Ver Más Certificaciones</span>
-          </summary>
-          <div class="grid-compact">
         <a href="assets/certificados/Linguagem de Programação Python (53 horas).pdf" target="_blank"
           class="card card-light card-compact">
           <h3 class="card-title"><span class="lang lang-pt">Trilha Python (53h)</span><span class="lang lang-en">Python
@@ -820,8 +861,8 @@
               class="lang lang-es">Curso de extensión en Esperanto estándar internacional (20 horas).</span></p>
         </a>
         <a href="assets/certificados/CertificadoParticipacao.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Fiscalização UFCI</span><span class="lang lang-en">UFCI
-              Supervision</span><span class="lang lang-es">Fiscalización UFCI</span></h3><span class="card-pill"><span
+          <h3 class="card-title"><span class="lang lang-pt">Fiscalização CEFET</span><span class="lang lang-en">CEFET
+              Supervision</span><span class="lang lang-es">Fiscalización CEFET</span></h3><span class="card-pill"><span
               class="lang lang-pt">EVENTO</span><span class="lang lang-en">EVENT</span><span
               class="lang lang-es">EVENTO</span></span>
           <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
@@ -829,8 +870,6 @@
               class="lang lang-en">Acted as an inspector for the Technical Education Selection Process.</span><span
               class="lang lang-es">Actué como inspector del Proceso de Selección de Educación Técnica.</span></p>
         </a>
-          </div>
-        </details>
       </div>
     </section>
 
@@ -892,13 +931,10 @@
         </a>
       </div>
 
-      <div class="contact-form-container">
-        <form action="#" method="POST" class="contact-form" onsubmit="alert('Formulário de demonstração! Conecte ao Supabase ou Google Sheets. / Demo form! Connect to Supabase or Google Sheets.'); return false;">
-          <input type="text" name="name" placeholder="Seu Nome / Your Name" required class="mock-input" style="width: 100%; margin-bottom: 16px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 8px;" />
-          <input type="email" name="email" placeholder="Seu Email / Your Email" required class="mock-input" style="width: 100%; margin-bottom: 16px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 8px;" />
-          <textarea name="message" placeholder="Sua Mensagem / Your Message" required class="mock-input" rows="5" style="width: 100%; margin-bottom: 16px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); resize: vertical; padding: 12px; border-radius: 8px;"></textarea>
-          <button type="submit" class="btn btn-primary" style="width: 100%;"><span class="lang lang-pt">ENVIAR MENSAGEM</span><span class="lang lang-en">SEND MESSAGE</span><span class="lang lang-es">ENVIAR MENSAJE</span></button>
-        </form>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="mailto:kairohenrique293@gmail.com" class="btn btn-primary"><span class="lang lang-pt">Enviar
+            mensagem</span><span class="lang lang-en">Send message</span><span class="lang lang-es">Enviar
+            mensaje</span></a>
       </div>
     </section>
 
@@ -947,7 +983,7 @@
               class="lang lang-es">EDUCACIÓN</span></h3>
           <p><strong><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer
                 Engineering</span><span class="lang lang-es">Ingeniería Informática</span></strong><br>
-            UFCI/MG (Campus Divinópolis)<br>
+            CEFET-MG (Campus Divinópolis)<br>
             2024 - 2029 (<span class="lang lang-pt">6º Período</span><span class="lang lang-en">6th Semester</span><span
               class="lang lang-es">6º Semestre</span>)</p>
         </div>
@@ -1062,7 +1098,7 @@
             <h4><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching
                 Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la
                 Programación</span> <span>(2024)</span></h4>
-            <h5>UFCI/MG</h5>
+            <h5>CEFET-MG</h5>
             <p><span class="lang lang-pt">Monitoria para alunos do técnico em fundamentos de lógica, estruturação de
                 algoritmos e exercícios avançados em Linguagem C.</span><span class="lang lang-en">Mentoring tech
                 students in logic fundamentals, algorithm structuring, and advanced exercises in C Language.</span><span

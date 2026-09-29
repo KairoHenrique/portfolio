@@ -4,7 +4,8 @@
   const header = document.getElementById("header");
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
-  const navLinks = document.querySelectorAll(".nav-links a");
+  const navLinks = document.querySelectorAll(".nav__link, .nav-links a");
+  const navOverlay = document.getElementById("nav-overlay");
   const revealElements = document.querySelectorAll(".reveal");
   const yearEl = document.getElementById("year");
 
@@ -44,23 +45,49 @@
   }
 
   function toggleMenu() {
+    if (!navMenu || !navToggle) return;
     const isOpen = navMenu.classList.toggle("nav__menu--open");
     navToggle.classList.toggle("nav__toggle--open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
+    if (navOverlay) {
+      navOverlay.classList.toggle("nav-overlay--active", isOpen);
+    }
+    document.body.classList.toggle("menu-open", isOpen);
   }
 
   function closeMenu() {
+    if (!navMenu || !navToggle) return;
     navMenu.classList.remove("nav__menu--open");
     navToggle.classList.remove("nav__toggle--open");
     navToggle.setAttribute("aria-expanded", "false");
+    if (navOverlay) {
+      navOverlay.classList.remove("nav-overlay--active");
+    }
+    document.body.classList.remove("menu-open");
   }
 
   if (navToggle) {
     navToggle.addEventListener("click", toggleMenu);
   }
 
+  if (navOverlay) {
+    navOverlay.addEventListener("click", closeMenu);
+  }
+
   navLinks.forEach(function (link) {
     link.addEventListener("click", closeMenu);
+  });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && navMenu && navMenu.classList.contains("nav__menu--open")) {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 768 && navMenu && navMenu.classList.contains("nav__menu--open")) {
+      closeMenu();
+    }
   });
 
   window.addEventListener("scroll", handleScroll, { passive: true });
@@ -728,44 +755,4 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.className = 'lang-' + lang;
     });
   });
-});
-
-// Counters Animation
-document.addEventListener('DOMContentLoaded', () => {
-  const counters = document.querySelectorAll('.counter');
-  const speed = 200;
-
-  const animateCounters = () => {
-    counters.forEach(counter => {
-      const target = +counter.getAttribute('data-target');
-      const suffix = counter.getAttribute('data-suffix') || '';
-      
-      const updateCount = () => {
-        const count = +counter.innerText.replace(/\D/g, '');
-        const inc = target / speed;
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count + inc) + suffix;
-          setTimeout(updateCount, 10);
-        } else {
-          counter.innerText = target + suffix;
-        }
-      };
-      updateCount();
-    });
-  };
-
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounters();
-        obs.disconnect(); // Animate only once
-      }
-    });
-  }, { threshold: 0.5 });
-
-  const statsSection = document.querySelector('.about-right');
-  if (statsSection) {
-    observer.observe(statsSection);
-  }
 });
