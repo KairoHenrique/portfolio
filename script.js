@@ -13,6 +13,7 @@
   }
 
   function handleScroll() {
+    if (!header) return;
     if (window.scrollY > 50) {
       header.classList.add("header--scrolled");
     } else {
