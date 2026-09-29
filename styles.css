@@ -101,24 +101,11 @@ body.lang-es .lang-es { display: inline; }
   line-height: 0.85;
   letter-spacing: 4px;
   text-transform: uppercase;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    #ffffff 30%,
-    #ffffff 70%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-  background-size: 200% 200%;
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255,255,255,0) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shineTitle 6s ease-in-out infinite alternate;
   margin-bottom: 24px;
   z-index: 1;
-}
-
-@keyframes shineTitle {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 100%; }
 }
 
 .hero-subtitle {
