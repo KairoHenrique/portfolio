@@ -4,7 +4,7 @@
   const header = document.getElementById("header");
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
-  const navLinks = document.querySelectorAll(".nav__link");
+  const navLinks = document.querySelectorAll(".nav-links a");
   const revealElements = document.querySelectorAll(".reveal");
   const yearEl = document.getElementById("year");
 
@@ -99,7 +99,7 @@
 
     if (type === "acmehub") {
       modalBadge.textContent = "Web App Demo · SaaS";
-      modalTitle.textContent = "ACME HUB — Planejador Acadêmico CEFET-MG";
+      modalTitle.textContent = "ACME HUB — Planejador Acadêmico UFCI/MG";
       renderAcmeHubMockup();
     } else if (type === "easytrip") {
       modalBadge.textContent = "Mobile App Demo · iOS/Android";
@@ -154,7 +154,7 @@
           <div class="acme-logo">
             <span class="acme-logo-badge">AH</span>
             <span style="color:#ffffff;">ACME<span style="color:#d4a843;">HUB</span></span>
-            <span style="font-size:0.75rem; color:#8ba0be; font-weight:400;">CEFET-MG</span>
+            <span style="font-size:0.75rem; color:#8ba0be; font-weight:400;">UFCI/MG</span>
           </div>
           <div style="display:flex; align-items:center; gap:0.75rem;">
             <span class="acme-status-pill acme-status-pill--approved" style="background:rgba(63,185,80,0.15); border:1px solid #3fb950; color:#3fb950;">
@@ -168,7 +168,7 @@
 
         <div class="mockup-tabs" style="background:rgba(0,20,40,0.9); border-bottom:1px solid rgba(212,168,67,0.25);">
           <button class="mockup-tab mockup-tab--active" data-tab="acme-dash">Dashboard F28</button>
-          <button class="mockup-tab" data-tab="acme-sim">Calculadora 3-Etapas CEFET</button>
+          <button class="mockup-tab" data-tab="acme-sim">Calculadora 3-Etapas UFCI</button>
           <button class="mockup-tab" data-tab="acme-integralizao">Integralização CHT</button>
           <button class="mockup-tab" data-tab="acme-grid">Simulador de Matrícula</button>
           <button class="mockup-tab" data-tab="acme-live" style="color:#d4a843; font-weight:700;">🌐 Site Oficial (acmehub.com.br)</button>
@@ -193,7 +193,7 @@
 
           <div id="sync-status-box" style="display:none; margin-bottom:1.25rem; background:rgba(0, 30, 60, 0.95); border:1px solid #d4a843; padding:0.85rem; border-radius:8px;">
             <div style="display:flex; justify-content:space-between; font-size:0.82rem; color:#f4f8fc; margin-bottom:0.4rem;">
-              <span id="sync-label" style="font-family:monospace;">[Playwright] Conectando ao servidor SIGAA do CEFET-MG...</span>
+              <span id="sync-label" style="font-family:monospace;">[Playwright] Conectando ao servidor SIGAA do UFCI/MG...</span>
               <span id="sync-percent" style="font-weight:700; color:#d4a843;">0%</span>
             </div>
             <div class="progress-bar-container" style="background:rgba(0,16,32,0.8); border:1px solid rgba(212,168,67,0.2);">
@@ -244,7 +244,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Engenharia de Software</strong> <br><small style="color:#8ba0be;">CEFET001 · Prof. Alexandre</small></td>
+                  <td><strong>Engenharia de Software</strong> <br><small style="color:#8ba0be;">UFCI001 · Prof. Alexandre</small></td>
                   <td>28.0</td>
                   <td>27.5</td>
                   <td>36.0</td>
@@ -253,7 +253,7 @@
                   <td><span class="acme-status-pill" style="background:rgba(63,185,80,0.15); color:#3fb950;">🟢 Aprovado</span></td>
                 </tr>
                 <tr>
-                  <td><strong>Sistemas Operacionais II</strong> <br><small style="color:#8ba0be;">CEFET002 · Prof. Roberto</small></td>
+                  <td><strong>Sistemas Operacionais II</strong> <br><small style="color:#8ba0be;">UFCI002 · Prof. Roberto</small></td>
                   <td>26.0</td>
                   <td>25.5</td>
                   <td style="color:#8ba0be;">--</td>
@@ -262,7 +262,7 @@
                   <td><span class="acme-status-pill" style="background:rgba(32,136,212,0.15); color:#2088d4;">🔵 Em Andamento</span></td>
                 </tr>
                 <tr>
-                  <td><strong>Banco de Dados I</strong> <br><small style="color:#8ba0be;">CEFET003 · Profa. Carla</small></td>
+                  <td><strong>Banco de Dados I</strong> <br><small style="color:#8ba0be;">UFCI003 · Profa. Carla</small></td>
                   <td>24.5</td>
                   <td>26.0</td>
                   <td style="color:#8ba0be;">--</td>
@@ -271,7 +271,7 @@
                   <td><span class="acme-status-pill" style="background:rgba(32,136,212,0.15); color:#2088d4;">🔵 Em Andamento</span></td>
                 </tr>
                 <tr>
-                  <td><strong>Redes de Computadores I</strong> <br><small style="color:#8ba0be;">CEFET004 · Prof. Marcos</small></td>
+                  <td><strong>Redes de Computadores I</strong> <br><small style="color:#8ba0be;">UFCI004 · Prof. Marcos</small></td>
                   <td>29.0</td>
                   <td>28.5</td>
                   <td>38.0</td>
@@ -284,11 +284,11 @@
           </div>
         </div>
 
-        <!-- ABA 2: CALCULADORA CEFET-MG -->
+        <!-- ABA 2: CALCULADORA UFCI/MG -->
         <div class="mockup-tab-content" id="acme-sim">
-          <h4 style="color:#ffffff; margin-bottom:0.4rem; font-family:var(--font-display);">Calculadora Oficial de Notas (Regra 3-Etapas CEFET-MG)</h4>
+          <h4 style="color:#ffffff; margin-bottom:0.4rem; font-family:var(--font-display);">Calculadora Oficial de Notas (Regra 3-Etapas UFCI/MG)</h4>
           <p style="color:#94a3b4; font-size:0.85rem; margin-bottom:1.25rem;">
-            No CEFET-MG, a distribuição de pontos é dividida em 3 etapas: <strong>Etapa 1 (30p)</strong>, <strong>Etapa 2 (30p)</strong> e <strong>Etapa 3 (40p)</strong>.
+            No UFCI/MG, a distribuição de pontos é dividida em 3 etapas: <strong>Etapa 1 (30p)</strong>, <strong>Etapa 2 (30p)</strong> e <strong>Etapa 3 (40p)</strong>.
             A nota mínima global para aprovação direta é <strong>60.0 pontos</strong>.
           </p>
 
@@ -317,7 +317,7 @@
         <div class="mockup-tab-content" id="acme-integralizao">
           <h4 style="color:#ffffff; margin-bottom:0.4rem; font-family:var(--font-display);">Integralização Curricular CHT</h4>
           <p style="color:#94a3b4; font-size:0.85rem; margin-bottom:1.25rem;">
-            Acompanhamento de Carga Horária Total (CHT) dividida por categorias do PPC do CEFET-MG.
+            Acompanhamento de Carga Horária Total (CHT) dividida por categorias do PPC do UFCI/MG.
           </p>
 
           <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:1.25rem;">
@@ -424,7 +424,7 @@
         btnSync.style.opacity = "0.5";
         let width = 0;
         const logs = [
-          "[Playwright] Conectando ao servidor SIGAA do CEFET-MG...",
+          "[Playwright] Conectando ao servidor SIGAA do UFCI/MG...",
           "[Playwright] Autenticando credenciais com sessão criptografada...",
           "[Playwright] Extraindo notas das 3 Etapas e registro de faltas...",
           "[Playwright] Recalculando IRA e matriz de integralização PPC...",
@@ -447,7 +447,7 @@
       });
     }
 
-    /* Interação da Calculadora 3-Etapas CEFET-MG */
+    /* Interação da Calculadora 3-Etapas UFCI/MG */
     const btnCalc = document.getElementById("btn-calcular-nota");
     const simN1 = document.getElementById("sim-n1");
     const simN2 = document.getElementById("sim-n2");
@@ -728,23 +728,44 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.className = 'lang-' + lang;
     });
   });
+});
 
-  const printBtn = document.getElementById('btn-print-resume');
-  if (printBtn) {
-    printBtn.addEventListener('click', (e) => {
-      e.preventDefault();
+// Counters Animation
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200;
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const suffix = counter.getAttribute('data-suffix') || '';
       
-      const lang = document.body.className.replace('lang-', '').trim();
-      let langSuffix = 'br';
-      if (lang === 'en') langSuffix = 'us';
-      if (lang === 'es') langSuffix = 'es';
-      
-      const origTitle = document.title;
-      document.title = 'Kairo Martins-Curriculo (' + langSuffix + ')';
-      
-      window.print();
-      
-      document.title = origTitle;
+      const updateCount = () => {
+        const count = +counter.innerText.replace(/\D/g, '');
+        const inc = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + inc) + suffix;
+          setTimeout(updateCount, 10);
+        } else {
+          counter.innerText = target + suffix;
+        }
+      };
+      updateCount();
     });
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        obs.disconnect(); // Animate only once
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const statsSection = document.querySelector('.about-right');
+  if (statsSection) {
+    observer.observe(statsSection);
   }
 });

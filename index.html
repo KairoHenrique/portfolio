@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Kairo Henrique | Full-Stack & Game Dev" />
   <title>Kairo Henrique | Portfolio</title>
-  
-  <link rel="icon" type="image/jpeg" href="assets/img/profile.jpg" />
+
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="lang-pt">
 
   <!-- NAVBAR -->
   <nav class="navbar" id="header">
-    <div class="nav-links">
-      <a href="#sobre"><span class="lang lang-pt">SOBRE</span><span class="lang lang-en">ABOUT</span><span class="lang lang-es">SOBRE MÍ</span></a>
-      <a href="#experiencia"><span class="lang lang-pt">EXPERIÊNCIA</span><span class="lang lang-en">EXPERIENCE</span><span class="lang lang-es">EXPERIENCIA</span></a>
-      <a href="#projetos"><span class="lang lang-pt">PROJETOS</span><span class="lang lang-en">PROJECTS</span><span class="lang lang-es">PROYECTOS</span></a>
-      <a href="#certificados"><span class="lang lang-pt">CERTIFICADOS</span><span class="lang lang-en">CERTS</span><span class="lang lang-es">CERTIFICADOS</span></a>
-      <a href="#contato"><span class="lang lang-pt">CONTATO</span><span class="lang lang-en">CONTACT</span><span class="lang lang-es">CONTACTO</span></a>
+    <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+    </button>
+    <div class="nav-links" id="nav-menu">
+      <a href="#sobre"><span class="lang lang-pt">SOBRE</span><span class="lang lang-en">ABOUT</span><span
+          class="lang lang-es">SOBRE MÍ</span></a>
+      <a href="#experiencia"><span class="lang lang-pt">EXPERIÊNCIA</span><span
+          class="lang lang-en">EXPERIENCE</span><span class="lang lang-es">EXPERIENCIA</span></a>
+      <a href="#projetos"><span class="lang lang-pt">PROJETOS</span><span class="lang lang-en">PROJECTS</span><span
+          class="lang lang-es">PROYECTOS</span></a>
+      <a href="#certificados"><span class="lang lang-pt">CERTIFICADOS</span><span class="lang lang-en">CERTS</span><span
+          class="lang lang-es">CERTIFICADOS</span></a>
+      <a href="#contato"><span class="lang lang-pt">CONTATO</span><span class="lang lang-en">CONTACT</span><span
+          class="lang lang-es">CONTACTO</span></a>
     </div>
     <div class="nav-langs">
       <button class="lang-btn active" data-lang="pt"><span class="fi fi-br"></span></button>
@@ -35,51 +46,73 @@
   <section class="hero" id="inicio">
     <div class="availability-pill">
       <span class="availability-dot"></span>
-      <span class="availability-text"><span class="lang lang-pt">Disponível para oportunidades</span><span class="lang lang-en">Available for opportunities</span><span class="lang lang-es">Disponible para oportunidades</span></span>
+      <span class="availability-text"><span class="lang lang-pt">Disponível para oportunidades</span><span
+          class="lang lang-en">Available for opportunities</span><span class="lang lang-es">Disponible para
+          oportunidades</span></span>
     </div>
     <h1 class="giant-title">KAIRO HENRIQUE</h1>
     <p class="hero-subtitle">
-      <span class="lang lang-pt">Desenvolvedor Full-Stack (22 anos) | Fundador da Studio Vessel | Estudante de Engenharia de Computação no CEFET-MG (6º período)</span><span class="lang lang-en">Full-Stack Developer (22 y/o) | Studio Vessel Founder | Computer Engineering Student at CEFET-MG (6th semester)</span><span class="lang lang-es">Desarrollador Full-Stack (22 años) | Fundador de Studio Vessel | Estudiante de Ingeniería Informática en CEFET-MG (6º semestre)</span>
+      <span class="lang lang-pt">Desenvolvedor Full-Stack (22 anos) | Fundador da Studio Vessel | Estudante de
+        Engenharia de Computação no UFCI/MG (6º período)</span><span class="lang lang-en">Full-Stack Developer (22 y/o)
+        | Studio Vessel Founder | Computer Engineering Student at UFCI/MG (6th semester)</span><span
+        class="lang lang-es">Desarrollador Full-Stack (22 años) | Fundador de Studio Vessel | Estudiante de Ingeniería
+        Informática en UFCI/MG (6º semestre)</span>
     </p>
     <div class="hero-actions">
       <a href="#projetos" class="btn btn-primary">
-        <span class="lang lang-pt">VER PROJETOS</span><span class="lang lang-en">VIEW PROJECTS</span><span class="lang lang-es">VER PROYECTOS</span>
+        <span class="lang lang-pt">VER PROJETOS</span><span class="lang lang-en">VIEW PROJECTS</span><span
+          class="lang lang-es">VER PROYECTOS</span>
       </a>
-      <a href="#" id="btn-print-resume" class="btn btn-secondary">
-        <span class="lang lang-pt">VER MEU CURRÍCULO</span><span class="lang lang-en">VIEW RESUME</span><span class="lang lang-es">VER MI CV</span>
+      <a href="javascript:window.print();" class="btn btn-secondary">
+        <span class="lang lang-pt">VER MEU CURRÍCULO</span><span class="lang lang-en">VIEW RESUME</span><span
+          class="lang lang-es">VER MI CV</span>
       </a>
     </div>
   </section>
 
   <main class="container">
-    
+
     <!-- SOBRE -->
     <section class="section" id="sobre">
-      <h2 class="section-title"><span class="lang lang-pt">SOBRE MIM</span><span class="lang lang-en">ABOUT ME</span><span class="lang lang-es">SOBRE MÍ</span></h2>
+      <h2 class="section-title"><span class="lang lang-pt">SOBRE MIM</span><span class="lang lang-en">ABOUT
+          ME</span><span class="lang lang-es">SOBRE MÍ</span></h2>
       <div class="about-layout">
-        
+
         <div class="about-text">
-          <img src="assets/img/profile.jpg" alt="Kairo Henrique" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Kairo+Henrique'"/>
-          <p><span class="lang lang-pt">Sou <strong>Kairo Henrique Ferreira Martins</strong> (22 anos), estudante de <strong>Engenharia de Computação no CEFET-MG</strong> (Campus Divinópolis, 6º período) e <strong>game dev</strong> na <strong>Studio Vessel</strong>. Fui estagiário como professor de robótica e programação na <strong>HZN Labs</strong>, desenvolvendo também softwares internos. Domino React, React Native, TypeScript, Spring Boot, FastAPI, Python, C/C++ e desenvolvimento de jogos (GameMaker, Godot e TIC-80).</span><span class="lang lang-en">I am <strong>Kairo Henrique Ferreira Martins</strong> (22 years old), a <strong>Computer Engineering student at CEFET-MG</strong> (6th semester) and <strong>game dev</strong> at <strong>Studio Vessel</strong>. I interned as a robotics and programming teacher at <strong>HZN Labs</strong>, where I also developed internal software. I master React, React Native, TypeScript, Spring Boot, FastAPI, Python, C/C++, and game development (GameMaker, Godot, and TIC-80).</span><span class="lang lang-es">Soy <strong>Kairo Henrique Ferreira Martins</strong> (22 años), estudiante de <strong>Ingeniería Informática en CEFET-MG</strong> (6º semestre) y <strong>desarrollador de juegos</strong> en <strong>Studio Vessel</strong>. Hice prácticas como profesor de robótica y programación en <strong>HZN Labs</strong>, desarrollando también software interno. Domino React, React Native, TypeScript, Spring Boot, FastAPI, Python, C/C++ y desarrollo de juegos (GameMaker, Godot y TIC-80).</span></p>
-          <p><span class="lang lang-pt">Concluí o <strong>Santander Bootcamp | Fullstack Developer</strong> (DIO, 125h). Fui Scrum Master e desenvolvedor full-stack do <strong>HealthBridge</strong>, plataforma médica com IA. Desenvolvi o <strong>ACME HUB</strong>, planejador acadêmico. Em paralelo, trabalho no <strong>Easy Trip</strong> (viagens com IA), <strong>SEMUSA</strong> (dashboard de saúde) e no Metroidvania <strong>Whispers of the Mind</strong>.</span><span class="lang lang-en">I completed the <strong>Santander Bootcamp | Fullstack Developer</strong> (DIO, 125h). I was Scrum Master and full-stack developer for <strong>HealthBridge</strong>, an AI medical platform. I developed <strong>ACME HUB</strong>, an academic planner. Concurrently, I work on <strong>Easy Trip</strong> (AI travel), <strong>SEMUSA</strong> (health dashboard), and the Metroidvania <strong>Whispers of the Mind</strong>.</span><span class="lang lang-es">Completé el <strong>Santander Bootcamp | Fullstack Developer</strong> (DIO, 125h). Fui Scrum Master y desarrollador full-stack de <strong>HealthBridge</strong>, plataforma médica con IA. Desarrollé <strong>ACME HUB</strong>, planificador académico. En paralelo, trabajo en <strong>Easy Trip</strong> (viajes con IA), <strong>SEMUSA</strong> (dashboard de salud) y el Metroidvania <strong>Whispers of the Mind</strong>.</span></p>
-          <p><span class="lang lang-pt">Já atuei como monitor de Introdução à Programação no CEFET-MG e estagiário na Prefeitura de Divinópolis. Meu foco é <strong>desenvolvimento de software</strong> bem arquitetado, com SOLID, segurança (OWASP/LGPD) e alta performance.</span><span class="lang lang-en">I worked as a teaching assistant for Intro to Programming at CEFET-MG and interned at the Divinópolis City Hall. My focus is on well-architected <strong>software development</strong>, employing SOLID, security (OWASP/LGPD), and high performance.</span><span class="lang lang-es">Trabajé como asistente de Introducción a la Programación en CEFET-MG y pasante en la Alcaldía de Divinópolis. Mi enfoque es el <strong>desarrollo de software</strong> bien estructurado, con SOLID, seguridad (OWASP/LGPD) y alto rendimiento.</span></p>
+          <img src="assets/img/profile.jpg" alt="Kairo Henrique" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Kairo+Henrique'" />
+          <p><span class="lang lang-pt">Sou <strong>Kairo Henrique</strong>, desenvolvedor full-stack e analista de sistemas em formação pela UFCI/MG, com foco em arquiteturas escaláveis e produtos digitais modernos. Atuo unindo visão de negócio com tecnologia para criar experiências de alto desempenho.</span><span class="lang lang-en">I am <strong>Kairo Henrique</strong>, a full-stack developer and systems analyst in training at UFCI/MG, focused on scalable architectures and modern digital products. I combine business vision with technology to create high-performance experiences.</span><span class="lang lang-es">Soy <strong>Kairo Henrique</strong>, desarrollador full-stack y analista de sistemas en formación en la UFCI/MG, enfocado en arquitecturas escalables y productos digitales modernos. Combino visión de negocio con tecnología para crear experiencias de alto rendimiento.</span></p>
+          
+          <div style="display:flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+            <span class="skill-tag" style="background:#d4a843; color:#001e3c; font-weight:700; border:none;"><span class="lang lang-pt">Lead Developer</span><span class="lang lang-en">Lead Developer</span><span class="lang lang-es">Lead Developer</span></span>
+            <span class="skill-tag" style="background:#2088d4; color:#fff; font-weight:700; border:none;"><span class="lang lang-pt">Scrum Master</span><span class="lang lang-en">Scrum Master</span><span class="lang lang-es">Scrum Master</span></span>
+            <span class="skill-tag" style="background:#3fb950; color:#fff; font-weight:700; border:none;"><span class="lang lang-pt">Game Dev</span><span class="lang lang-en">Game Dev</span><span class="lang lang-es">Game Dev</span></span>
+          </div>
         </div>
 
         <div class="about-right">
           <div class="stat-card">
-            <h3>6º</h3>
-            <p><span class="lang lang-pt">Período CEFET-MG</span><span class="lang lang-en">CEFET-MG Semester</span><span class="lang lang-es">Semestre CEFET-MG</span></p>
+            <h3 class="counter" data-target="6" data-suffix="º">0º</h3>
+            <p><span class="lang lang-pt">Período UFCI/MG</span><span class="lang lang-en">UFCI/MG
+                Semester</span><span class="lang lang-es">Semestre UFCI/MG</span></p>
           </div>
           <div class="stat-card">
-            <h3>20+</h3>
-            <p><span class="lang lang-pt">Projetos</span><span class="lang lang-en">Projects</span><span class="lang lang-es">Proyectos</span></p>
+            <h3 class="counter" data-target="20" data-suffix="+">0+</h3>
+            <p><span class="lang lang-pt">Projetos</span><span class="lang lang-en">Projects</span><span
+                class="lang lang-es">Proyectos</span></p>
           </div>
           <div class="stat-card lang-card">
-            <h4><span class="lang lang-pt">IDIOMAS</span><span class="lang lang-en">LANGUAGES</span><span class="lang lang-es">IDIOMAS</span></h4>
+            <h4><span class="lang lang-pt">IDIOMAS</span><span class="lang lang-en">LANGUAGES</span><span
+                class="lang lang-es">IDIOMAS</span></h4>
             <ul>
-              <li><span><span class="lang lang-pt">Português</span><span class="lang lang-en">Portuguese</span><span class="lang lang-es">Portugués</span></span><span><span class="lang lang-pt">Nativo</span><span class="lang lang-en">Native</span><span class="lang lang-es">Nativo</span></span></li>
-              <li><span><span class="lang lang-pt">Inglês</span><span class="lang lang-en">English</span><span class="lang lang-es">Inglés</span></span><span><span class="lang lang-pt">Intermediário</span><span class="lang lang-en">Intermediate</span><span class="lang lang-es">Intermedio</span></span></li>
-              <li><span><span class="lang lang-pt">Espanhol</span><span class="lang lang-en">Spanish</span><span class="lang lang-es">Español</span></span><span><span class="lang lang-pt">Intermediário</span><span class="lang lang-en">Intermediate</span><span class="lang lang-es">Intermedio</span></span></li>
+              <li><span><span class="lang lang-pt">Português</span><span class="lang lang-en">Portuguese</span><span
+                    class="lang lang-es">Portugués</span></span><span><span class="lang lang-pt">Nativo</span><span
+                    class="lang lang-en">Native</span><span class="lang lang-es">Nativo</span></span></li>
+              <li><span><span class="lang lang-pt">Inglês</span><span class="lang lang-en">English</span><span
+                    class="lang lang-es">Inglés</span></span><span><span class="lang lang-pt">Intermediário</span><span
+                    class="lang lang-en">Intermediate</span><span class="lang lang-es">Intermedio</span></span></li>
+              <li><span><span class="lang lang-pt">Espanhol</span><span class="lang lang-en">Spanish</span><span
+                    class="lang lang-es">Español</span></span><span><span class="lang lang-pt">Intermediário</span><span
+                    class="lang lang-en">Intermediate</span><span class="lang lang-es">Intermedio</span></span></li>
             </ul>
           </div>
         </div>
@@ -90,162 +123,252 @@
     <!-- HABILIDADES & APRENDIZADOS -->
     <section class="section" id="habilidades">
       <h2 class="section-title">
-        <span class="lang lang-pt">STACK & SKILLS</span><span class="lang lang-en">STACK & SKILLS</span><span class="lang lang-es">STACK & SKILLS</span>
+        <span class="lang lang-pt">STACK & SKILLS</span><span class="lang lang-en">STACK & SKILLS</span><span
+          class="lang lang-es">STACK & SKILLS</span>
       </h2>
-      
+
       <div class="skills-container">
         <div class="skills-group">
-          <h3><span class="lang lang-pt">Linguagens</span><span class="lang lang-en">Languages</span><span class="lang lang-es">Lenguajes</span></h3>
+          <h3><span class="lang lang-pt">Linguagens</span><span class="lang lang-en">Languages</span><span
+              class="lang lang-es">Lenguajes</span></h3>
           <div class="skills-wrapper">
-            <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span>
-            <span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Lua</span><span class="skill-tag">HTML/CSS</span>
+            <div class="skills-track">
+              <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Lua</span><span class="skill-tag">HTML/CSS</span>
+              <!-- Duplicate for seamless scroll -->
+              <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Lua</span><span class="skill-tag">HTML/CSS</span>
+            </div>
           </div>
         </div>
         <div class="skills-group">
-          <h3><span class="lang lang-pt">Front-End & Mobile</span><span class="lang lang-en">Front-End & Mobile</span><span class="lang lang-es">Front-End y Móvil</span></h3>
+          <h3><span class="lang lang-pt">Front-End & Mobile</span><span class="lang lang-en">Front-End &
+              Mobile</span><span class="lang lang-es">Front-End y Móvil</span></h3>
           <div class="skills-wrapper">
-            <span class="skill-tag">React</span><span class="skill-tag">React Native</span><span class="skill-tag">Expo</span><span class="skill-tag">Next.js</span>
-            <span class="skill-tag">Angular</span><span class="skill-tag">Vite</span><span class="skill-tag">Recharts</span><span class="skill-tag">Jinja2</span>
+            <div class="skills-track" style="animation-direction: reverse; animation-duration: 18s;">
+              <span class="skill-tag">React</span><span class="skill-tag">React Native</span><span class="skill-tag">Expo</span><span class="skill-tag">Next.js</span><span class="skill-tag">Angular</span><span class="skill-tag">Vite</span><span class="skill-tag">Recharts</span><span class="skill-tag">Jinja2</span>
+              <!-- Duplicate for seamless scroll -->
+              <span class="skill-tag">React</span><span class="skill-tag">React Native</span><span class="skill-tag">Expo</span><span class="skill-tag">Next.js</span><span class="skill-tag">Angular</span><span class="skill-tag">Vite</span><span class="skill-tag">Recharts</span><span class="skill-tag">Jinja2</span>
+            </div>
           </div>
         </div>
         <div class="skills-group">
-          <h3><span class="lang lang-pt">Back-End & Dados</span><span class="lang lang-en">Back-End & Data</span><span class="lang lang-es">Back-End y Datos</span></h3>
+          <h3><span class="lang lang-pt">Back-End & Dados</span><span class="lang lang-en">Back-End & Data</span><span
+              class="lang lang-es">Back-End y Datos</span></h3>
           <div class="skills-wrapper">
-            <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Fastify</span>
-            <span class="skill-tag">Node.js</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite</span>
+            <div class="skills-track" style="animation-duration: 22s;">
+              <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Fastify</span><span class="skill-tag">Node.js</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite</span>
+              <!-- Duplicate for seamless scroll -->
+              <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Cloud</span><span class="skill-tag">FastAPI</span><span class="skill-tag">Fastify</span><span class="skill-tag">Node.js</span><span class="skill-tag">SQLAlchemy</span><span class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQLite</span>
+            </div>
           </div>
         </div>
         <div class="skills-group">
-          <h3><span class="lang lang-pt">Game Dev</span><span class="lang lang-en">Game Dev</span><span class="lang lang-es">Game Dev</span></h3>
+          <h3><span class="lang lang-pt">Game Dev</span><span class="lang lang-en">Game Dev</span><span
+              class="lang lang-es">Game Dev</span></h3>
           <div class="skills-wrapper">
-            <span class="skill-tag">Unity</span><span class="skill-tag">GameMaker</span><span class="skill-tag">GML</span><span class="skill-tag">Godot</span><span class="skill-tag">TIC-80</span>
+            <div class="skills-track" style="animation-direction: reverse; animation-duration: 16s;">
+              <span class="skill-tag">Unity</span><span class="skill-tag">GameMaker</span><span class="skill-tag">GML</span><span class="skill-tag">Godot</span><span class="skill-tag">TIC-80</span>
+              <!-- Duplicate for seamless scroll -->
+              <span class="skill-tag">Unity</span><span class="skill-tag">GameMaker</span><span class="skill-tag">GML</span><span class="skill-tag">Godot</span><span class="skill-tag">TIC-80</span>
+            </div>
           </div>
         </div>
         <div class="skills-group">
-          <h3><span class="lang lang-pt">IA & Automação</span><span class="lang lang-en">AI & Automation</span><span class="lang lang-es">IA y Automatización</span></h3>
+          <h3><span class="lang lang-pt">IA & Automação</span><span class="lang lang-en">AI & Automation</span><span
+              class="lang lang-es">IA y Automatización</span></h3>
           <div class="skills-wrapper">
-            <span class="skill-tag">Gemini</span><span class="skill-tag">OpenAI</span><span class="skill-tag">Ollama</span><span class="skill-tag">Playwright</span>
+            <div class="skills-track" style="animation-duration: 19s;">
+              <span class="skill-tag">Gemini</span><span class="skill-tag">OpenAI</span><span class="skill-tag">Ollama</span><span class="skill-tag">Playwright</span>
+              <!-- Duplicate for seamless scroll -->
+              <span class="skill-tag">Gemini</span><span class="skill-tag">OpenAI</span><span class="skill-tag">Ollama</span><span class="skill-tag">Playwright</span>
+            </div>
           </div>
         </div>
         <div class="skills-group">
-          <h3><span class="lang lang-pt">Ferramentas</span><span class="lang lang-en">Tools</span><span class="lang lang-es">Herramientas</span></h3>
+          <h3><span class="lang lang-pt">Ferramentas</span><span class="lang lang-en">Tools</span><span
+              class="lang lang-es">Herramientas</span></h3>
           <div class="skills-wrapper">
-            <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Figma</span>
+            <div class="skills-track" style="animation-direction: reverse; animation-duration: 20s;">
+              <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Figma</span>
+              <!-- Duplicate for seamless scroll -->
+              <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span><span class="skill-tag">Linux</span><span class="skill-tag">Docker</span><span class="skill-tag">Figma</span>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="learning-box">
-        <h2 class="section-title" style="font-size: 2rem; margin-bottom: 24px;"><span class="lang lang-pt">APRENDIZADOS RECENTES</span><span class="lang lang-en">RECENT LEARNINGS</span><span class="lang lang-es">APRENDIZAJES RECIENTES</span></h2>
-        <div class="skills-wrapper">
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Microsserviços com Spring Cloud</span><span class="lang lang-en">Microservices with Spring Cloud</span><span class="lang lang-es">Microservicios con Spring Cloud</span></span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;">Angular 17</span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;">React Native & Expo</span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">APIs REST com Spring Boot</span><span class="lang lang-en">REST APIs with Spring Boot</span><span class="lang lang-es">APIs REST con Spring Boot</span></span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;">Fastify + Supabase</span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Arquitetura mobile full-stack</span><span class="lang lang-en">Full-stack mobile architecture</span><span class="lang lang-es">Arquitectura móvil full-stack</span></span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Testes E2E (Playwright)</span><span class="lang lang-en">E2E Testing (Playwright)</span><span class="lang lang-es">Pruebas E2E (Playwright)</span></span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">Integração IA Multimodelo</span><span class="lang lang-en">Multi-model AI Integration</span><span class="lang lang-es">Integración IA Multimodelo</span></span>
 
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">UX/UI Design</span><span class="lang lang-en">UX/UI Design</span><span class="lang lang-es">Diseño UX/UI</span></span>
-          <span class="skill-tag" style="border-color: #fff; color: #fff;"><span class="lang lang-pt">CI/CD (GitHub Actions)</span><span class="lang lang-en">CI/CD (GitHub Actions)</span><span class="lang lang-es">CI/CD (GitHub Actions)</span></span>
-        </div>
-      </div></div>
+      </div>
     </section>
 
     <!-- EXPERIÊNCIA -->
     <section class="section" id="experiencia">
-      <h2 class="section-title"><span class="lang lang-pt">EXPERIÊNCIA & FORMAÇÃO</span><span class="lang lang-en">EXPERIENCE & EDUCATION</span><span class="lang lang-es">EXPERIENCIA Y FORMACIÓN</span></h2>
+      <h2 class="section-title"><span class="lang lang-pt">EXPERIÊNCIA & FORMAÇÃO</span><span
+          class="lang lang-en">EXPERIENCE & EDUCATION</span><span class="lang lang-es">EXPERIENCIA Y FORMACIÓN</span>
+      </h2>
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3><span class="lang lang-pt"><span class="lang lang-pt">Estagiário</span><span class="lang lang-en">Intern</span><span class="lang lang-es">Pasante</span> · Professor de Robótica e Programação</span><span class="lang lang-en">Intern · Robotics and Programming Teacher</span><span class="lang lang-es">Pasante · Profesor de Robótica y Programación</span></h3>
+            <h3><span class="lang lang-pt"><span class="lang lang-pt">Estagiário</span><span
+                  class="lang lang-en">Intern</span><span class="lang lang-es">Pasante</span> · Professor de Robótica e
+                Programação</span><span class="lang lang-en">Intern · Robotics and Programming Teacher</span><span
+                class="lang lang-es">Pasante · Profesor de Robótica y Programación</span></h3>
             <h4>HZN Labs · Divinópolis/MG <span>(2026)</span></h4>
-            <p><span class="lang lang-pt">Atuei no ensino de robótica e programação para alunos do 1º ao 8º ano do Ensino Fundamental e, em paralelo, desenvolvi softwares para a HZN Labs.</span><span class="lang lang-en">Taught robotics and programming to elementary and middle school students while developing software for HZN Labs in parallel.</span><span class="lang lang-es">Enseñé robótica y programación a estudiantes de primaria y secundaria, mientras desarrollaba software para HZN Labs en paralelo.</span></p>
+            <p><span class="lang lang-pt">Atuei no ensino de robótica e programação para alunos do 1º ao 8º ano do
+                Ensino Fundamental e, em paralelo, desenvolvi softwares para a HZN Labs.</span><span
+                class="lang lang-en">Taught robotics and programming to elementary and middle school students while
+                developing software for HZN Labs in parallel.</span><span class="lang lang-es">Enseñé robótica y
+                programación a estudiantes de primaria y secundaria, mientras desarrollaba software para HZN Labs en
+                paralelo.</span></p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>Santander Bootcamp | Fullstack Developer</h3>
-            <h4>Digital Innovation One · Santander <span>(<span class="lang lang-pt">Setembro 2026</span><span class="lang lang-en">September 2026</span><span class="lang lang-es">Septiembre 2026</span>)</span></h4>
-            <p><span class="lang lang-pt">Bootcamp full-stack com Java, Spring Boot, Spring Cloud, Angular e APIs REST. Projetos em microsserviços, CRUD, gestão de pessoas e controle de ponto. (125 horas).</span><span class="lang lang-en">Full-stack bootcamp covering Java, Spring Boot, Spring Cloud, Angular, and REST APIs. Projects in microservices, CRUD, HR management, and time tracking. (125 hours).</span><span class="lang lang-es">Bootcamp full-stack con Java, Spring Boot, Spring Cloud, Angular y APIs REST. Proyectos en microservicios, CRUD, gestión de personas y control de asistencia. (125 horas).</span></p>
+            <h4>Digital Innovation One · Santander <span>(<span class="lang lang-pt">Setembro 2026</span><span
+                  class="lang lang-en">September 2026</span><span class="lang lang-es">Septiembre 2026</span>)</span>
+            </h4>
+            <p><span class="lang lang-pt">Bootcamp full-stack com Java, Spring Boot, Spring Cloud, Angular e APIs REST.
+                Projetos em microsserviços, CRUD, gestão de pessoas e controle de ponto. (125 horas).</span><span
+                class="lang lang-en">Full-stack bootcamp covering Java, Spring Boot, Spring Cloud, Angular, and REST
+                APIs. Projects in microservices, CRUD, HR management, and time tracking. (125 hours).</span><span
+                class="lang lang-es">Bootcamp full-stack con Java, Spring Boot, Spring Cloud, Angular y APIs REST.
+                Proyectos en microservicios, CRUD, gestión de personas y control de asistencia. (125 horas).</span></p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3><span class="lang lang-pt">Scrum Master e Full-Stack no HealthBridge</span><span class="lang lang-en">Scrum Master and Full-Stack at HealthBridge</span><span class="lang lang-es">Scrum Master y Full-Stack en HealthBridge</span></h3>
-            <h4><span class="lang lang-pt">Projeto acadêmico · Saúde digital</span><span class="lang lang-en">Academic Project · Digital Health</span><span class="lang lang-es">Proyecto Académico · Salud Digital</span> <span>(2026)</span></h4>
-            <p><span class="lang lang-pt">Liderança ágil e desenvolvimento da plataforma de triagem com IA configurável, agendamento por proximidade, painéis, JWT, conformidade LGPD.</span><span class="lang lang-en">Agile leadership and development of an AI-configurable triage platform, proximity scheduling, dashboards, JWT, LGPD compliance.</span><span class="lang lang-es">Liderazgo ágil y desarrollo de plataforma de triaje con IA configurable, programación por proximidad, paneles, JWT, cumplimiento de LGPD.</span></p>
+            <h3><span class="lang lang-pt">Scrum Master e Full-Stack no HealthBridge</span><span
+                class="lang lang-en">Scrum Master and Full-Stack at HealthBridge</span><span class="lang lang-es">Scrum
+                Master y Full-Stack en HealthBridge</span></h3>
+            <h4><span class="lang lang-pt">Projeto acadêmico · Saúde digital</span><span class="lang lang-en">Academic
+                Project · Digital Health</span><span class="lang lang-es">Proyecto Académico · Salud Digital</span>
+              <span>(2026)</span></h4>
+            <p><span class="lang lang-pt">Liderança ágil e desenvolvimento da plataforma de triagem com IA configurável,
+                agendamento por proximidade, painéis, JWT, conformidade LGPD.</span><span class="lang lang-en">Agile
+                leadership and development of an AI-configurable triage platform, proximity scheduling, dashboards, JWT,
+                LGPD compliance.</span><span class="lang lang-es">Liderazgo ágil y desarrollo de plataforma de triaje
+                con IA configurable, programación por proximidad, paneles, JWT, cumplimiento de LGPD.</span></p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3><span class="lang lang-pt">Fundador & Lead Developer na Studio Vessel</span><span class="lang lang-en">Founder & Lead Developer at Studio Vessel</span><span class="lang lang-es">Fundador y Lead Developer en Studio Vessel</span></h3>
-            <h4><span class="lang lang-pt">Estúdio Indie de Software & Game Dev</span><span class="lang lang-en">Indie Software & Game Dev Studio</span><span class="lang lang-es">Estudio Indie de Software y Desarrollo de Juegos</span> <span>(2025 - <span class="lang lang-pt">Atual</span><span class="lang lang-en">Present</span><span class="lang lang-es">Actual</span>)</span></h4>
-            <p><span class="lang lang-pt">Liderança técnica e criação de produtos como o ACME HUB (planejador acadêmico), Whispers of the Mind (Metroidvania), Zero Echo e Between Game.</span><span class="lang lang-en">Technical leadership and product creation such as ACME HUB (academic planner), Whispers of the Mind (Metroidvania), Zero Echo, and Between Game.</span><span class="lang lang-es">Liderazgo técnico y creación de productos como ACME HUB (planificador académico), Whispers of the Mind (Metroidvania), Zero Echo y Between Game.</span></p>
+            <h3><span class="lang lang-pt">Fundador & Lead Developer na Studio Vessel</span><span
+                class="lang lang-en">Founder & Lead Developer at Studio Vessel</span><span class="lang lang-es">Fundador
+                y Lead Developer en Studio Vessel</span></h3>
+            <h4><span class="lang lang-pt">Estúdio Indie de Software & Game Dev</span><span class="lang lang-en">Indie
+                Software & Game Dev Studio</span><span class="lang lang-es">Estudio Indie de Software y Desarrollo de
+                Juegos</span> <span>(2025 - <span class="lang lang-pt">Atual</span><span
+                  class="lang lang-en">Present</span><span class="lang lang-es">Actual</span>)</span></h4>
+            <p><span class="lang lang-pt">Liderança técnica e criação de produtos como o ACME HUB (planejador
+                acadêmico), Whispers of the Mind (Metroidvania), Zero Echo e Between Game.</span><span
+                class="lang lang-en">Technical leadership and product creation such as ACME HUB (academic planner),
+                Whispers of the Mind (Metroidvania), Zero Echo, and Between Game.</span><span
+                class="lang lang-es">Liderazgo técnico y creación de productos como ACME HUB (planificador académico),
+                Whispers of the Mind (Metroidvania), Zero Echo y Between Game.</span></p>
           </div>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <h3><span class="lang lang-pt">Estagiário</span><span class="lang lang-en">Intern</span><span class="lang lang-es">Pasante</span></h3>
-            <h4><span class="lang lang-pt">Prefeitura de Divinópolis</span><span class="lang lang-en">City Hall of Divinópolis</span><span class="lang lang-es">Alcaldía de Divinópolis</span> <span>(2025 <span class="lang lang-pt">a</span><span class="lang lang-en">to</span><span class="lang lang-es">a</span> 2026)</span></h4>
-            <p><span class="lang lang-pt">Atuação em desenvolvimento, suporte tecnológico e automações em ambiente público.</span><span class="lang lang-en">Development, technological support, and automations in a public sector environment.</span><span class="lang lang-es">Desarrollo, soporte tecnológico y automatizaciones en un entorno del sector público.</span></p>
+            <h3><span class="lang lang-pt">Estagiário</span><span class="lang lang-en">Intern</span><span
+                class="lang lang-es">Pasante</span></h3>
+            <h4><span class="lang lang-pt">Prefeitura de Divinópolis</span><span class="lang lang-en">City Hall of
+                Divinópolis</span><span class="lang lang-es">Alcaldía de Divinópolis</span> <span>(2025 <span
+                  class="lang lang-pt">a</span><span class="lang lang-en">to</span><span class="lang lang-es">a</span>
+                2026)</span></h4>
+            <p><span class="lang lang-pt">Atuação em desenvolvimento, suporte tecnológico e automações em ambiente
+                público.</span><span class="lang lang-en">Development, technological support, and automations in a
+                public sector environment.</span><span class="lang lang-es">Desarrollo, soporte tecnológico y
+                automatizaciones en un entorno del sector público.</span></p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la Programación</span></h3>
-            <h4>CEFET-MG · <span class="lang lang-pt">Curso Técnico</span><span class="lang lang-en">Technical Course</span><span class="lang lang-es">Curso Técnico</span> <span>(2024)</span></h4>
-            <p><span class="lang lang-pt">Auxílio a alunos do técnico em lógica de programação e exercícios em C.</span><span class="lang lang-en">Assisting technical students with programming logic and exercises in C.</span><span class="lang lang-es">Ayuda a estudiantes técnicos en lógica de programación y ejercicios en C.</span></p>
+        <details class="expandable-section">
+          <summary class="btn-expand">
+            <span class="lang lang-pt">Ver Mais Experiências</span><span class="lang lang-en">View More Experiences</span><span class="lang lang-es">Ver Más Experiencias</span>
+          </summary>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching
+                  Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la
+                  Programación</span></h3>
+              <h4>UFCI/MG · <span class="lang lang-pt">Curso Técnico</span><span class="lang lang-en">Technical
+                  Course</span><span class="lang lang-es">Curso Técnico</span> <span>(2024)</span></h4>
+              <p><span class="lang lang-pt">Auxílio a alunos do técnico em lógica de programação e exercícios em
+                  C.</span><span class="lang lang-en">Assisting technical students with programming logic and exercises in
+                  C.</span><span class="lang lang-es">Ayuda a estudiantes técnicos en lógica de programación y ejercicios
+                  en C.</span></p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer Engineering</span><span class="lang lang-es">Ingeniería Informática</span></h3>
-            <h4>CEFET-MG · Campus Divinópolis <span>(2024 a 2029)</span></h4>
-            <p><span class="lang lang-pt">Formação em algoritmos, POO, banco de dados, eng. de software, redes, SO, linguagens formais, sinais e sistemas e arquitetura.</span><span class="lang lang-en">Training in algorithms, OOP, databases, software eng., networks, OS, formal languages, signals & systems, and architecture.</span><span class="lang lang-es">Formación en algoritmos, POO, bases de datos, ing. de software, redes, SO, lenguajes formales, señales y sistemas y arquitectura.</span></p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer
+                  Engineering</span><span class="lang lang-es">Ingeniería Informática</span></h3>
+              <h4>UFCI/MG · Campus Divinópolis <span>(2024 a 2029)</span></h4>
+              <p><span class="lang lang-pt">Formação em algoritmos, POO, banco de dados, eng. de software, redes, SO,
+                  linguagens formais, sinais e sistemas e arquitetura.</span><span class="lang lang-en">Training in
+                  algorithms, OOP, databases, software eng., networks, OS, formal languages, signals & systems, and
+                  architecture.</span><span class="lang lang-es">Formación en algoritmos, POO, bases de datos, ing. de
+                  software, redes, SO, lenguajes formales, señales y sistemas y arquitectura.</span></p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
-            <h4>Gráfica Express <span>(2023 a 2024)</span></h4>
-            <p><span class="lang lang-pt">Atuação em finalização e produção visual de materiais impressos e preparação de arquivos.</span><span class="lang lang-en">Worked in visual finishing and production of printed materials, including file preparation.</span><span class="lang lang-es">Trabajo en acabado visual y producción de materiales impresos, y preparación de archivos.</span></p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
+                  Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
+              <h4>Gráfica Express <span>(2023 a 2024)</span></h4>
+              <p><span class="lang lang-pt">Atuação em finalização e produção visual de materiais impressos e preparação
+                  de arquivos.</span><span class="lang lang-en">Worked in visual finishing and production of printed
+                  materials, including file preparation.</span><span class="lang lang-es">Trabajo en acabado visual y
+                  producción de materiales impresos, y preparación de archivos.</span></p>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
-            <h4>Poligráfica <span>(2017 a 2019)</span></h4>
-            <p><span class="lang lang-pt">Experiência sólida com preparação e finalização visual gráfica no setor de impressões.</span><span class="lang lang-en">Solid experience in graphic visual preparation and finishing within the printing sector.</span><span class="lang lang-es">Sólida experiencia en preparación visual y acabado gráfico en el sector de impresión.</span></p>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
+                  Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span></h3>
+              <h4>Poligráfica <span>(2017 a 2019)</span></h4>
+              <p><span class="lang lang-pt">Experiência sólida com preparação e finalização visual gráfica no setor de
+                  impressões.</span><span class="lang lang-en">Solid experience in graphic visual preparation and
+                  finishing within the printing sector.</span><span class="lang lang-es">Sólida experiencia en preparación
+                  visual y acabado gráfico en el sector de impresión.</span></p>
+            </div>
           </div>
-        </div>
+        </details>
       </div>
     </section>
 
     <!-- PROJETOS: DESTAQUES -->
     <section class="section" id="projetos">
-      <h2 class="section-title"><span class="lang lang-pt">PROJETOS: DESTAQUES</span><span class="lang lang-en">FEATURED PROJECTS</span><span class="lang lang-es">PROYECTOS DESTACADOS</span></h2>
+      <h2 class="section-title"><span class="lang lang-pt">PROJETOS: DESTAQUES</span><span class="lang lang-en">FEATURED
+          PROJECTS</span><span class="lang lang-es">PROYECTOS DESTACADOS</span></h2>
       <div class="grid">
-        
+
         <div class="card card-light" style="display:flex;flex-direction:column;">
           <div class="card-header">
             <h3 class="card-title">ACME HUB</h3>
             <span class="card-pill">NEXT.JS · SUPABASE</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt"><strong>ACME HUB</strong> — planejador acadêmico gratuito para o CEFET-MG. Sincroniza o SIGAA via Playwright, simulador de notas e mapa do PPC.</span><span class="lang lang-en"><strong>ACME HUB</strong> — free academic planner for CEFET-MG. Synchronizes SIGAA via Playwright, grade simulator, and PPC map.</span><span class="lang lang-es"><strong>ACME HUB</strong> — planificador académico gratuito para CEFET-MG. Sincroniza SIGAA a través de Playwright, simulador de notas y mapa del PPC.</span></p>
+          <p class="card-desc"><span class="lang lang-pt"><strong>ACME HUB</strong> — planejador acadêmico gratuito para
+              o UFCI/MG. Sincroniza o SIGAA via Playwright, simulador de notas e mapa do PPC.</span><span
+              class="lang lang-en"><strong>ACME HUB</strong> — free academic planner for UFCI/MG. Synchronizes SIGAA
+              via Playwright, grade simulator, and PPC map.</span><span class="lang lang-es"><strong>ACME HUB</strong> —
+              planificador académico gratuito para UFCI/MG. Sincroniza SIGAA a través de Playwright, simulador de notas
+              y mapa del PPC.</span></p>
           <div class="card-footer" style="display: flex; gap: 16px; margin-top: auto;">
-            <a href="https://github.com/KairoHenrique/CEFET-Academic-Planner" target="_blank" style="text-decoration: none;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></a>
-            <a href="https://acmehub.com.br" target="_blank" style="text-decoration: none;"><span class="card-link"><span class="lang lang-pt">Acessar Site →</span><span class="lang lang-en">Visit Site →</span><span class="lang lang-es">Visitar Sitio →</span></span></a>
+            <a href="https://github.com/KairoHenrique/UFCI-Academic-Planner" target="_blank"
+              style="text-decoration: none;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub
+                  →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub
+                  →</span></span></a>
+            <a href="https://acmehub.com.br" target="_blank" style="text-decoration: none;"><span
+                class="card-link"><span class="lang lang-pt">Acessar Site →</span><span class="lang lang-en">Visit Site
+                  →</span><span class="lang lang-es">Visitar Sitio →</span></span></a>
           </div>
         </div>
 
@@ -254,7 +377,12 @@
             <h3 class="card-title">EASY TRIP</h3>
             <span class="card-pill">REACT NATIVE</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt">App mobile de planejamento de viagens. Roteiros com IA, rateio de gastos e <strong>Radar da Noite</strong> (Google Places + IA). Backend Fastify.</span><span class="lang lang-en">Mobile travel planning app. AI itineraries, expense splitting, and <strong>Night Radar</strong> (Google Places + AI). Fastify backend.</span><span class="lang lang-es">Aplicación móvil de planificación de viajes. Itinerarios con IA, división de gastos y <strong>Radar Nocturno</strong> (Google Places + IA). Backend Fastify.</span></p>
+          <p class="card-desc"><span class="lang lang-pt">App mobile de planejamento de viagens. Roteiros com IA, rateio
+              de gastos e <strong>Radar da Noite</strong> (Google Places + IA). Backend Fastify.</span><span
+              class="lang lang-en">Mobile travel planning app. AI itineraries, expense splitting, and <strong>Night
+                Radar</strong> (Google Places + AI). Fastify backend.</span><span class="lang lang-es">Aplicación móvil
+              de planificación de viajes. Itinerarios con IA, división de gastos y <strong>Radar Nocturno</strong>
+              (Google Places + IA). Backend Fastify.</span></p>
         </div>
 
         <a href="https://github.com/KairoHenrique/HealthBridge" target="_blank" class="card card-light">
@@ -262,8 +390,14 @@
             <h3 class="card-title">HEALTHBRIDGE</h3>
             <span class="card-pill">PYTHON · IA</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt">Plataforma de triagem médica com IA multi-provider, chatbot, agendamento por proximidade (Haversine), JWT e auditoria LGPD.</span><span class="lang lang-en">Multi-provider AI medical triage platform, chatbot, proximity scheduling (Haversine), JWT, and LGPD audit.</span><span class="lang lang-es">Plataforma de triaje médico con IA multiproveedor, chatbot, programación por proximidad (Haversine), JWT y auditoría LGPD.</span></p>
-          <div class="card-footer"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+          <p class="card-desc"><span class="lang lang-pt">Plataforma de triagem médica com IA multi-provider, chatbot,
+              agendamento por proximidade (Haversine), JWT e auditoria LGPD.</span><span
+              class="lang lang-en">Multi-provider AI medical triage platform, chatbot, proximity scheduling (Haversine),
+              JWT, and LGPD audit.</span><span class="lang lang-es">Plataforma de triaje médico con IA multiproveedor,
+              chatbot, programación por proximidad (Haversine), JWT y auditoría LGPD.</span></p>
+          <div class="card-footer"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span
+                class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span>
+          </div>
         </a>
 
         <div class="card card-dark" style="display:flex;flex-direction:column;">
@@ -271,30 +405,57 @@
             <h3 class="card-title">SEMUSA</h3>
             <span class="card-pill">REACT · VITE</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt">Dashboard de indicadores de saúde pública para apoio à gestão. Painéis com gráficos; React + Vite + Recharts. Projeto aplicado em andamento.</span><span class="lang lang-en">Public health indicators dashboard for management support. Panels with charts; React + Vite + Recharts. Ongoing applied project.</span><span class="lang lang-es">Panel de indicadores de salud pública para apoyo a la gestión. Paneles con gráficos; React + Vite + Recharts. Proyecto aplicado en curso.</span></p>
+          <p class="card-desc"><span class="lang lang-pt">Dashboard de indicadores de saúde pública para apoio à gestão.
+              Painéis com gráficos; React + Vite + Recharts. Projeto aplicado em andamento.</span><span
+              class="lang lang-en">Public health indicators dashboard for management support. Panels with charts; React
+              + Vite + Recharts. Ongoing applied project.</span><span class="lang lang-es">Panel de indicadores de salud
+              pública para apoyo a la gestión. Paneles con gráficos; React + Vite + Recharts. Proyecto aplicado en
+              curso.</span></p>
         </div>
 
-        <a href="https://github.com/KairoHenrique/Monitoramento-de-Tendencias-em-Manchetes-de-Noticias" target="_blank" class="card card-light" style="display:flex;flex-direction:column;">
-          <div class="card-header"><h3 class="card-title">PROCESSADOR C++</h3><span class="card-pill">C++17</span></div>
-          <p class="card-desc"><span class="lang lang-pt">Pipeline em C++17 processando 1,24M manchetes em ~0,59s via mmap multithread, Hash e Jaccard.</span><span class="lang lang-en">C++17 pipeline processing 1.24M headlines in ~0.59s via multithreaded mmap, Hash, and Jaccard.</span><span class="lang lang-es">Pipeline en C++17 procesando 1,24M titulares en ~0,59s mediante mmap multihilo, Hash y Jaccard.</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+        <a href="https://github.com/KairoHenrique/Monitoramento-de-Tendencias-em-Manchetes-de-Noticias" target="_blank"
+          class="card card-light" style="display:flex;flex-direction:column;">
+          <div class="card-header">
+            <h3 class="card-title">PROCESSADOR C++</h3><span class="card-pill">C++17</span>
+          </div>
+          <p class="card-desc"><span class="lang lang-pt">Pipeline em C++17 processando 1,24M manchetes em ~0,59s via
+              mmap multithread, Hash e Jaccard.</span><span class="lang lang-en">C++17 pipeline processing 1.24M
+              headlines in ~0.59s via multithreaded mmap, Hash, and Jaccard.</span><span class="lang lang-es">Pipeline
+              en C++17 procesando 1,24M titulares en ~0,59s mediante mmap multihilo, Hash y Jaccard.</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
 
-        <a href="https://github.com/KairoHenrique" target="_blank" class="card card-dark" style="display:flex;flex-direction:column;">
+        <a href="https://github.com/KairoHenrique" target="_blank" class="card card-dark"
+          style="display:flex;flex-direction:column;">
           <div class="card-header">
             <h3 class="card-title">WHISPERS OF THE MIND</h3>
             <span class="card-pill">GAMEMAKER</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt">Metroidvania 2D em pixel art. Acompanhe Luna em um mundo de sombras enquanto enfrenta seus próprios demônios — sobre medos e autodescoberta.</span><span class="lang lang-en">2D pixel art Metroidvania. Join Luna in a world of shadows as she faces her own demons — about fears and self-discovery.</span><span class="lang lang-es">Metroidvania 2D en pixel art. Únete a Luna en un mundo de sombras mientras se enfrenta a sus propios demonios — sobre los miedos y el autodescubrimiento.</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+          <p class="card-desc"><span class="lang lang-pt">Metroidvania 2D em pixel art. Acompanhe Luna em um mundo de
+              sombras enquanto enfrenta seus próprios demônios — sobre medos e autodescoberta.</span><span
+              class="lang lang-en">2D pixel art Metroidvania. Join Luna in a world of shadows as she faces her own
+              demons — about fears and self-discovery.</span><span class="lang lang-es">Metroidvania 2D en pixel art.
+              Únete a Luna en un mundo de sombras mientras se enfrenta a sus propios demonios — sobre los miedos y el
+              autodescubrimiento.</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
 
       </div>
     </section>
 
+    <details class="expandable-section" style="margin-bottom:48px;">
+      <summary class="btn-expand">
+        <span class="lang lang-pt">Ver Mais Projetos</span><span class="lang lang-en">View More Projects</span><span class="lang lang-es">Ver Más Proyectos</span>
+      </summary>
+      
     <!-- PROJETOS: GAMES -->
     <section class="section">
-      <h2 class="section-title"><span class="lang lang-pt">GAME DEV</span><span class="lang lang-en">GAME DEV</span><span class="lang lang-es">GAME DEV</span></h2>
+      <h2 class="section-title"><span class="lang lang-pt">GAME DEV</span><span class="lang lang-en">GAME
+          DEV</span><span class="lang lang-es">GAME DEV</span></h2>
       <div class="grid">
 
         <a href="https://github.com/KairoHenrique" target="_blank" class="card card-light">
@@ -302,8 +463,14 @@
             <h3 class="card-title">ZERO ECHO</h3>
             <span class="card-pill">UNITY 2D</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt">Jogo imersivo focado em mecânicas baseadas em eco e design de som para revelar o ambiente de suspense.</span><span class="lang lang-en">Immersive game focused on echo-based mechanics and sound design to reveal the suspenseful environment.</span><span class="lang lang-es">Juego inmersivo centrado en mecánicas basadas en el eco y diseño de sonido para revelar el entorno de suspenso.</span></p>
-          <div class="card-footer"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+          <p class="card-desc"><span class="lang lang-pt">Jogo imersivo focado em mecânicas baseadas em eco e design de
+              som para revelar o ambiente de suspense.</span><span class="lang lang-en">Immersive game focused on
+              echo-based mechanics and sound design to reveal the suspenseful environment.</span><span
+              class="lang lang-es">Juego inmersivo centrado en mecánicas basadas en el eco y diseño de sonido para
+              revelar el entorno de suspenso.</span></p>
+          <div class="card-footer"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span
+                class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span>
+          </div>
         </a>
 
         <a href="https://github.com/KairoHenrique/Between-Game" target="_blank" class="card card-dark">
@@ -311,8 +478,13 @@
             <h3 class="card-title">BETWEEN GAME</h3>
             <span class="card-pill">LUA · TIC-80</span>
           </div>
-          <p class="card-desc"><span class="lang lang-pt">Boss rush 2D em Lua para TIC-80. Ação rápida com chefes desafiadores e visual retro pixel art.</span><span class="lang lang-en">2D Boss rush in Lua for TIC-80. Fast action with challenging bosses and retro pixel art visuals.</span><span class="lang lang-es">Boss rush 2D en Lua para TIC-80. Acción rápida con jefes desafiantes y gráficos retro pixel art.</span></p>
-          <div class="card-footer"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+          <p class="card-desc"><span class="lang lang-pt">Boss rush 2D em Lua para TIC-80. Ação rápida com chefes
+              desafiadores e visual retro pixel art.</span><span class="lang lang-en">2D Boss rush in Lua for TIC-80.
+              Fast action with challenging bosses and retro pixel art visuals.</span><span class="lang lang-es">Boss
+              rush 2D en Lua para TIC-80. Acción rápida con jefes desafiantes y gráficos retro pixel art.</span></p>
+          <div class="card-footer"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span
+                class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span>
+          </div>
         </a>
 
       </div>
@@ -320,168 +492,385 @@
 
     <!-- PROJETOS: BOOTCAMP -->
     <section class="section">
-      <h2 class="section-title"><span class="lang lang-pt">SANTANDER BOOTCAMP · FULLSTACK</span><span class="lang lang-en">SANTANDER BOOTCAMP · FULLSTACK</span><span class="lang lang-es">SANTANDER BOOTCAMP · FULLSTACK</span></h2>
+      <h2 class="section-title"><span class="lang lang-pt">SANTANDER BOOTCAMP · FULLSTACK</span><span
+          class="lang lang-en">SANTANDER BOOTCAMP · FULLSTACK</span><span class="lang lang-es">SANTANDER BOOTCAMP ·
+          FULLSTACK</span></h2>
       <div class="grid">
-        <a href="https://github.com/KairoHenrique/santander-bootcamp-microsservicos-spring-cloud" target="_blank" class="card card-light" style="display:flex;flex-direction:column;">
-          <div class="card-header"><h3 class="card-title"><span class="lang lang-pt">MICROSSERVIÇOS</span><span class="lang lang-en">MICROSERVICES</span><span class="lang lang-es">MICROSERVICIOS</span></h3><span class="card-pill">SPRING CLOUD</span></div>
-          <p class="card-desc"><span class="lang lang-pt">Arquitetura multi-módulo com Eureka, Config Server, API Gateway, catálogo de produtos. Java 17.</span><span class="lang lang-en">Multi-module architecture with Eureka, Config Server, API Gateway, product catalog. Java 17.</span><span class="lang lang-es">Arquitectura multimódulo con Eureka, Config Server, API Gateway, catálogo de productos. Java 17.</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+        <a href="https://github.com/KairoHenrique/santander-bootcamp-microsservicos-spring-cloud" target="_blank"
+          class="card card-light" style="display:flex;flex-direction:column;">
+          <div class="card-header">
+            <h3 class="card-title"><span class="lang lang-pt">MICROSSERVIÇOS</span><span
+                class="lang lang-en">MICROSERVICES</span><span class="lang lang-es">MICROSERVICIOS</span></h3><span
+              class="card-pill">SPRING CLOUD</span>
+          </div>
+          <p class="card-desc"><span class="lang lang-pt">Arquitetura multi-módulo com Eureka, Config Server, API
+              Gateway, catálogo de produtos. Java 17.</span><span class="lang lang-en">Multi-module architecture with
+              Eureka, Config Server, API Gateway, product catalog. Java 17.</span><span
+              class="lang lang-es">Arquitectura multimódulo con Eureka, Config Server, API Gateway, catálogo de
+              productos. Java 17.</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
-        <a href="https://github.com/KairoHenrique/santander-bootcamp-gerenciador-salas-reuniao" target="_blank" class="card card-dark" style="display:flex;flex-direction:column;">
-          <div class="card-header"><h3 class="card-title"><span class="lang lang-pt">SALAS DE REUNIÃO</span><span class="lang lang-en">MEETING ROOMS</span><span class="lang lang-es">SALAS DE REUNIÓN</span></h3><span class="card-pill">ANGULAR · JAVA</span></div>
-          <p class="card-desc"><span class="lang lang-pt">CRUD full-stack de salas com API Spring Boot + H2 e SPA Angular 17. Validação e Swagger.</span><span class="lang lang-en">Full-stack room CRUD with Spring Boot + H2 API and Angular 17 SPA. Validation and Swagger.</span><span class="lang lang-es">CRUD full-stack de salas con API Spring Boot + H2 y SPA Angular 17. Validación y Swagger.</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+        <a href="https://github.com/KairoHenrique/santander-bootcamp-gerenciador-salas-reuniao" target="_blank"
+          class="card card-dark" style="display:flex;flex-direction:column;">
+          <div class="card-header">
+            <h3 class="card-title"><span class="lang lang-pt">SALAS DE REUNIÃO</span><span class="lang lang-en">MEETING
+                ROOMS</span><span class="lang lang-es">SALAS DE REUNIÓN</span></h3><span class="card-pill">ANGULAR ·
+              JAVA</span>
+          </div>
+          <p class="card-desc"><span class="lang lang-pt">CRUD full-stack de salas com API Spring Boot + H2 e SPA
+              Angular 17. Validação e Swagger.</span><span class="lang lang-en">Full-stack room CRUD with Spring Boot +
+              H2 API and Angular 17 SPA. Validation and Swagger.</span><span class="lang lang-es">CRUD full-stack de
+              salas con API Spring Boot + H2 y SPA Angular 17. Validación y Swagger.</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
-        <a href="https://github.com/KairoHenrique/santander-bootcamp-controle-ponto-acesso" target="_blank" class="card card-light" style="display:flex;flex-direction:column;">
-          <div class="card-header"><h3 class="card-title"><span class="lang lang-pt">CONTROLE DE PONTO</span><span class="lang lang-en">TIME TRACKING</span><span class="lang lang-es">CONTROL DE ASISTENCIA</span></h3><span class="card-pill">SPRING BOOT</span></div>
-          <p class="card-desc"><span class="lang lang-pt">Sistema de controle de ponto e acesso corporativo, modelagem de entidades e gestão de jornada.</span><span class="lang lang-en">Corporate time tracking and access control system, entity modeling, and shift management.</span><span class="lang lang-es">Sistema de control de asistencia y acceso corporativo, modelado de entidades y gestión de turnos.</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+        <a href="https://github.com/KairoHenrique/santander-bootcamp-controle-ponto-acesso" target="_blank"
+          class="card card-light" style="display:flex;flex-direction:column;">
+          <div class="card-header">
+            <h3 class="card-title"><span class="lang lang-pt">CONTROLE DE PONTO</span><span class="lang lang-en">TIME
+                TRACKING</span><span class="lang lang-es">CONTROL DE ASISTENCIA</span></h3><span
+              class="card-pill">SPRING BOOT</span>
+          </div>
+          <p class="card-desc"><span class="lang lang-pt">Sistema de controle de ponto e acesso corporativo, modelagem
+              de entidades e gestão de jornada.</span><span class="lang lang-en">Corporate time tracking and access
+              control system, entity modeling, and shift management.</span><span class="lang lang-es">Sistema de control
+              de asistencia y acceso corporativo, modelado de entidades y gestión de turnos.</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
       </div>
     </section>
 
     <!-- ALGORITMOS -->
     <section class="section">
-      <h2 class="section-title"><span class="lang lang-pt">ALGORITMOS & SISTEMAS</span><span class="lang lang-en">ALGORITHMS & SYSTEMS</span><span class="lang lang-es">ALGORITMOS Y SISTEMAS</span></h2>
+      <h2 class="section-title"><span class="lang lang-pt">ALGORITMOS & SISTEMAS</span><span
+          class="lang lang-en">ALGORITHMS & SYSTEMS</span><span class="lang lang-es">ALGORITMOS Y SISTEMAS</span></h2>
       <div class="grid">
-        <a href="https://github.com/KairoHenrique/Algoritmo-Genetico-Ajuste-Linear" target="_blank" class="card card-light" style="display:flex;flex-direction:column;">
-          <div class="card-header"><h3 class="card-title"><span class="lang lang-pt">ALGORITMO GENÉTICO</span><span class="lang lang-en">GENETIC ALGORITHM</span><span class="lang lang-es">ALGORITMO GENÉTICO</span></h3><span class="card-pill">C++ · IA</span></div>
-          <p class="card-desc"><span class="lang lang-pt">Simulador evolutivo em C++ para encontrar coeficientes ótimos de regressão linear (MSE).</span><span class="lang lang-en">Evolutionary simulator in C++ to find optimal linear regression coefficients (MSE).</span><span class="lang lang-es">Simulador evolutivo en C++ para encontrar coeficientes óptimos de regresión lineal (MSE).</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+        <a href="https://github.com/KairoHenrique/Algoritmo-Genetico-Ajuste-Linear" target="_blank"
+          class="card card-light" style="display:flex;flex-direction:column;">
+          <div class="card-header">
+            <h3 class="card-title"><span class="lang lang-pt">ALGORITMO GENÉTICO</span><span
+                class="lang lang-en">GENETIC ALGORITHM</span><span class="lang lang-es">ALGORITMO GENÉTICO</span></h3>
+            <span class="card-pill">C++ · IA</span>
+          </div>
+          <p class="card-desc"><span class="lang lang-pt">Simulador evolutivo em C++ para encontrar coeficientes ótimos
+              de regressão linear (MSE).</span><span class="lang lang-en">Evolutionary simulator in C++ to find optimal
+              linear regression coefficients (MSE).</span><span class="lang lang-es">Simulador evolutivo en C++ para
+              encontrar coeficientes óptimos de regresión lineal (MSE).</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
-        <a href="https://github.com/KairoHenrique/Sistema-de-Gestao-de-Filas-em-Supermercado" target="_blank" class="card card-dark" style="display:flex;flex-direction:column;">
-          <div class="card-header"><h3 class="card-title"><span class="lang lang-pt">GESTÃO DE FILAS</span><span class="lang lang-en">QUEUE MANAGEMENT</span><span class="lang lang-es">GESTIÓN DE COLAS</span></h3><span class="card-pill">C</span></div>
-          <p class="card-desc"><span class="lang lang-pt">Filas em C com estruturas de dados para simulação de atendimento e otimização de fluxo.</span><span class="lang lang-en">C queues with data structures for service simulation and flow optimization.</span><span class="lang lang-es">Colas en C con estructuras de datos para simulación de servicio y optimización de flujo.</span></p>
-          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en GitHub →</span></span></div>
+        <a href="https://github.com/KairoHenrique/Sistema-de-Gestao-de-Filas-em-Supermercado" target="_blank"
+          class="card card-dark" style="display:flex;flex-direction:column;">
+          <div class="card-header">
+            <h3 class="card-title"><span class="lang lang-pt">GESTÃO DE FILAS</span><span class="lang lang-en">QUEUE
+                MANAGEMENT</span><span class="lang lang-es">GESTIÓN DE COLAS</span></h3><span class="card-pill">C</span>
+          </div>
+          <p class="card-desc"><span class="lang lang-pt">Filas em C com estruturas de dados para simulação de
+              atendimento e otimização de fluxo.</span><span class="lang lang-en">C queues with data structures for
+              service simulation and flow optimization.</span><span class="lang lang-es">Colas en C con estructuras de
+              datos para simulación de servicio y optimización de flujo.</span></p>
+          <div class="card-footer" style="margin-top: auto;"><span class="card-link"><span class="lang lang-pt">Ver no
+                GitHub →</span><span class="lang lang-en">View on GitHub →</span><span class="lang lang-es">Ver en
+                GitHub →</span></span></div>
         </a>
       </div>
       <div style="text-align: center; margin-top: 48px;">
-        <a href="https://github.com/KairoHenrique?tab=repositories" target="_blank" class="btn btn-primary" style="font-size: 1rem; padding: 12px 32px;">
-          <span class="lang lang-pt">VER TODOS OS PROJETOS NO GITHUB</span><span class="lang lang-en">VIEW ALL PROJECTS ON GITHUB</span><span class="lang lang-es">VER TODOS LOS PROYECTOS EN GITHUB</span>
+        <a href="https://github.com/KairoHenrique?tab=repositories" target="_blank" class="btn btn-primary"
+          style="font-size: 1rem; padding: 12px 32px;">
+          <span class="lang lang-pt">VER TODOS OS PROJETOS NO GITHUB</span><span class="lang lang-en">VIEW ALL PROJECTS
+            ON GITHUB</span><span class="lang lang-es">VER TODOS LOS PROYECTOS EN GITHUB</span>
         </a>
       </div>
     </section>
+    </details>
 
     <!-- CERTIFICADOS (DIVIDIDOS EM ETAPAS) -->
     <section class="section" id="certificados">
-      <h2 class="section-title" style="margin-bottom: 8px;"><span class="lang lang-pt">CERTIFICAÇÕES E CURSOS</span><span class="lang lang-en">CERTIFICATIONS & COURSES</span><span class="lang lang-es">CERTIFICACIONES Y CURSOS</span></h2>
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 32px; display: flex; align-items: center; gap: 8px; font-family: var(--font-body); opacity: 0.7;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-        <span class="lang lang-pt">Clique nos cartões para visualizar o certificado em PDF</span><span class="lang lang-en">Click on the cards to view the certificate in PDF</span><span class="lang lang-es">Haz clic en las tarjetas para ver el certificado en PDF</span>
+      <h2 class="section-title" style="margin-bottom: 8px;"><span class="lang lang-pt">CERTIFICAÇÕES E
+          CURSOS</span><span class="lang lang-en">CERTIFICATIONS & COURSES</span><span
+          class="lang lang-es">CERTIFICACIONES Y CURSOS</span></h2>
+      <p
+        style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 32px; display: flex; align-items: center; gap: 8px; font-family: var(--font-body); opacity: 0.7;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        <span class="lang lang-pt">Clique nos cartões para visualizar o certificado em PDF</span><span
+          class="lang lang-en">Click on the cards to view the certificate in PDF</span><span class="lang lang-es">Haz
+          clic en las tarjetas para ver el certificado en PDF</span>
       </p>
 
-      <h3 class="subsection-title"><span class="lang lang-pt">Tecnologia & Programação</span><span class="lang lang-en">Technology & Programming</span><span class="lang lang-es">Tecnología y Programación</span></h3>
+      <h3 class="subsection-title"><span class="lang lang-pt">Tecnologia & Programação</span><span
+          class="lang lang-en">Technology & Programming</span><span class="lang lang-es">Tecnología y
+          Programación</span></h3>
       <div class="grid-compact" style="margin-bottom: 48px;">
-        <a href="assets/certificados/Certificado_Santander_Bootcamp.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title">Santander Bootcamp</h3><span class="card-pill"><span class="lang lang-pt">125 HORAS</span><span class="lang lang-en">125 HOURS</span><span class="lang lang-es">125 HORAS</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Formação Fullstack Developer focada em microsserviços Java e Angular (DIO).</span><span class="lang lang-en">Fullstack Developer training focused on Java and Angular microservices (DIO).</span><span class="lang lang-es">Formación Fullstack Developer centrada en microservicios Java y Angular (DIO).</span></p>
+        <a href="assets/certificados/Certificado_Santander_Bootcamp.pdf" target="_blank"
+          class="card card-light card-compact">
+          <h3 class="card-title">Santander Bootcamp</h3><span class="card-pill"><span class="lang lang-pt">125
+              HORAS</span><span class="lang lang-en">125 HOURS</span><span class="lang lang-es">125 HORAS</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Formação Fullstack Developer focada em microsserviços Java e Angular
+              (DIO).</span><span class="lang lang-en">Fullstack Developer training focused on Java and Angular
+              microservices (DIO).</span><span class="lang lang-es">Formación Fullstack Developer centrada en
+              microservicios Java y Angular (DIO).</span></p>
         </a>
         <a href="assets/certificados/ai900.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title">Microsoft AI-900</h3><span class="card-pill"><span class="lang lang-pt">CERTIFICAÇÃO</span><span class="lang lang-en">CERTIFICATION</span><span class="lang lang-es">CERTIFICACIÓN</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Certificação oficial em fundamentos de Inteligência Artificial da Microsoft Azure.</span><span class="lang lang-en">Official Microsoft Azure Artificial Intelligence fundamentals certification.</span><span class="lang lang-es">Certificación oficial en fundamentos de Inteligencia Artificial de Microsoft Azure.</span></p>
+          <h3 class="card-title">Microsoft AI-900</h3><span class="card-pill"><span
+              class="lang lang-pt">CERTIFICAÇÃO</span><span class="lang lang-en">CERTIFICATION</span><span
+              class="lang lang-es">CERTIFICACIÓN</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Certificação oficial em fundamentos de Inteligência Artificial da Microsoft
+              Azure.</span><span class="lang lang-en">Official Microsoft Azure Artificial Intelligence fundamentals
+              certification.</span><span class="lang lang-es">Certificación oficial en fundamentos de Inteligencia
+              Artificial de Microsoft Azure.</span></p>
         </a>
-        <a href="assets/certificados/Linguagem de Programação Python (53 horas).pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Trilha Python (53h)</span><span class="lang lang-en">Python Track (53h)</span><span class="lang lang-es">Ruta Python (53h)</span></h3><span class="card-pill"><span class="lang lang-pt">TRILHA</span><span class="lang lang-en">TRACK</span><span class="lang lang-es">RUTA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Trilha completa da Fundação Bradesco, englobando 5 cursos de desenvolvimento back-end e desktop.</span><span class="lang lang-en">Complete track from Fundação Bradesco, covering 5 back-end and desktop development courses.</span><span class="lang lang-es">Ruta completa de la Fundação Bradesco, que abarca 5 cursos de desarrollo back-end y de escritorio.</span></p>
+        <details class="expandable-section" style="grid-column: 1 / -1;">
+          <summary class="btn-expand" style="margin-bottom: 16px;">
+            <span class="lang lang-pt">Ver Mais Certificados</span><span class="lang lang-en">View More Certifications</span><span class="lang lang-es">Ver Más Certificaciones</span>
+          </summary>
+          <div class="grid-compact">
+        <a href="assets/certificados/Linguagem de Programação Python (53 horas).pdf" target="_blank"
+          class="card card-light card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Trilha Python (53h)</span><span class="lang lang-en">Python
+              Track (53h)</span><span class="lang lang-es">Ruta Python (53h)</span></h3><span class="card-pill"><span
+              class="lang lang-pt">TRILHA</span><span class="lang lang-en">TRACK</span><span
+              class="lang lang-es">RUTA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Trilha completa da Fundação Bradesco, englobando 5 cursos de desenvolvimento back-end
+              e desktop.</span><span class="lang lang-en">Complete track from Fundação Bradesco, covering 5 back-end and
+              desktop development courses.</span><span class="lang lang-es">Ruta completa de la Fundação Bradesco, que
+              abarca 5 cursos de desarrollo back-end y de escritorio.</span></p>
         </a>
-        <a href="assets/certificados/Certificado INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Python: Intro POO</span><span class="lang lang-en">Python: Intro to OOP</span><span class="lang lang-es">Python: Intro a POO</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Módulo focado nos conceitos fundamentais de Programação Orientada a Objetos.</span><span class="lang lang-en">Module focused on the fundamental concepts of Object-Oriented Programming.</span><span class="lang lang-es">Módulo centrado en los conceptos fundamentales de la Programación Orientada a Objetos.</span></p>
+        <a href="assets/certificados/Certificado INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA.pdf" target="_blank"
+          class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Python: Intro POO</span><span class="lang lang-en">Python:
+              Intro to OOP</span><span class="lang lang-es">Python: Intro a POO</span></h3><span class="card-pill"><span
+              class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span
+              class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Módulo focado nos conceitos fundamentais de Programação Orientada a
+              Objetos.</span><span class="lang lang-en">Module focused on the fundamental concepts of Object-Oriented
+              Programming.</span><span class="lang lang-es">Módulo centrado en los conceptos fundamentales de la
+              Programación Orientada a Objetos.</span></p>
         </a>
         <a href="assets/certificados/pooo.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Python: POO na Prática</span><span class="lang lang-en">Python: OOP in Practice</span><span class="lang lang-es">Python: POO en la Práctica</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Desenvolvimento avançado orientado a objetos utilizando a linguagem Python.</span><span class="lang lang-en">Advanced object-oriented development using the Python language.</span><span class="lang lang-es">Desarrollo avanzado orientado a objetos utilizando el lenguaje Python.</span></p>
+          <h3 class="card-title"><span class="lang lang-pt">Python: POO na Prática</span><span
+              class="lang lang-en">Python: OOP in Practice</span><span class="lang lang-es">Python: POO en la
+              Práctica</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span
+              class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Desenvolvimento avançado orientado a objetos utilizando a linguagem
+              Python.</span><span class="lang lang-en">Advanced object-oriented development using the Python
+              language.</span><span class="lang lang-es">Desarrollo avanzado orientado a objetos utilizando el lenguaje
+              Python.</span></p>
         </a>
-        <a href="assets/certificados/Projeto com Interface Gráfica Utilizando a Linguagem Python.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Python: Interface Gráfica</span><span class="lang lang-en">Python: GUI</span><span class="lang lang-es">Python: Interfaz Gráfica</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Criação de projetos práticos com aplicações desktop e interfaces gráficas interativas.</span><span class="lang lang-en">Creation of practical projects with desktop applications and interactive graphical interfaces.</span><span class="lang lang-es">Creación de proyectos prácticos con aplicaciones de escritorio e interfaces gráficas interactivas.</span></p>
+        <a href="assets/certificados/Projeto com Interface Gráfica Utilizando a Linguagem Python.pdf" target="_blank"
+          class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Python: Interface Gráfica</span><span
+              class="lang lang-en">Python: GUI</span><span class="lang lang-es">Python: Interfaz Gráfica</span></h3>
+          <span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span
+              class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Criação de projetos práticos com aplicações desktop e interfaces gráficas
+              interativas.</span><span class="lang lang-en">Creation of practical projects with desktop applications and
+              interactive graphical interfaces.</span><span class="lang lang-es">Creación de proyectos prácticos con
+              aplicaciones de escritorio e interfaces gráficas interactivas.</span></p>
         </a>
         <a href="assets/certificados/projeto pyhon.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Python: Banco de Dados</span><span class="lang lang-en">Python: Databases</span><span class="lang lang-es">Python: Bases de Datos</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Desenvolvimento de um projeto completo em Python com estrutura de banco de dados e SQL.</span><span class="lang lang-en">Development of a complete Python project with database structure and SQL.</span><span class="lang lang-es">Desarrollo de un proyecto completo en Python con estructura de base de datos y SQL.</span></p>
+          <h3 class="card-title"><span class="lang lang-pt">Python: Banco de Dados</span><span
+              class="lang lang-en">Python: Databases</span><span class="lang lang-es">Python: Bases de Datos</span></h3>
+          <span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span
+              class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Desenvolvimento de um projeto completo em Python com estrutura de banco de dados e
+              SQL.</span><span class="lang lang-en">Development of a complete Python project with database structure and
+              SQL.</span><span class="lang lang-es">Desarrollo de un proyecto completo en Python con estructura de base
+              de datos y SQL.</span></p>
         </a>
         <a href="assets/certificados/site.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">HTML e CSS na Prática</span><span class="lang lang-en">HTML & CSS in Practice</span><span class="lang lang-es">HTML y CSS en la Práctica</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Criação de projetos front-end estruturados com HTML5 e estilizados com CSS3 (Fundação Bradesco).</span><span class="lang lang-en">Creation of structured front-end projects with HTML5 and styled with CSS3 (Fundação Bradesco).</span><span class="lang lang-es">Creación de proyectos front-end estructurados con HTML5 y estilizados con CSS3 (Fundação Bradesco).</span></p>
+          <h3 class="card-title"><span class="lang lang-pt">HTML e CSS na Prática</span><span class="lang lang-en">HTML
+              & CSS in Practice</span><span class="lang lang-es">HTML y CSS en la Práctica</span></h3><span
+            class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span
+              class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Criação de projetos front-end estruturados com HTML5 e estilizados com CSS3 (Fundação
+              Bradesco).</span><span class="lang lang-en">Creation of structured front-end projects with HTML5 and
+              styled with CSS3 (Fundação Bradesco).</span><span class="lang lang-es">Creación de proyectos front-end
+              estructurados con HTML5 y estilizados con CSS3 (Fundação Bradesco).</span></p>
         </a>
       </div>
 
-      <h3 class="subsection-title"><span class="lang lang-pt">Ferramentas & Office</span><span class="lang lang-en">Tools & Office</span><span class="lang lang-es">Herramientas y Office</span></h3>
+      <h3 class="subsection-title"><span class="lang lang-pt">Ferramentas & Office</span><span
+          class="lang lang-en">Tools & Office</span><span class="lang lang-es">Herramientas y Office</span></h3>
       <div class="grid-compact" style="margin-bottom: 48px;">
         <a href="assets/certificados/curso power bi.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title">Power BI</h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Curso de Power BI para visualização de dados, modelagem dimensional e dashboards interativos.</span><span class="lang lang-en">Power BI course for data visualization, dimensional modeling, and interactive dashboards.</span><span class="lang lang-es">Curso de Power BI para visualización de datos, modelado dimensional y dashboards interactivos.</span></p>
+          <h3 class="card-title">Power BI</h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span
+              class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Curso de Power BI para visualização de dados, modelagem dimensional e dashboards
+              interativos.</span><span class="lang lang-en">Power BI course for data visualization, dimensional
+              modeling, and interactive dashboards.</span><span class="lang lang-es">Curso de Power BI para
+              visualización de datos, modelado dimensional y dashboards interactivos.</span></p>
         </a>
-        <a href="assets/certificados/curso de informatica avancada.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Informática Avançada</span><span class="lang lang-en">Advanced IT</span><span class="lang lang-es">Informática Avanzada</span></h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Uso avançado de sistemas operacionais, redes e configuração de ambientes de desenvolvimento.</span><span class="lang lang-en">Advanced use of operating systems, networks, and development environment configuration.</span><span class="lang lang-es">Uso avanzado de sistemas operativos, redes y configuración de entornos de desarrollo.</span></p>
+        <a href="assets/certificados/curso de informatica avancada.pdf" target="_blank"
+          class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Informática Avançada</span><span
+              class="lang lang-en">Advanced IT</span><span class="lang lang-es">Informática Avanzada</span></h3><span
+            class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span
+              class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Uso
+              avançado de sistemas operacionais, redes e configuração de ambientes de desenvolvimento.</span><span
+              class="lang lang-en">Advanced use of operating systems, networks, and development environment
+              configuration.</span><span class="lang lang-es">Uso avanzado de sistemas operativos, redes y configuración
+              de entornos de desarrollo.</span></p>
         </a>
         <a href="assets/certificados/curso windows 10.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title">Windows 10</h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Administração, segurança e ferramentas essenciais de produtividade no ecossistema Windows.</span><span class="lang lang-en">Administration, security, and essential productivity tools in the Windows ecosystem.</span><span class="lang lang-es">Administración, seguridad y herramientas esenciales de productividad en el ecosistema Windows.</span></p>
+          <h3 class="card-title">Windows 10</h3><span class="card-pill"><span class="lang lang-pt">CURSO</span><span
+              class="lang lang-en">COURSE</span><span class="lang lang-es">CURSO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Administração, segurança e ferramentas essenciais de produtividade no ecossistema
+              Windows.</span><span class="lang lang-en">Administration, security, and essential productivity tools in
+              the Windows ecosystem.</span><span class="lang lang-es">Administración, seguridad y herramientas
+              esenciales de productividad en el ecosistema Windows.</span></p>
         </a>
       </div>
 
-      <h3 class="subsection-title"><span class="lang lang-pt">Palestras, Eventos & Extensão</span><span class="lang lang-en">Lectures, Events & Extension</span><span class="lang lang-es">Charlas, Eventos y Extensión</span></h3>
+      <h3 class="subsection-title"><span class="lang lang-pt">Palestras, Eventos & Extensão</span><span
+          class="lang lang-en">Lectures, Events & Extension</span><span class="lang lang-es">Charlas, Eventos y
+          Extensión</span></h3>
       <div class="grid-compact">
-        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 23 de Junho de 2025.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">TI no Setor Público</span><span class="lang lang-en">IT in the Public Sector</span><span class="lang lang-es">TI en el Sector Público</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Transformação digital e inovação no setor público.</span><span class="lang lang-en">Digital transformation and innovation in the public sector.</span><span class="lang lang-es">Transformación digital e innovación en el sector público.</span></p>
+        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 23 de Junho de 2025.pdf"
+          target="_blank" class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">TI no Setor Público</span><span class="lang lang-en">IT in
+              the Public Sector</span><span class="lang lang-es">TI en el Sector Público</span></h3><span
+            class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Transformação digital e inovação no setor público.</span><span
+              class="lang lang-en">Digital transformation and innovation in the public sector.</span><span
+              class="lang lang-es">Transformación digital e innovación en el sector público.</span></p>
         </a>
-        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 23 de Junho de 2025 (1).pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Tecnologia e Gestão</span><span class="lang lang-en">Technology and Management</span><span class="lang lang-es">Tecnología y Gestión</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Tecnologia, Engenharia e Gestão: Experiências que transformam realidades.</span><span class="lang lang-en">Technology, Engineering, and Management: Experiences that transform realities.</span><span class="lang lang-es">Tecnología, Ingeniería y Gestión: Experiencias que transforman realidades.</span></p>
+        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 23 de Junho de 2025 (1).pdf"
+          target="_blank" class="card card-light card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Tecnologia e Gestão</span><span
+              class="lang lang-en">Technology and Management</span><span class="lang lang-es">Tecnología y
+              Gestión</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Tecnologia, Engenharia e Gestão: Experiências que transformam realidades.</span><span
+              class="lang lang-en">Technology, Engineering, and Management: Experiences that transform
+              realities.</span><span class="lang lang-es">Tecnología, Ingeniería y Gestión: Experiencias que transforman
+              realidades.</span></p>
         </a>
-        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 23 de Junho de 2025 (2).pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Desafios de Carreira</span><span class="lang lang-en">Career Challenges</span><span class="lang lang-es">Desafíos de Carrera</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Aprendizados e Desafios na Construção de uma Carreira.</span><span class="lang lang-en">Learnings and Challenges in Building a Career.</span><span class="lang lang-es">Aprendizajes y Desafíos en la Construcción de una Carrera.</span></p>
+        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 23 de Junho de 2025 (2).pdf"
+          target="_blank" class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Desafios de Carreira</span><span class="lang lang-en">Career
+              Challenges</span><span class="lang lang-es">Desafíos de Carrera</span></h3><span class="card-pill"><span
+              class="lang lang-pt">PALESTRA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Aprendizados e Desafios na Construção de uma Carreira.</span><span
+              class="lang lang-en">Learnings and Challenges in Building a Career.</span><span
+              class="lang lang-es">Aprendizajes y Desafíos en la Construcción de una Carrera.</span></p>
         </a>
-        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 26 de Junho de 2025.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Indústria Automotiva</span><span class="lang lang-en">Automotive Industry</span><span class="lang lang-es">Industria Automotriz</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">A Engenharia Mecatrônica e o Perfil Profissional para a Nova Indústria.</span><span class="lang lang-en">Mechatronics Engineering and the Professional Profile for the New Industry.</span><span class="lang lang-es">La Ingeniería Mecatrónica y el Perfil Profesional para la Nueva Industria.</span></p>
+        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 26 de Junho de 2025.pdf"
+          target="_blank" class="card card-light card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Indústria Automotiva</span><span
+              class="lang lang-en">Automotive Industry</span><span class="lang lang-es">Industria Automotriz</span></h3>
+          <span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">A
+              Engenharia Mecatrônica e o Perfil Profissional para a Nova Indústria.</span><span
+              class="lang lang-en">Mechatronics Engineering and the Professional Profile for the New
+              Industry.</span><span class="lang lang-es">La Ingeniería Mecatrónica y el Perfil Profesional para la Nueva
+              Industria.</span></p>
         </a>
-        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 27 de Junho de 2025.pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Graduação ao Mercado</span><span class="lang lang-en">From College to Market</span><span class="lang lang-es">De la Universidad al Mercado</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Construindo o Próprio Caminho: Da Graduação ao Mercado.</span><span class="lang lang-en">Building Your Own Path: From College to the Market.</span><span class="lang lang-es">Construyendo el Propio Camino: De la Universidad al Mercado.</span></p>
+        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 27 de Junho de 2025.pdf"
+          target="_blank" class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Graduação ao Mercado</span><span class="lang lang-en">From
+              College to Market</span><span class="lang lang-es">De la Universidad al Mercado</span></h3><span
+            class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Construindo o Próprio Caminho: Da Graduação ao Mercado.</span><span
+              class="lang lang-en">Building Your Own Path: From College to the Market.</span><span
+              class="lang lang-es">Construyendo el Propio Camino: De la Universidad al Mercado.</span></p>
         </a>
-        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 27 de Junho de 2025 (1).pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Ciência de Dados</span><span class="lang lang-en">Data Science</span><span class="lang lang-es">Ciencia de Datos</span></h3><span class="card-pill"><span class="lang lang-pt">PALESTRA</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Da Engenharia à Ciência de Dados: Um Bate-Papo sobre Carreira.</span><span class="lang lang-en">From Engineering to Data Science: A Career Talk.</span><span class="lang lang-es">De la Ingeniería a la Ciencia de Datos: Una Charla sobre Carrera.</span></p>
+        <a href="assets/certificados/Certificados - KAIRO HENRIQUE FERREIRA MARTINS - 27 de Junho de 2025 (1).pdf"
+          target="_blank" class="card card-light card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Ciência de Dados</span><span class="lang lang-en">Data
+              Science</span><span class="lang lang-es">Ciencia de Datos</span></h3><span class="card-pill"><span
+              class="lang lang-pt">PALESTRA</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Da
+              Engenharia à Ciência de Dados: Um Bate-Papo sobre Carreira.</span><span class="lang lang-en">From
+              Engineering to Data Science: A Career Talk.</span><span class="lang lang-es">De la Ingeniería a la Ciencia
+              de Datos: Una Charla sobre Carrera.</span></p>
         </a>
-        <a href="assets/certificados/CERTIFICADO_DEDC_59718146 (2).pdf" target="_blank" class="card card-dark card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Esperanto 1</span><span class="lang lang-en">Esperanto 1</span><span class="lang lang-es">Esperanto 1</span></h3><span class="card-pill"><span class="lang lang-pt">EXTENSÃO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Curso de extensão em Esperanto padrão internacional (20 horas).</span><span class="lang lang-en">Extension course in international standard Esperanto (20 hours).</span><span class="lang lang-es">Curso de extensión en Esperanto estándar internacional (20 horas).</span></p>
+        <a href="assets/certificados/CERTIFICADO_DEDC_59718146 (2).pdf" target="_blank"
+          class="card card-dark card-compact">
+          <h3 class="card-title"><span class="lang lang-pt">Esperanto 1</span><span class="lang lang-en">Esperanto
+              1</span><span class="lang lang-es">Esperanto 1</span></h3><span class="card-pill"><span
+              class="lang lang-pt">EXTENSÃO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Curso de extensão em Esperanto padrão internacional (20 horas).</span><span
+              class="lang lang-en">Extension course in international standard Esperanto (20 hours).</span><span
+              class="lang lang-es">Curso de extensión en Esperanto estándar internacional (20 horas).</span></p>
         </a>
         <a href="assets/certificados/CertificadoParticipacao.pdf" target="_blank" class="card card-light card-compact">
-          <h3 class="card-title"><span class="lang lang-pt">Fiscalização CEFET</span><span class="lang lang-en">CEFET Supervision</span><span class="lang lang-es">Fiscalización CEFET</span></h3><span class="card-pill"><span class="lang lang-pt">EVENTO</span><span class="lang lang-en">EVENT</span><span class="lang lang-es">EVENTO</span></span>
-          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span class="lang lang-pt">Atuação como fiscal (Volante) do Processo Seletivo do Ensino Técnico.</span><span class="lang lang-en">Acted as an inspector for the Technical Education Selection Process.</span><span class="lang lang-es">Actué como inspector del Proceso de Selección de Educación Técnica.</span></p>
+          <h3 class="card-title"><span class="lang lang-pt">Fiscalização UFCI</span><span class="lang lang-en">UFCI
+              Supervision</span><span class="lang lang-es">Fiscalización UFCI</span></h3><span class="card-pill"><span
+              class="lang lang-pt">EVENTO</span><span class="lang lang-en">EVENT</span><span
+              class="lang lang-es">EVENTO</span></span>
+          <p class="card-desc" style="font-size: 0.8rem; margin-top: 8px; opacity: 0.85;"><span
+              class="lang lang-pt">Atuação como fiscal (Volante) do Processo Seletivo do Ensino Técnico.</span><span
+              class="lang lang-en">Acted as an inspector for the Technical Education Selection Process.</span><span
+              class="lang lang-es">Actué como inspector del Proceso de Selección de Educación Técnica.</span></p>
         </a>
+          </div>
+        </details>
       </div>
     </section>
 
     <!-- NOVO CONTATO -->
     <section class="section" id="contato">
       <h2 class="section-title" style="text-align: center; margin-bottom: 24px;">
-        <span class="lang lang-pt">Entre em contato</span><span class="lang lang-en">Get in touch</span><span class="lang lang-es">Ponte en contacto</span>
+        <span class="lang lang-pt">Entre em contato</span><span class="lang lang-en">Get in touch</span><span
+          class="lang lang-es">Ponte en contacto</span>
       </h2>
       <p style="text-align: center; color: var(--text-muted); max-width: 650px; margin: 0 auto 48px; line-height: 1.6;">
-        <span class="lang lang-pt">Aberto a oportunidades de estágio, projetos freelance e colaborações em desenvolvimento web, back-end, game dev, IA aplicada e sistemas de alta performance.</span><span class="lang lang-en">Open to internship opportunities, freelance projects, and collaborations in web development, back-end, game dev, applied AI, and high-performance systems.</span><span class="lang lang-es">Abierto a oportunidades de pasantías, proyectos freelance y colaboraciones en desarrollo web, back-end, game dev, IA aplicada y sistemas de alto rendimiento.</span>
+        <span class="lang lang-pt">Aberto a oportunidades de estágio, projetos freelance e colaborações em
+          desenvolvimento web, back-end, game dev, IA aplicada e sistemas de alta performance.</span><span
+          class="lang lang-en">Open to internship opportunities, freelance projects, and collaborations in web
+          development, back-end, game dev, applied AI, and high-performance systems.</span><span
+          class="lang lang-es">Abierto a oportunidades de pasantías, proyectos freelance y colaboraciones en desarrollo
+          web, back-end, game dev, IA aplicada y sistemas de alto rendimiento.</span>
       </p>
 
       <div class="contact-cards-wrap">
         <a href="mailto:kairohenrique293@gmail.com" class="contact-item">
           <div class="contact-icon">
-            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
           </div>
           <div class="contact-info">
-            <span class="contact-label"><span class="lang lang-pt">EMAIL</span><span class="lang lang-en">EMAIL</span><span class="lang lang-es">CORREO</span></span>
+            <span class="contact-label"><span class="lang lang-pt">EMAIL</span><span
+                class="lang lang-en">EMAIL</span><span class="lang lang-es">CORREO</span></span>
             <span class="contact-value">kairohenrique293@gmail.com</span>
           </div>
         </a>
-        
+
         <a href="https://www.linkedin.com/in/kairohfm/" target="_blank" class="contact-item">
           <div class="contact-icon">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
           </div>
           <div class="contact-info">
             <span class="contact-label">LINKEDIN</span>
@@ -491,7 +880,10 @@
 
         <a href="https://github.com/KairoHenrique" target="_blank" class="contact-item">
           <div class="contact-icon">
-            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
           </div>
           <div class="contact-info">
             <span class="contact-label">GITHUB</span>
@@ -500,128 +892,234 @@
         </a>
       </div>
 
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="mailto:kairohenrique293@gmail.com" class="btn btn-primary"><span class="lang lang-pt">Enviar mensagem</span><span class="lang lang-en">Send message</span><span class="lang lang-es">Enviar mensaje</span></a>
+      <div class="contact-form-container">
+        <form action="#" method="POST" class="contact-form" onsubmit="alert('Formulário de demonstração! Conecte ao Supabase ou Google Sheets. / Demo form! Connect to Supabase or Google Sheets.'); return false;">
+          <input type="text" name="name" placeholder="Seu Nome / Your Name" required class="mock-input" style="width: 100%; margin-bottom: 16px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 8px;" />
+          <input type="email" name="email" placeholder="Seu Email / Your Email" required class="mock-input" style="width: 100%; margin-bottom: 16px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 8px;" />
+          <textarea name="message" placeholder="Sua Mensagem / Your Message" required class="mock-input" rows="5" style="width: 100%; margin-bottom: 16px; background: rgba(255,255,255,0.05); color: #fff; border: 1px solid rgba(255,255,255,0.1); resize: vertical; padding: 12px; border-radius: 8px;"></textarea>
+          <button type="submit" class="btn btn-primary" style="width: 100%;"><span class="lang lang-pt">ENVIAR MENSAGEM</span><span class="lang lang-en">SEND MESSAGE</span><span class="lang lang-es">ENVIAR MENSAJE</span></button>
+        </form>
       </div>
     </section>
 
-    <footer style="text-align: right; padding: 24px 0; margin-top: 48px; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-muted); font-size: 0.85rem;">
+    <footer
+      style="text-align: right; padding: 24px 0; margin-top: 48px; border-top: 1px solid rgba(255,255,255,0.1); color: var(--text-muted); font-size: 0.85rem;">
       <div style="max-width: var(--max-width); margin: 0 auto; padding: 0 5%;">
-        <span class="lang lang-pt">© 2026 Kairo Henrique. Feito com dedicação.</span><span class="lang lang-en">© 2026 Kairo Henrique. Made with dedication.</span><span class="lang lang-es">© 2026 Kairo Henrique. Hecho con dedicación.</span>
+        <span class="lang lang-pt">© 2026 Kairo Henrique. Feito com dedicação.</span><span class="lang lang-en">© 2026
+          Kairo Henrique. Made with dedication.</span><span class="lang lang-es">© 2026 Kairo Henrique. Hecho con
+          dedicación.</span>
       </div>
     </footer>
   </main>
 
-    <!-- O NOVO CV DE IMPRESSÃO - ESTRUTURA PROFISSIONAL DE DUAS COLUNAS -->
+  <!-- O NOVO CV DE IMPRESSÃO - ESTRUTURA PROFISSIONAL DE DUAS COLUNAS -->
   <div class="cv-document" id="cv-document">
     <div class="cv-header">
       <div class="cv-header-text">
         <h1>KAIRO HENRIQUE MARTINS</h1>
-        <h2><span class="lang lang-pt">ENGENHEIRO DE COMPUTAÇÃO | FULL-STACK | GAME DEV</span><span class="lang lang-en">COMPUTER ENGINEER | FULL-STACK | GAME DEV</span><span class="lang lang-es">INGENIERO INFORMÁTICO | FULL-STACK | GAME DEV</span></h2>
+        <h2><span class="lang lang-pt">ENGENHEIRO DE COMPUTAÇÃO | FULL-STACK | GAME DEV</span><span
+            class="lang lang-en">COMPUTER ENGINEER | FULL-STACK | GAME DEV</span><span class="lang lang-es">INGENIERO
+            INFORMÁTICO | FULL-STACK | GAME DEV</span></h2>
       </div>
-      <img src="assets/img/profile.jpg" alt="Foto Kairo" class="cv-photo" onerror="this.src='https://ui-avatars.com/api/?name=Kairo+Henrique'">
+      <img src="assets/img/profile.jpg" alt="Foto Kairo" class="cv-photo"
+        onerror="this.src='https://ui-avatars.com/api/?name=Kairo+Henrique'">
     </div>
-    
+
     <div class="cv-body">
       <!-- Coluna Esquerda -->
       <div class="cv-sidebar">
-        
+
         <div class="cv-section">
-          <h3><span class="lang lang-pt">CONTATO</span><span class="lang lang-en">CONTACT</span><span class="lang lang-es">CONTACTO</span></h3>
+          <h3><span class="lang lang-pt">CONTATO</span><span class="lang lang-en">CONTACT</span><span
+              class="lang lang-es">CONTACTO</span></h3>
           <ul>
             <li>✉ kairohenrique293@gmail.com</li>
             <li>☏ (31) 97152-4733</li>
             <li>in/kairohfm</li>
             <li>github.com/KairoHenrique</li>
-            <li>Divinópolis, MG (<span class="lang lang-pt">22 anos</span><span class="lang lang-en">22 y/o</span><span class="lang lang-es">22 años</span>)</li>
+            <li>Divinópolis, MG (<span class="lang lang-pt">22 anos</span><span class="lang lang-en">22 y/o</span><span
+                class="lang lang-es">22 años</span>)</li>
           </ul>
         </div>
-        
+
         <div class="cv-section">
-          <h3><span class="lang lang-pt">EDUCAÇÃO</span><span class="lang lang-en">EDUCATION</span><span class="lang lang-es">EDUCACIÓN</span></h3>
-          <p><strong><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer Engineering</span><span class="lang lang-es">Ingeniería Informática</span></strong><br>
-          CEFET-MG (Campus Divinópolis)<br>
-          2024 - 2029 (<span class="lang lang-pt">6º Período</span><span class="lang lang-en">6th Semester</span><span class="lang lang-es">6º Semestre</span>)</p>
+          <h3><span class="lang lang-pt">EDUCAÇÃO</span><span class="lang lang-en">EDUCATION</span><span
+              class="lang lang-es">EDUCACIÓN</span></h3>
+          <p><strong><span class="lang lang-pt">Engenharia de Computação</span><span class="lang lang-en">Computer
+                Engineering</span><span class="lang lang-es">Ingeniería Informática</span></strong><br>
+            UFCI/MG (Campus Divinópolis)<br>
+            2024 - 2029 (<span class="lang lang-pt">6º Período</span><span class="lang lang-en">6th Semester</span><span
+              class="lang lang-es">6º Semestre</span>)</p>
         </div>
         <div class="cv-section">
-          <h3><span class="lang lang-pt">CERTIFICAÇÕES</span><span class="lang lang-en">CERTIFICATIONS</span><span class="lang lang-es">CERTIFICACIONES</span></h3>
+          <h3><span class="lang lang-pt">CERTIFICAÇÕES</span><span class="lang lang-en">CERTIFICATIONS</span><span
+              class="lang lang-es">CERTIFICACIONES</span></h3>
           <ul>
-            <li><strong>Microsoft AI-900:</strong> <span class="lang lang-pt">Fundamentos IA</span><span class="lang lang-en">AI Fundamentals</span><span class="lang lang-es">Fundamentos IA</span></li>
+            <li><strong>Microsoft AI-900:</strong> <span class="lang lang-pt">Fundamentos IA</span><span
+                class="lang lang-en">AI Fundamentals</span><span class="lang lang-es">Fundamentos IA</span></li>
             <li><strong>Santander Bootcamp:</strong> Fullstack Java + Angular</li>
-            <li><strong>Trilha Python:</strong> <span class="lang lang-pt">Back-End (53h)</span><span class="lang lang-en">Back-End (53h)</span><span class="lang lang-es">Back-End (53h)</span></li>
-            <li><strong>Power BI & Office:</strong> <span class="lang lang-pt">Avançado</span><span class="lang lang-en">Advanced</span><span class="lang lang-es">Avanzado</span></li>
-            <li><strong>Esperanto 1:</strong> <span class="lang lang-pt">Extensão (20h)</span><span class="lang lang-en">Extension (20h)</span><span class="lang lang-es">Extensión (20h)</span></li>
+            <li><strong>Trilha Python:</strong> <span class="lang lang-pt">Back-End (53h)</span><span
+                class="lang lang-en">Back-End (53h)</span><span class="lang lang-es">Back-End (53h)</span></li>
+            <li><strong>Power BI & Office:</strong> <span class="lang lang-pt">Avançado</span><span
+                class="lang lang-en">Advanced</span><span class="lang lang-es">Avanzado</span></li>
+            <li><strong>Esperanto 1:</strong> <span class="lang lang-pt">Extensão (20h)</span><span
+                class="lang lang-en">Extension (20h)</span><span class="lang lang-es">Extensión (20h)</span></li>
           </ul>
         </div>
 
 
         <div class="cv-section">
-          <h3><span class="lang lang-pt">SKILLS TÉCNICAS</span><span class="lang lang-en">TECHNICAL SKILLS</span><span class="lang lang-es">HABILIDADES TÉCNICAS</span></h3>
-          <p><strong><span class="lang lang-pt">Linguagens:</span><span class="lang lang-en">Languages:</span><span class="lang lang-es">Lenguajes:</span></strong><br> C/C++, Java, Python, TypeScript, React, Next.js, React Native.</p>
-          <p><strong><span class="lang lang-pt">Back-End:</span><span class="lang lang-en">Back-End:</span><span class="lang lang-es">Back-End:</span></strong><br> Spring Boot, Spring Cloud, FastAPI, PostgreSQL, Supabase.</p>
-          <p><strong><span class="lang lang-pt">Game Dev:</span><span class="lang lang-en">Game Dev:</span><span class="lang lang-es">Game Dev:</span></strong><br> Unity (C#), GameMaker, Godot, <span class="lang lang-pt">Lógica 2D e Física Custom.</span><span class="lang lang-en">2D Logic & Custom Physics.</span><span class="lang lang-es">Lógica 2D y Física Custom.</span></p>
+          <h3><span class="lang lang-pt">SKILLS TÉCNICAS</span><span class="lang lang-en">TECHNICAL SKILLS</span><span
+              class="lang lang-es">HABILIDADES TÉCNICAS</span></h3>
+          <p><strong><span class="lang lang-pt">Linguagens:</span><span class="lang lang-en">Languages:</span><span
+                class="lang lang-es">Lenguajes:</span></strong><br> C/C++, Java, Python, TypeScript, React, Next.js,
+            React Native.</p>
+          <p><strong><span class="lang lang-pt">Back-End:</span><span class="lang lang-en">Back-End:</span><span
+                class="lang lang-es">Back-End:</span></strong><br> Spring Boot, Spring Cloud, FastAPI, PostgreSQL,
+            Supabase.</p>
+          <p><strong><span class="lang lang-pt">Game Dev:</span><span class="lang lang-en">Game Dev:</span><span
+                class="lang lang-es">Game Dev:</span></strong><br> Unity (C#), GameMaker, Godot, <span
+              class="lang lang-pt">Lógica 2D e Física Custom.</span><span class="lang lang-en">2D Logic & Custom
+              Physics.</span><span class="lang lang-es">Lógica 2D y Física Custom.</span></p>
         </div>
 
         <div class="cv-section">
-          <h3><span class="lang lang-pt">IDIOMAS</span><span class="lang lang-en">LANGUAGES</span><span class="lang lang-es">IDIOMAS</span></h3>
+          <h3><span class="lang lang-pt">IDIOMAS</span><span class="lang lang-en">LANGUAGES</span><span
+              class="lang lang-es">IDIOMAS</span></h3>
           <ul>
-            <li><span class="lang lang-pt">Português (Nativo)</span><span class="lang lang-en">Portuguese (Native)</span><span class="lang lang-es">Portugués (Nativo)</span></li>
-            <li><span class="lang lang-pt">Inglês (Intermediário)</span><span class="lang lang-en">English (Intermediate)</span><span class="lang lang-es">Inglés (Intermedio)</span></li>
-            <li><span class="lang lang-pt">Espanhol (Intermediário)</span><span class="lang lang-en">Spanish (Intermediate)</span><span class="lang lang-es">Español (Intermedio)</span></li>
+            <li><span class="lang lang-pt">Português (Nativo)</span><span class="lang lang-en">Portuguese
+                (Native)</span><span class="lang lang-es">Portugués (Nativo)</span></li>
+            <li><span class="lang lang-pt">Inglês (Intermediário)</span><span class="lang lang-en">English
+                (Intermediate)</span><span class="lang lang-es">Inglés (Intermedio)</span></li>
+            <li><span class="lang lang-pt">Espanhol (Intermediário)</span><span class="lang lang-en">Spanish
+                (Intermediate)</span><span class="lang lang-es">Español (Intermedio)</span></li>
           </ul>
         </div>
       </div>
-      
+
       <!-- Coluna Direita -->
       <div class="cv-main">
         <div class="cv-section">
-          <h3><span class="lang lang-pt">SOBRE MIM</span><span class="lang lang-en">ABOUT ME</span><span class="lang lang-es">SOBRE MÍ</span></h3>
-          <p style="text-align:justify; line-height: 1.4; font-size: 12px;"><span class="lang lang-pt">Estudante de Engenharia de Computação com sólida base em desenvolvimento de software e lógica de programação. Experiência na criação de sistemas e projetos orientados a performance, utilizando linguagens como C, C++ e Python, além de atuação em metodologias ágeis (Scrum). Foco em construir soluções eficientes, escaláveis e focadas na experiência do usuário.</span><span class="lang lang-en">Computer Engineering student with a solid foundation in software development and programming logic. Experience in creating performance-oriented systems and projects using languages such as C, C++, and Python, along with agile methodologies (Scrum). Focused on building efficient, scalable, and user-centric solutions.</span><span class="lang lang-es">Estudiante de Ingeniería Informática con una sólida base en desarrollo de software y lógica de programación. Experiencia en la creación de sistemas y proyectos orientados al rendimiento utilizando lenguajes como C, C++ y Python, además de metodologías ágiles (Scrum). Enfocado en construir soluciones eficientes, escalables y centradas en el usuario.</span></p>
+          <h3><span class="lang lang-pt">SOBRE MIM</span><span class="lang lang-en">ABOUT ME</span><span
+              class="lang lang-es">SOBRE MÍ</span></h3>
+          <p style="text-align:justify; line-height: 1.4; font-size: 12px;"><span class="lang lang-pt">Estudante de
+              Engenharia de Computação com sólida base em desenvolvimento de software e lógica de programação.
+              Experiência na criação de sistemas e projetos orientados a performance, utilizando linguagens como C, C++
+              e Python, além de atuação em metodologias ágeis (Scrum). Foco em construir soluções eficientes, escaláveis
+              e focadas na experiência do usuário.</span><span class="lang lang-en">Computer Engineering student with a
+              solid foundation in software development and programming logic. Experience in creating
+              performance-oriented systems and projects using languages such as C, C++, and Python, along with agile
+              methodologies (Scrum). Focused on building efficient, scalable, and user-centric solutions.</span><span
+              class="lang lang-es">Estudiante de Ingeniería Informática con una sólida base en desarrollo de software y
+              lógica de programación. Experiencia en la creación de sistemas y proyectos orientados al rendimiento
+              utilizando lenguajes como C, C++ y Python, además de metodologías ágiles (Scrum). Enfocado en construir
+              soluciones eficientes, escalables y centradas en el usuario.</span></p>
         </div>
 
         <div class="cv-section">
-          <h3><span class="lang lang-pt">EXPERIÊNCIA</span><span class="lang lang-en">EXPERIENCE</span><span class="lang lang-es">EXPERIENCIA</span></h3>
-          
+          <h3><span class="lang lang-pt">EXPERIÊNCIA</span><span class="lang lang-en">EXPERIENCE</span><span
+              class="lang lang-es">EXPERIENCIA</span></h3>
+
           <div class="cv-item">
-            <h4><span class="lang lang-pt">Professor de Robótica & Desenvolvedor</span><span class="lang lang-en">Robotics Teacher & Developer</span><span class="lang lang-es">Profesor de Robótica y Desarrollador</span> <span>(2026)</span></h4>
+            <h4><span class="lang lang-pt">Professor de Robótica & Desenvolvedor</span><span
+                class="lang lang-en">Robotics Teacher & Developer</span><span class="lang lang-es">Profesor de Robótica
+                y Desarrollador</span> <span>(2026)</span></h4>
             <h5>HZN Labs</h5>
-            <p><span class="lang lang-pt">Ensino de lógica e robótica e desenvolvimento de ferramentas internas para gestão pedagógica e automação.</span><span class="lang lang-en">Teaching logic and robotics and developing internal tools for pedagogical management and automation.</span><span class="lang lang-es">Enseñanza de lógica y robótica y desarrollo de herramientas internas para la gestión pedagógica y automatización.</span></p>
+            <p><span class="lang lang-pt">Ensino de lógica e robótica e desenvolvimento de ferramentas internas para
+                gestão pedagógica e automação.</span><span class="lang lang-en">Teaching logic and robotics and
+                developing internal tools for pedagogical management and automation.</span><span
+                class="lang lang-es">Enseñanza de lógica y robótica y desarrollo de herramientas internas para la
+                gestión pedagógica y automatización.</span></p>
           </div>
 
           <div class="cv-item">
-            <h4><span class="lang lang-pt">Fundador & Lead Developer</span><span class="lang lang-en">Founder & Lead Developer</span><span class="lang lang-es">Fundador y Lead Developer</span> <span>(2025 - <span class="lang lang-pt">Atual</span><span class="lang lang-en">Present</span><span class="lang lang-es">Actual</span>)</span></h4>
+            <h4><span class="lang lang-pt">Fundador & Lead Developer</span><span class="lang lang-en">Founder & Lead
+                Developer</span><span class="lang lang-es">Fundador y Lead Developer</span> <span>(2025 - <span
+                  class="lang lang-pt">Atual</span><span class="lang lang-en">Present</span><span
+                  class="lang lang-es">Actual</span>)</span></h4>
             <h5>Studio Vessel</h5>
-            <p><span class="lang lang-pt">Estúdio indie autoral. Desenvolvimento full-cycle de produtos web (ACME HUB) e arquitetura de jogos imersivos (Zero Echo, Whispers of the Mind, Between Game).</span><span class="lang lang-en">Authorial indie studio. Full-cycle web product development (ACME HUB) and immersive game architecture (Zero Echo, Whispers of the Mind, Between Game).</span><span class="lang lang-es">Estudio indie de autor. Desarrollo de ciclo completo de productos web (ACME HUB) y arquitectura de juegos inmersivos (Zero Echo, Whispers of the Mind, Between Game).</span></p>
+            <p><span class="lang lang-pt">Estúdio indie autoral. Desenvolvimento full-cycle de produtos web (ACME HUB) e
+                arquitetura de jogos imersivos (Zero Echo, Whispers of the Mind, Between Game).</span><span
+                class="lang lang-en">Authorial indie studio. Full-cycle web product development (ACME HUB) and immersive
+                game architecture (Zero Echo, Whispers of the Mind, Between Game).</span><span
+                class="lang lang-es">Estudio indie de autor. Desarrollo de ciclo completo de productos web (ACME HUB) y
+                arquitectura de juegos inmersivos (Zero Echo, Whispers of the Mind, Between Game).</span></p>
           </div>
 
           <div class="cv-item">
-            <h4><span class="lang lang-pt">Estagiário de Tecnologia</span><span class="lang lang-en">Technology Intern</span><span class="lang lang-es">Pasante de Tecnología</span> <span>(2025 - 2026)</span></h4>
-            <h5><span class="lang lang-pt">Prefeitura de Divinópolis</span><span class="lang lang-en">City Hall of Divinópolis</span><span class="lang lang-es">Alcaldía de Divinópolis</span></h5>
-            <p><span class="lang lang-pt">Suporte tecnológico, automação de processos e criação de dashboards gerenciais em ambiente do setor público.</span><span class="lang lang-en">Technological support, process automation, and creation of management dashboards in a public sector environment.</span><span class="lang lang-es">Soporte tecnológico, automatización de procesos y creación de paneles de gestión en un entorno del sector público.</span></p>
+            <h4><span class="lang lang-pt">Estagiário de Tecnologia</span><span class="lang lang-en">Technology
+                Intern</span><span class="lang lang-es">Pasante de Tecnología</span> <span>(2025 - 2026)</span></h4>
+            <h5><span class="lang lang-pt">Prefeitura de Divinópolis</span><span class="lang lang-en">City Hall of
+                Divinópolis</span><span class="lang lang-es">Alcaldía de Divinópolis</span></h5>
+            <p><span class="lang lang-pt">Suporte tecnológico, automação de processos e criação de dashboards gerenciais
+                em ambiente do setor público.</span><span class="lang lang-en">Technological support, process
+                automation, and creation of management dashboards in a public sector environment.</span><span
+                class="lang lang-es">Soporte tecnológico, automatización de procesos y creación de paneles de gestión en
+                un entorno del sector público.</span></p>
           </div>
 
           <div class="cv-item">
-            <h4><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la Programación</span> <span>(2024)</span></h4>
-            <h5>CEFET-MG</h5>
-            <p><span class="lang lang-pt">Monitoria para alunos do técnico em fundamentos de lógica, estruturação de algoritmos e exercícios avançados em Linguagem C.</span><span class="lang lang-en">Mentoring tech students in logic fundamentals, algorithm structuring, and advanced exercises in C Language.</span><span class="lang lang-es">Tutoría para estudiantes técnicos en fundamentos de lógica, estructuración de algoritmos y ejercicios avanzados en lenguaje C.</span></p>
+            <h4><span class="lang lang-pt">Monitor de Introdução à Programação</span><span class="lang lang-en">Teaching
+                Assistant (Intro to Programming)</span><span class="lang lang-es">Monitor de Introducción a la
+                Programación</span> <span>(2024)</span></h4>
+            <h5>UFCI/MG</h5>
+            <p><span class="lang lang-pt">Monitoria para alunos do técnico em fundamentos de lógica, estruturação de
+                algoritmos e exercícios avançados em Linguagem C.</span><span class="lang lang-en">Mentoring tech
+                students in logic fundamentals, algorithm structuring, and advanced exercises in C Language.</span><span
+                class="lang lang-es">Tutoría para estudiantes técnicos en fundamentos de lógica, estructuración de
+                algoritmos y ejercicios avanzados en lenguaje C.</span></p>
           </div>
 
           <div class="cv-item">
-            <h4><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span> <span>(2017 - 2019 / 2023 - 2024)</span></h4>
+            <h4><span class="lang lang-pt">Arte Finalista</span><span class="lang lang-en">Print Production
+                Artist</span><span class="lang lang-es">Arte Finalista (Diseño de Impresión)</span> <span>(2017 - 2019 /
+                2023 - 2024)</span></h4>
             <h5>Gráfica Express & Poligráfica</h5>
-            <p><span class="lang lang-pt">Atuação no setor de impressões com finalização visual, design gráfico e preparação técnica de arquivos.</span><span class="lang lang-en">Worked in the printing sector handling visual finishing, graphic design, and technical file preparation.</span><span class="lang lang-es">Trabajo en el sector de impresión manejando acabado visual, diseño gráfico y preparación técnica de archivos.</span></p>
+            <p><span class="lang lang-pt">Atuação no setor de impressões com finalização visual, design gráfico e
+                preparação técnica de arquivos.</span><span class="lang lang-en">Worked in the printing sector handling
+                visual finishing, graphic design, and technical file preparation.</span><span
+                class="lang lang-es">Trabajo en el sector de impresión manejando acabado visual, diseño gráfico y
+                preparación técnica de archivos.</span></p>
           </div>
         </div>
 
-                <div class="cv-section">
-          <h3><span class="lang lang-pt">PROJETOS DESTAQUE</span><span class="lang lang-en">FEATURED PROJECTS</span><span class="lang lang-es">PROYECTOS DESTACADOS</span></h3>
+        <div class="cv-section">
+          <h3><span class="lang lang-pt">PROJETOS DESTAQUE</span><span class="lang lang-en">FEATURED
+              PROJECTS</span><span class="lang lang-es">PROYECTOS DESTACADOS</span></h3>
           <ul class="cv-projects">
-            <li><strong>ACME HUB:</strong> <span class="lang lang-pt">SaaS educacional Full-Stack (Next.js/Supabase). Sincroniza dados via workers em Playwright, orquestra calendário e simula métricas.</span><span class="lang lang-en">Full-Stack educational SaaS (Next.js/Supabase). Synchronizes data via Playwright workers, orchestrates calendars, and simulates metrics.</span><span class="lang lang-es">SaaS educativo Full-Stack (Next.js/Supabase). Sincroniza datos a través de workers en Playwright, orquesta calendarios y simula métricas.</span></li>
-            <li><strong>HealthBridge:</strong> <span class="lang lang-pt">Sistema de triagem médica baseado em IA multimodelo, painéis sob medida, LGPD e agendamento por proximidade (Haversine).</span><span class="lang lang-en">Medical triage system based on multi-model AI, custom dashboards, LGPD compliance, and proximity scheduling (Haversine).</span><span class="lang lang-es">Sistema de triaje médico basado en IA multimodelo, paneles personalizados, cumplimiento de LGPD y programación por proximidad (Haversine).</span></li>
-            <li><strong>Easy Trip:</strong> <span class="lang lang-pt">App mobile de curadoria de viagens integrado com IA e Radar da Noite (Backend Fastify + React Native).</span><span class="lang lang-en">Mobile travel curation app integrated with AI and Night Radar (Fastify Backend + React Native).</span><span class="lang lang-es">Aplicación móvil de selección de viajes integrada con IA y Radar Nocturno (Backend Fastify + React Native).</span></li>
-            <li><strong>SEMUSA <span class="lang lang-pt">(Prefeitura de Divinópolis)</span><span class="lang lang-en">(City Hall of Divinópolis)</span><span class="lang lang-es">(Alcaldía de Divinópolis)</span>:</strong> <span class="lang lang-pt">Dashboard de indicadores de saúde pública para apoio à gestão (React + Vite + Recharts).</span><span class="lang lang-en">Public health indicators dashboard for management support (React + Vite + Recharts).</span><span class="lang lang-es">Panel de indicadores de salud pública para apoyo a la gestión (React + Vite + Recharts).</span></li>
-            <li><strong><span class="lang lang-pt">Processador C++</span><span class="lang lang-en">C++ Processor</span><span class="lang lang-es">Procesador C++</span>:</strong> <span class="lang lang-pt">Pipeline com alocação mmap e multithreading para processar 1,2M de manchetes em ~0,6s (C++17).</span><span class="lang lang-en">Pipeline with mmap allocation and multithreading to process 1.2M headlines in ~0.6s (C++17).</span><span class="lang lang-es">Pipeline con asignación mmap y multihilo para procesar 1,2M de titulares en ~0,6s (C++17).</span></li>
-            <li><strong>Whispers of the Mind:</strong> <span class="lang lang-pt">Jogo Metroidvania 2D focado em pixel art e design de som imersivo (GameMaker).</span><span class="lang lang-en">2D Metroidvania game focused on pixel art and immersive sound design (GameMaker).</span><span class="lang lang-es">Juego Metroidvania 2D centrado en pixel art y diseño de sonido inmersivo (GameMaker).</span></li>
+            <li><strong>ACME HUB:</strong> <span class="lang lang-pt">SaaS educacional Full-Stack (Next.js/Supabase).
+                Sincroniza dados via workers em Playwright, orquestra calendário e simula métricas.</span><span
+                class="lang lang-en">Full-Stack educational SaaS (Next.js/Supabase). Synchronizes data via Playwright
+                workers, orchestrates calendars, and simulates metrics.</span><span class="lang lang-es">SaaS educativo
+                Full-Stack (Next.js/Supabase). Sincroniza datos a través de workers en Playwright, orquesta calendarios
+                y simula métricas.</span></li>
+            <li><strong>HealthBridge:</strong> <span class="lang lang-pt">Sistema de triagem médica baseado em IA
+                multimodelo, painéis sob medida, LGPD e agendamento por proximidade (Haversine).</span><span
+                class="lang lang-en">Medical triage system based on multi-model AI, custom dashboards, LGPD compliance,
+                and proximity scheduling (Haversine).</span><span class="lang lang-es">Sistema de triaje médico basado
+                en IA multimodelo, paneles personalizados, cumplimiento de LGPD y programación por proximidad
+                (Haversine).</span></li>
+            <li><strong>Easy Trip:</strong> <span class="lang lang-pt">App mobile de curadoria de viagens integrado com
+                IA e Radar da Noite (Backend Fastify + React Native).</span><span class="lang lang-en">Mobile travel
+                curation app integrated with AI and Night Radar (Fastify Backend + React Native).</span><span
+                class="lang lang-es">Aplicación móvil de selección de viajes integrada con IA y Radar Nocturno (Backend
+                Fastify + React Native).</span></li>
+            <li><strong>SEMUSA <span class="lang lang-pt">(Prefeitura de Divinópolis)</span><span
+                  class="lang lang-en">(City Hall of Divinópolis)</span><span class="lang lang-es">(Alcaldía de
+                  Divinópolis)</span>:</strong> <span class="lang lang-pt">Dashboard de indicadores de saúde pública
+                para apoio à gestão (React + Vite + Recharts).</span><span class="lang lang-en">Public health indicators
+                dashboard for management support (React + Vite + Recharts).</span><span class="lang lang-es">Panel de
+                indicadores de salud pública para apoyo a la gestión (React + Vite + Recharts).</span></li>
+            <li><strong><span class="lang lang-pt">Processador C++</span><span class="lang lang-en">C++
+                  Processor</span><span class="lang lang-es">Procesador C++</span>:</strong> <span
+                class="lang lang-pt">Pipeline com alocação mmap e multithreading para processar 1,2M de manchetes em
+                ~0,6s (C++17).</span><span class="lang lang-en">Pipeline with mmap allocation and multithreading to
+                process 1.2M headlines in ~0.6s (C++17).</span><span class="lang lang-es">Pipeline con asignación mmap y
+                multihilo para procesar 1,2M de titulares en ~0,6s (C++17).</span></li>
+            <li><strong>Whispers of the Mind:</strong> <span class="lang lang-pt">Jogo Metroidvania 2D focado em pixel
+                art e design de som imersivo (GameMaker).</span><span class="lang lang-en">2D Metroidvania game focused
+                on pixel art and immersive sound design (GameMaker).</span><span class="lang lang-es">Juego Metroidvania
+                2D centrado en pixel art y diseño de sonido inmersivo (GameMaker).</span></li>
           </ul>
         </div>
       </div>
@@ -631,4 +1129,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
