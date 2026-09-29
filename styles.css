@@ -577,17 +577,24 @@ body.lang-es .lang-es { display: inline; }
   display: none;
 }
 @media print {
-  @page { margin: 0; size: A4; }
+  @page { margin: 0; size: A4 portrait; }
+  html, body { 
+    width: 210mm !important; 
+    height: 297mm !important; 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    background: white !important; 
+    overflow: visible !important;
+  }
   body > * { display: none !important; }
-  body { background: white !important; margin: 0; padding: 0; }
   
   #cv-document { 
     display: flex !important;
     flex-direction: column;
     position: absolute; 
     top: 0; left: 0; 
-    width: 100%;
-    min-height: 100vh;
+    width: 210mm !important;
+    height: 297mm !important;
     background: white;
     color: #333;
     font-family: 'Montserrat', sans-serif;
